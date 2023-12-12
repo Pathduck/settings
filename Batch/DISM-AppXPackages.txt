@@ -1,0 +1,41 @@
+DISM
+=====
+
+# Cleanup
+DISM.exe /online /Cleanup-Image /StartComponentCleanup
+DISM.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
+
+# Features
+DISM.exe /Online /Get-Features /Format:Table
+DISM.exe /Online /Disable-Feature /FeatureName:<name> /Remove
+DISM.exe /Online /Get-FeatureInfo /FeatureName:<name>
+
+# Packages
+DISM.exe /Online /Get-Packages /Format:Table
+DISM.exe /Online /Remove-Package /PackageName:name
+DISM.exe /Online /Get-PackageInfo /PackageName:<name_in_image>
+
+# Capabilities
+DISM.exe /Online /Get-Capabilities /Format:Table
+DISM.exe /Online /Remove-Capability /CapabilityName:<name>
+DISM.exe /online /Get-CapabilityInfo /CapabilityName:<name_in_image>
+
+# ProvisionedAppxPackages
+DISM.exe /Online /Get-ProvisionedAppxPackages
+DISM.exe /Online /Remove-ProvisionedAppxPackage /PackageName:name
+
+POWERSHELL
+==========
+
+Get-AppxPackage -AllUsers
+Get-AppxPackage -Allusers * | Select Name, PackageFullName
+
+Get-AppxPackage *zunemusic* | Remove-AppxPackage
+
+Get-AppxProvisionedPackage -online | select packagename
+
+Remove-AppxProvisionedPackage -online -packagename <string>
+
+Get-AppxProvisionedpackage –online | where-object {$_.packagename –notlike “*store*”} | Remove-AppxProvisionedPackage -online
+
+Get-AppxProvisionedpackage –online | where-object {$_.packagename –like “*xbox*”} | Remove-AppxProvisionedPackage -online

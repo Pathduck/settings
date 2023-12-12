@@ -1,0 +1,56 @@
+The Dark Mod Xbox 360 Controller
+===============================
+
+Main
+====
+
+LS: WASD movement
+LS Press: Crouch
+RS: Mouse look / Rotate (with manipulate)
+RS Press: Eyeglass
+
+Y: Toggle lantern
+X: Jump / Mantle
+A: Frob / Interact
+B: Use item
+
+Dpad Up: Lean forward
+Dpad Down: Put away weapons
+Dpad Left: Lean left
+Dpad Right: Lean right
+
+LT: Parry / Manipulate
+RT: Attack
+
+RB: Change to Set 2
+LB: Creep
+
+Back: ESC
+Start: Objectives
+
+Set 2
+=====
+
+LS: WASD movement
+LS Press: Clear inventory
+RS: Mouse look / Rotate (with manipulate)
+RS Press: Drop inventory item
+
+Y: Cycle lockpicks
+X: Cycle keys
+A: Cycle maps
+B: Cycle readables
+
+Dpad Up: Previous weapon / Zoom
+Dpad Down: Next weapon / Zoom
+Dpad Left: Next inventory item
+Dpad Right: Previous inventory item
+
+LT: Shortsword
+RT: Blackjack
+
+LB: Run
+RB: n/a
+
+Back: Quick load
+Start: Quick save

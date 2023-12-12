@@ -1,0 +1,28 @@
+;--- Xpadder Profile File ---
+DataType=Profile
+Version=2013.07.18
+
+[Profile Settings]
+
+[Set Settings]
+Set1StickDeadZones=128,64
+Set1StickDiagonalSizes=30,45
+Set1DPadMode=FourWay
+Set1Stick1Mode=FourWay
+
+[Assignments]
+Set1Button1Slots=X
+Set1Button2Slots=C
+Set1Button3Slots=R
+Set1Button5Slots=Space
+Set1Button6Slots=F
+Set1Button7Slots=Escape
+Set1Button8Slots=P
+Set1DPadUpSlots=M
+Set1DPadRightSlots=3
+Set1DPadDownSlots=2
+Set1DPadLeftSlots=1
+Set1Stick1UpSlots=Arrow Up
+Set1Stick1RightSlots=Arrow Right
+Set1Stick1DownSlots=Arrow Down
+Set1Stick1LeftSlots=Arrow Left
