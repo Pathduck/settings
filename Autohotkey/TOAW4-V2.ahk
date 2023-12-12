@@ -1,4 +1,4 @@
-﻿; AutoHotkey v2 script for TOAW4
+; AutoHotkey v2 script for TOAW4
 #Warn ; Enable warnings to assist with detecting common errors.
 #UseHook true ; Keyboard hook
 #SingleInstance force ; Force single running instance
