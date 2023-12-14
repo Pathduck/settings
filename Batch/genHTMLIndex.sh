@@ -39,6 +39,12 @@ do
 	# Generate HTML index - Color, Date, Size(h), No lines(i), Title(T), filter self(I)
 	# Remove credits, link to parent dir
 	tree -CDhi -H "." -T "$(basename $PWD)" -I "index.html" -L 1 --dirsfirst --charset "utf-8"\
-	| sed -e '/<hr>/,+7d' -e 's/href="\.">\./href="..">../' > index.html
+	| sed -e '/<hr>/,+7d' -e 's/href="\.">\./href="..">../'\
+	| sed -e 's/BODY {/BODY { color: lime; background: black;/'\
+	| sed -e 's/color: black;/color: lime;/'\
+	| sed -e 's/color: blue;/color: deepskyblue;/'\
+	| sed -e 's/color: green;/color: limegreen;/'\
+	| sed -e 's/color: purple;/color: mediumpurple;/'\
+	> index.html
 	cd $OLDPWD
 done
