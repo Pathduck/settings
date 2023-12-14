@@ -1,0 +1,33 @@
+# none, visible or audible
+set bell-style visible
+
+# Ask before displaying >40 items
+set completion-query-items 40
+set completion-ignore-case on
+
+# disable/enable 8bit input
+#set meta-flag on
+#set input-meta on
+#set convert-meta off
+#set output-meta off
+
+"\e[1~": beginning-of-line    # Home
+"\e[4~": end-of-line          # End
+"\e[5~": beginning-of-history # PageUp
+"\e[6~": end-of-history       # PageDown
+"\e[2~": overwrite-mode       # Insert
+"\eOC": forward-word          # Ctrl-Right
+"\eOD": backward-word         # Ctrl-Left
+"\e[3;5~": kill-word          # Ctrl-Del - delete word to the right
+
+"\e[A": history-search-backward # ArrowUp
+"\e[B": history-search-forward  # ArrowDown
+
+#"\33\33[A": "cd ..\n" # Alt-UpArrow for 'cd ..'
+#"\33\33[B": "cd -\n"  # Alt-ArrowDown for previous dir
+
+"\e[1;3A": "cd ..\n" # Alt-UpArrow for 'cd ..'
+"\e[1;3B": "cd -\n"  # Alt-ArrowDown for previous dir
+
+# Ctrl-K - clears the input line regardless of cursor pos
+"\C-k": "\C-e\C-u"

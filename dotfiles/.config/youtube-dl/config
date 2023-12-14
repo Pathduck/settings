@@ -1,0 +1,2 @@
+--no-check-certificate
+-o 'G:\download\%(title)s-%(id)s.%(ext)s'
