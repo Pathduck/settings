@@ -23,19 +23,3 @@ DISM.exe /online /Get-CapabilityInfo /CapabilityName:<name_in_image>
 # ProvisionedAppxPackages
 DISM.exe /Online /Get-ProvisionedAppxPackages
 DISM.exe /Online /Remove-ProvisionedAppxPackage /PackageName:name
-
-POWERSHELL
-==========
-
-Get-AppxPackage -AllUsers
-Get-AppxPackage -Allusers * | Select Name, PackageFullName
-
-Get-AppxPackage *zunemusic* | Remove-AppxPackage
-
-Get-AppxProvisionedPackage -online | select packagename
-
-Remove-AppxProvisionedPackage -online -packagename <string>
-
-Get-AppxProvisionedpackage –online | where-object {$_.packagename –notlike “*store*”} | Remove-AppxProvisionedPackage -online
-
-Get-AppxProvisionedpackage –online | where-object {$_.packagename –like “*xbox*”} | Remove-AppxProvisionedPackage -online

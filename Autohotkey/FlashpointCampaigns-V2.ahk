@@ -42,13 +42,16 @@ e::Send("{F6}") ; E - Subunit Inspector
 |::Send("{F7}") ; | - Log
 +s::Send("^k") ; Shift+S - SOP Manager
 r::Send("^r") ; R - Rotate Stack
-f::Send("^l") ; F - Line-Of-Sight
+f::Send("^l") ; F - Line Of Sight
 g::Send("^o") ; G - Spottable From
 h::Send("^p") ; H - SOP Ranges
 t::Send("^y") ; T - Enemies Spotted
 y::Send("^d") ; Y - Range Rings
 v::Send("^u") ; V - Hide Units
 ;e::Send("{Click,right}") ; Right-click
+
+; Ctrl+Shift+S - Save game
+^+s::Send("{Alt Down},g,a,p,{Alt Up}")
 
 ; Zoom controls
 z::Send("{WheelUp}")	; Zoom In

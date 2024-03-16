@@ -1,0 +1,15 @@
+POWERSHELL
+==========
+
+Get-AppxPackage -AllUsers
+Get-AppxPackage -Allusers * | Select Name, PackageFullName
+
+Get-AppxProvisionedPackage -online | select packagename
+
+Get-AppxPackage *zunemusic* | Remove-AppxPackage
+
+Get-AppxProvisionedpackage –online | where-object {$_.packagename –notlike “*store*”} | Remove-AppxProvisionedPackage -online
+
+Get-AppxProvisionedpackage –online | where-object {$_.packagename –like “*xbox*”} | Remove-AppxProvisionedPackage -online
+
+Remove-AppxProvisionedPackage -online -packagename <string>
