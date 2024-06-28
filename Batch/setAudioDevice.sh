@@ -4,7 +4,7 @@
 
 DEVICE=$1
 # SoundVolumeCommandLine - https://www.nirsoft.net/utils/sound_volume_command_line.html
-SVCL="/cygdrive/d/bin/NirsoftLauncher/NirSoft/svcl.exe"
+SVCL="/d/bin/NirsoftLauncher/NirSoft/svcl.exe"
 
 # Get list of render devices
 RENDER_DEVICES=$($SVCL /scomma | grep "Device,Render" | cut -d "," -f1)
