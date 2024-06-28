@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2023-09-01 12:25:17" build="230724">
+		<key name=".Vanilla" modified="2024-05-10 15:14:47" build="230724">
 			<value name="ColorTable00" type="dword" data="00222827"/>
 			<value name="ColorTable01" type="dword" data="009e5401"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
 			<value name="ColorTable03" type="dword" data="00a6831a"/>
-			<value name="ColorTable04" type="dword" data="003403a7"/>
+			<value name="ColorTable04" type="dword" data="004604df"/>
 			<value name="ColorTable05" type="dword" data="009c5689"/>
 			<value name="ColorTable06" type="dword" data="0049b6b6"/>
-			<value name="ColorTable07" type="dword" data="00cacaca"/>
+			<value name="ColorTable07" type="dword" data="00d2d2d2"/>
 			<value name="ColorTable08" type="dword" data="007c7c7c"/>
-			<value name="ColorTable09" type="dword" data="00fc8603"/>
+			<value name="ColorTable09" type="dword" data="00f58303"/>
 			<value name="ColorTable10" type="dword" data="0006d08d"/>
 			<value name="ColorTable11" type="dword" data="00e5c258"/>
-			<value name="ColorTable12" type="dword" data="004b04f3"/>
+			<value name="ColorTable12" type="dword" data="004242ff"/>
 			<value name="ColorTable13" type="dword" data="00b87da8"/>
 			<value name="ColorTable14" type="dword" data="0081cccc"/>
 			<value name="ColorTable15" type="dword" data="00ffffff"/>
@@ -116,18 +116,18 @@
 			<value name="bgOperation" type="hex" data="02"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
 			<value name="AlphaValue" type="hex" data="FF"/>
-			<value name="AlphaValueSeparate" type="hex" data="00"/>
-			<value name="AlphaValueInactive" type="hex" data="EE"/>
+			<value name="AlphaValueSeparate" type="hex" data="01"/>
+			<value name="AlphaValueInactive" type="hex" data="F0"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="00000050"/>
+			<value name="ConWnd Width" type="dword" data="00000053"/>
 			<value name="ConWnd Height" type="dword" data="0000002d"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="886"/>
-			<value name="ConWnd Y" type="long" data="137"/>
+			<value name="ConWnd X" type="long" data="84"/>
+			<value name="ConWnd Y" type="long" data="-1"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="00"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -328,7 +328,7 @@
 			<value name="Update.CheckOnStartup" type="hex" data="01"/>
 			<value name="Update.CheckHourly" type="hex" data="00"/>
 			<value name="Update.ConfirmDownload" type="hex" data="01"/>
-			<value name="Update.UseBuilds" type="hex" data="03"/>
+			<value name="Update.UseBuilds" type="hex" data="01"/>
 			<value name="Update.UseProxy" type="hex" data="00"/>
 			<value name="Update.Proxy" type="string" data=""/>
 			<value name="Update.ProxyUser" type="string" data=""/>
@@ -493,25 +493,25 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000001"/>
 				</key>
-				<key name="Task2" modified="2023-06-13 21:27:13" build="221218">
-					<value name="Name" type="string" data="{Powershell::Powershell}"/>
-					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
-					<value name="Cmd1" type="string" data='PowerShell -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command "Invoke-Expression &apos;. &apos;&apos;%ConEmuDir%\..\profile.ps1&apos;&apos;&apos;" -new_console'/>
-					<value name="Active" type="long" data="0"/>
-					<value name="Count" type="long" data="1"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
-					<value name="Flags" type="dword" data="00000000"/>
-				</key>
-				<key name="Task3" modified="2023-06-13 21:27:13" build="221218">
+				<key name="Task2" modified="2024-03-23 16:29:11" build="230724">
 					<value name="Name" type="string" data="{cmd::Cmder as Admin}"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
 					<value name="Cmd1" type="string" data='cmd /k "%ConEmuDir%\..\init.bat"  -new_console:a'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-				<key name="Task4" modified="2021-05-03 11:55:04" build="210422">
+				<key name="Task3" modified="2024-03-23 16:29:11" build="230724">
+					<value name="Name" type="string" data="{Powershell::Powershell}"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
+					<value name="Cmd1" type="string" data='PowerShell -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command "Invoke-Expression &apos;. &apos;&apos;%ConEmuDir%\..\profile.ps1&apos;&apos;&apos;" -new_console'/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Flags" type="dword" data="00000000"/>
+				</key>
+				<key name="Task4" modified="2024-03-23 16:29:11" build="230724">
 					<value name="Name" type="string" data="{Powershell::PowerShell as Admin}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
@@ -521,7 +521,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-				<key name="Task5" modified="2021-05-03 17:04:17" build="210422">
+				<key name="Task5" modified="2024-03-23 16:29:11" build="230724">
 					<value name="Name" type="string" data="{bash::mintty}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
