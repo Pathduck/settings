@@ -40,4 +40,6 @@ unalias=alias /d $1
 vi=vim $*
 winscp=d:\bin\WinSCP\winscp.exe $*
 
-btop=d:\bin\btop4win\btop4win.exe $*  
+asn=sh "D:\bin\cygwin\bin\asn" $*  
+ncat=D:\bin\nettools\Nmap\ncat.exe $*  
+nping=D:\bin\nettools\Nmap\nping.exe $*  
