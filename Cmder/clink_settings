@@ -1,7 +1,92 @@
+# name: Auto-update the Clink program files
+# type: enum
+# options: off,check,prompt,auto
+clink.autoupdate = off
+
 # name: Strips CR and LF chars on paste
 # type: enum
 # options: delete,space,ampersand,crlf
 clink.paste_crlf = space
+
+# name: Argument color
+# type: color
+color.arg = bold
+
+# name: Argument info color
+# type: color
+color.arginfo = yellow
+
+# name: Shell command completions
+# type: color
+color.cmd = bold
+
+# name: Color for < and > redirection symbols
+# type: color
+color.cmdredir = bold
+
+# name: Color for & and | command separators
+# type: color
+color.cmdsep = bold
+
+# name: Color for comment row
+# type: color
+color.comment_row = bright white on cyan
+
+# name: Description completion color
+# type: color
+color.description = bright cyan
+
+# name: Doskey completions
+# type: color
+color.doskey = bold cyan
+
+# name: Filtered completion color
+# type: color
+color.filtered = bold
+
+# name: Flag color
+# type: color
+color.flag = default
+
+# name: Color for preferred branch completions
+# type: color
+color.git.star = bright green
+
+# name: For user-interaction prompts
+# type: color
+color.interact = bold
+
+# name: Message area color
+# type: color
+color.message = default
+
+# name: Unexpected argument color
+# type: color
+color.unexpected = default
+
+# name: Color for yarn run local module
+# type: color
+color.yarn.module = bright green
+
+# name: Color for yarn run project.json script
+# type: color
+color.yarn.script = bright blue
+
+# name: Match executables in current directory
+# type: boolean
+exec.cwd = True
+
+# name: Include directories
+# type: boolean
+exec.dirs = True
+
+# name: Match executables in PATH
+# type: boolean
+exec.path = True
+
+# name: Whitespace prefix matches files
+# type: boolean
+exec.space_prefix = True
 
 # name: Sets how command history expansion is applied
 # type: enum
@@ -23,14 +108,4 @@ history.shared = True
 # name: Support Windows' Ctrl-Alt substitute for AltGr
 # type: boolean
 terminal.use_altgr_substitute = True
-
-
-
-exec.cwd = 1
-
-exec.dirs = 1
-
-exec.path = 1
-
-exec.space_prefix = 1
 

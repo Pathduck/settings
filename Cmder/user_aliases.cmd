@@ -6,6 +6,7 @@
 ;= Add aliases below here
 cd=cd /d $*
 ~=cd /d "%USERPROFILE%"
+asn=sh "d:\bin\nettools\asn\asn" $*  
 clear=cls
 cmderr=cd /d "%CMDER_ROOT%"
 curl=d:\bin\cygwin\bin\curl.exe $*  
@@ -22,8 +23,10 @@ ll=ls -l --color=auto --group-directories-first $*
 ls=ls --color=auto --group-directories-first $*
 musify=node d:\bin\node\dl-musify.club\download_album.js $*  
 mv=mv -i $*
+ncat=D:\bin\nettools\Nmap\ncat.exe $*  
 nginx=start /d d:\bin\Nginx /b d:\bin\Nginx\nginx.exe $*
 nmap=D:\bin\nettools\Nmap\nmap.exe $*
+nping=D:\bin\nettools\Nmap\nping.exe $*  
 npp=d:\bin\Notepad++\notepad++.exe $*
 pb=sh "d:\bin\cygwin\usr\local\bin\pb" $*
 putty=d:\bin\putty\putty.exe $*
@@ -39,7 +42,3 @@ tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1
 vi=vim $*
 winscp=d:\bin\WinSCP\winscp.exe $*
-
-asn=sh "D:\bin\cygwin\bin\asn" $*  
-ncat=D:\bin\nettools\Nmap\ncat.exe $*  
-nping=D:\bin\nettools\Nmap\nping.exe $*  
