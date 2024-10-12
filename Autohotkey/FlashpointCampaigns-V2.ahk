@@ -4,18 +4,18 @@
 #SingleInstance force ; Force single running instance
 SendMode("Input") ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir(A_ScriptDir) ; Ensures a consistent starting directory.
-SetTitleMatchMode("RegEx") ; Regex title finding
+; SetTitleMatchMode("RegEx") ; Regex title finding
 
 ; Exclusions
 GroupAdd("Exlude_class", "ahk_class TfOrders")
 GroupAdd("Exlude_class", "ahk_class TfSpotlight")
 
 ; Main
-;#HotIf WinActive("ahk_exe FlashpointCampaigns.exe")
 ;#HotIf WinActive("ahk_exe FlashpointCampaigns.exe") and WinActive("ahk_class TfMain")
 #HotIf WinActive("ahk_exe FlashpointCampaigns.exe")
-and WinActive("ahk_class ^Tf.*")
+; and WinActive("ahk_class ^Tf.*")
 and !WinActive("ahk_group Exlude_class")
+and !WinExist("ahk_class #32768") ; Standard Windows context/menu class
 
 ; Pause - Suspend
 Pause::Suspend()
@@ -48,7 +48,11 @@ h::Send("^p") ; H - SOP Ranges
 t::Send("^y") ; T - Enemies Spotted
 y::Send("^d") ; Y - Range Rings
 v::Send("^u") ; V - Hide Units
-;e::Send("{Click,right}") ; Right-click
+
+; Mouse click handling
++e::Send("{Click,right}")
+AppsKey::Send("{F13 Down}{Click,right}{F13 Up}") 
+RButton::Send("{F13 Down}{Click,right}{F13 Up}") 
 
 ; Ctrl+Shift+S - Save game
 ^+s::Send("{Alt Down},g,a,p,{Alt Up}")
