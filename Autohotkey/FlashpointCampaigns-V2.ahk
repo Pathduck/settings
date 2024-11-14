@@ -71,6 +71,11 @@ s::Send("{Down}")
 d::Send("{Right}")
 #HotIf ; End
 
+; Handle RMB click if menu already showing
+#HotIf WinExist("ahk_class #32768")
+RButton::Send("{F13 Down}{Click,right}{F13 Up}") 
+#HotIf ; End
+
 ; Unit Dashboard
 ;#HotIf WinActive("ahk_class TfUnitDashboardNew")
 ;q::Send("{F4}")	; Q - Close Unit Dashboard
