@@ -1,0 +1,24 @@
+<NotepadPlus>
+    <InternalCommands>
+        <Shortcut id="44022" Ctrl="yes" Alt="yes" Shift="no" Key="87" />
+        <Shortcut id="41008" Ctrl="yes" Alt="yes" Shift="no" Key="83" />
+        <Shortcut id="41007" Ctrl="yes" Alt="no" Shift="yes" Key="83" />
+        <Shortcut id="44019" Ctrl="yes" Alt="yes" Shift="no" Key="65" />
+        <Shortcut id="44025" Ctrl="yes" Alt="yes" Shift="no" Key="84" />
+    </InternalCommands>
+    <Macros>
+        <Macro name="Trim Trailing Space and Save" Ctrl="no" Alt="yes" Shift="yes" Key="83">
+            <Action type="2" message="0" wParam="42024" lParam="0" sParam="" />
+            <Action type="2" message="0" wParam="41006" lParam="0" sParam="" />
+        </Macro>
+    </Macros>
+    <UserDefinedCommands>
+        <Command name="Get PHP help" Ctrl="no" Alt="yes" Shift="no" Key="112">https://www.php.net/$(CURRENT_WORD)</Command>
+        <Command name="Wikipedia Search" Ctrl="no" Alt="yes" Shift="no" Key="114">https://en.wikipedia.org/wiki/Special:Search?search=$(CURRENT_WORD)</Command>
+        <Command name="Open selected file path in new instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_FULL_FILE_PATH) $(CURRENT_WORD) -nosession -multiInst</Command>
+        <Command name="Launch in Vivaldi" Ctrl="no" Alt="yes" Shift="yes" Key="86">D:\bin\Vivaldi\Application\vivaldi.exe &quot;$(FULL_CURRENT_PATH)&quot;</Command>
+        <Command name="Launch in default program" Ctrl="no" Alt="yes" Shift="yes" Key="82">&quot;$(FULL_CURRENT_PATH)&quot;</Command>
+    </UserDefinedCommands>
+    <PluginCommands />
+    <ScintillaKeys />
+</NotepadPlus>
