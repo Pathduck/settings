@@ -1,0 +1,33 @@
+;--- Xpadder Profile File ---
+DataType=Profile
+Version=2011.02.09
+
+[Profile Settings]
+
+[Set Settings]
+Set1Stick2Mode=EightWay
+
+[Assignments]
+Set1Button1Slots=E
+Set1Button2Slots=U
+Set1Button3Slots=P
+Set1Button6Slots=Dot
+Set1Button7Slots=I
+Set1Button8Slots=Alt,F1
+Set1DPadUpSlots=Escape
+Set1DPadRightSlots=NumPad +
+Set1DPadDownSlots=1
+Set1DPadLeftSlots=NumPad -
+Set1Stick1UpSlots=Arrow Up
+Set1Stick1RightSlots=Arrow Right
+Set1Stick1DownSlots=Arrow Down
+Set1Stick1LeftSlots=Arrow Left
+Set1Stick2UpSlots=NumPad 8
+Set1Stick2RightSlots=NumPad 6
+Set1Stick2DownSlots=NumPad 2
+Set1Stick2LeftSlots=NumPad 4
+Set1Stick2UpRightSlots=NumPad 9
+Set1Stick2DownRightSlots=NumPad 3
+Set1Stick2DownLeftSlots=NumPad 1
+Set1Stick2UpLeftSlots=NumPad 7
+Set1TriggerLeftSlots=Left Shift

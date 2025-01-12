@@ -330,7 +330,7 @@
             <WordsStyle name="COMPLEX VARIABLE" styleID="104" fgColor="808080" bgColor="001B33" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="STRING VARIABLE" styleID="126" fgColor="C8C8C8" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SIMPLE STRING" styleID="120" fgColor="3AD900" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="WORD" styleID="121" fgColor="FF9D00" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="KEYWORDS" styleID="121" fgColor="FF9D00" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="122" fgColor="FF0044" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="VARIABLE" styleID="123" fgColor="C8C8C8" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="124" fgColor="0088FF" bgColor="001B33" fontName="" fontStyle="2" fontSize=""></WordsStyle>
@@ -497,7 +497,7 @@
         <WidgetStyle name="Change History revert origin" styleID="0" fgColor="40A0BF" bgColor="40A0BF"></WidgetStyle>
         <WidgetStyle name="Change History saved" styleID="0" fgColor="00A000" bgColor="00A000"></WidgetStyle>
         <WidgetStyle name="Fold" styleID="0" fgColor="0088FF" bgColor="000D1A" fontSize="" fontStyle="0"></WidgetStyle>
-        <WidgetStyle name="Fold active" styleID="0" fgColor="FF0000" bgColor="343F41" fontSize="" fontStyle="0"></WidgetStyle>
+        <WidgetStyle name="Fold active" styleID="0" fgColor="00F03D" bgColor="343F41" fontSize="" fontStyle="0"></WidgetStyle>
         <WidgetStyle name="Fold margin" styleID="0" fgColor="001B33" bgColor="003B70" fontSize="" fontStyle="0"></WidgetStyle>
         <WidgetStyle name="White space symbol" styleID="0" fgColor="FFB56A" bgColor="56676D" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Smart Highlighting" styleID="29" bgColor="00FF00" fgColor="E0E2E4" fontSize="" fontStyle="1" colorStyle="1"></WidgetStyle>
