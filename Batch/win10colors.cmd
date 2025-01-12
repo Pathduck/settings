@@ -1,54 +1,65 @@
 @echo off
+
+setlocal
+call :setESC
+
 cls
-echo [101;93m STYLES [0m
-echo ^<ESC^>[0m [0mReset[0m
-echo ^<ESC^>[1m [1mBold[0m
-echo ^<ESC^>[4m [4mUnderline[0m
-echo ^<ESC^>[7m [7mInverse[0m
+echo %ESC%[101;93m STYLES %ESC%[0m
+echo ^<ESC^>[0m %ESC%[0mReset%ESC%[0m
+echo ^<ESC^>[1m %ESC%[1mBold%ESC%[0m
+echo ^<ESC^>[4m %ESC%[4mUnderline%ESC%[0m
+echo ^<ESC^>[7m %ESC%[7mInverse%ESC%[0m
 echo.
-echo [101;93m NORMAL FOREGROUND COLORS [0m
-echo ^<ESC^>[30m [30mBlack[0m (black)
-echo ^<ESC^>[31m [31mRed[0m
-echo ^<ESC^>[32m [32mGreen[0m
-echo ^<ESC^>[33m [33mYellow[0m
-echo ^<ESC^>[34m [34mBlue[0m
-echo ^<ESC^>[35m [35mMagenta[0m
-echo ^<ESC^>[36m [36mCyan[0m
-echo ^<ESC^>[37m [37mWhite[0m
+echo %ESC%[101;93m NORMAL FOREGROUND COLORS %ESC%[0m
+echo ^<ESC^>[30m %ESC%[30mBlack%ESC%[0m (black)
+echo ^<ESC^>[31m %ESC%[31mRed%ESC%[0m
+echo ^<ESC^>[32m %ESC%[32mGreen%ESC%[0m
+echo ^<ESC^>[33m %ESC%[33mYellow%ESC%[0m
+echo ^<ESC^>[34m %ESC%[34mBlue%ESC%[0m
+echo ^<ESC^>[35m %ESC%[35mMagenta%ESC%[0m
+echo ^<ESC^>[36m %ESC%[36mCyan%ESC%[0m
+echo ^<ESC^>[37m %ESC%[37mWhite%ESC%[0m
 echo.
-echo [101;93m NORMAL BACKGROUND COLORS [0m
-echo ^<ESC^>[40m [40mBlack[0m
-echo ^<ESC^>[41m [41mRed[0m
-echo ^<ESC^>[42m [42mGreen[0m
-echo ^<ESC^>[43m [43mYellow[0m
-echo ^<ESC^>[44m [44mBlue[0m
-echo ^<ESC^>[45m [45mMagenta[0m
-echo ^<ESC^>[46m [46mCyan[0m
-echo ^<ESC^>[47m [47mWhite[0m (white)
+echo %ESC%[101;93m NORMAL BACKGROUND COLORS %ESC%[0m
+echo ^<ESC^>[40m %ESC%[40mBlack%ESC%[0m
+echo ^<ESC^>[41m %ESC%[41mRed%ESC%[0m
+echo ^<ESC^>[42m %ESC%[42mGreen%ESC%[0m
+echo ^<ESC^>[43m %ESC%[43mYellow%ESC%[0m
+echo ^<ESC^>[44m %ESC%[44mBlue%ESC%[0m
+echo ^<ESC^>[45m %ESC%[45mMagenta%ESC%[0m
+echo ^<ESC^>[46m %ESC%[46mCyan%ESC%[0m
+echo ^<ESC^>[47m %ESC%[47mWhite%ESC%[0m (white)
 echo.
-echo [101;93m STRONG FOREGROUND COLORS [0m
-echo ^<ESC^>[90m [90mWhite[0m
-echo ^<ESC^>[91m [91mRed[0m
-echo ^<ESC^>[92m [92mGreen[0m
-echo ^<ESC^>[93m [93mYellow[0m
-echo ^<ESC^>[94m [94mBlue[0m
-echo ^<ESC^>[95m [95mMagenta[0m
-echo ^<ESC^>[96m [96mCyan[0m
-echo ^<ESC^>[97m [97mWhite[0m
+echo %ESC%[101;93m STRONG FOREGROUND COLORS %ESC%[0m
+echo ^<ESC^>[90m %ESC%[90mWhite%ESC%[0m
+echo ^<ESC^>[91m %ESC%[91mRed%ESC%[0m
+echo ^<ESC^>[92m %ESC%[92mGreen%ESC%[0m
+echo ^<ESC^>[93m %ESC%[93mYellow%ESC%[0m
+echo ^<ESC^>[94m %ESC%[94mBlue%ESC%[0m
+echo ^<ESC^>[95m %ESC%[95mMagenta%ESC%[0m
+echo ^<ESC^>[96m %ESC%[96mCyan%ESC%[0m
+echo ^<ESC^>[97m %ESC%[97mWhite%ESC%[0m
 echo.
-echo [101;93m STRONG BACKGROUND COLORS [0m
-echo ^<ESC^>[100m [100mBlack[0m
-echo ^<ESC^>[101m [101mRed[0m
-echo ^<ESC^>[102m [102mGreen[0m
-echo ^<ESC^>[103m [103mYellow[0m
-echo ^<ESC^>[104m [104mBlue[0m
-echo ^<ESC^>[105m [105mMagenta[0m
-echo ^<ESC^>[106m [106mCyan[0m
-echo ^<ESC^>[107m [107mWhite[0m
+echo %ESC%[101;93m STRONG BACKGROUND COLORS %ESC%[0m
+echo ^<ESC^>[100m %ESC%[100mBlack%ESC%[0m
+echo ^<ESC^>[101m %ESC%[101mRed%ESC%[0m
+echo ^<ESC^>[102m %ESC%[102mGreen%ESC%[0m
+echo ^<ESC^>[103m %ESC%[103mYellow%ESC%[0m
+echo ^<ESC^>[104m %ESC%[104mBlue%ESC%[0m
+echo ^<ESC^>[105m %ESC%[105mMagenta%ESC%[0m
+echo ^<ESC^>[106m %ESC%[106mCyan%ESC%[0m
+echo ^<ESC^>[107m %ESC%[107mWhite%ESC%[0m
 echo.
-echo [101;93m COMBINATIONS [0m
-echo ^<ESC^>[31m                     [31mred foreground color[0m
-echo ^<ESC^>[7m                      [7minverse foreground ^<-^> background[0m
-echo ^<ESC^>[7;31m                   [7;31minverse red foreground color[0m
-echo ^<ESC^>[7m and nested ^<ESC^>[31m [7mbefore [31mnested[0m
-echo ^<ESC^>[31m and nested ^<ESC^>[7m [31mbefore [7mnested[0m
+echo %ESC%[101;93m COMBINATIONS %ESC%[0m
+echo ^<ESC^>[31m                     %ESC%[31mred foreground color%ESC%[0m
+echo ^<ESC^>[7m                      %ESC%[7minverse foreground ^<-^> background%ESC%[0m
+echo ^<ESC^>[7;31m                   %ESC%[7;31minverse red foreground color%ESC%[0m
+echo ^<ESC^>[7m and nested ^<ESC^>[31m %ESC%[7mbefore %ESC%[31mnested%ESC%[0m
+echo ^<ESC^>[31m and nested ^<ESC^>[7m %ESC%[31mbefore %ESC%[7mnested%ESC%[0m
+
+:setESC
+for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
+  set ESC=%%b
+  exit /B 0
+)
+exit /B 0
