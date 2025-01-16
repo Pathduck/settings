@@ -15,7 +15,6 @@ egrep=grep -E $*
 far=d:\bin\FarManager\Far.exe $*
 ga=git add -A $*
 gc=git commit $*  
-gl=git log --oneline --all --graph --decorate $*
 gs=git status $*
 home=cd /d "%USERPROFILE%"
 la=ls -la --color=auto --group-directories-first $*
@@ -33,7 +32,6 @@ putty=d:\bin\putty\putty.exe $*
 pwd=cd
 python=d:\bin\python\python.exe $*
 rm=rm -i $*
-shn=sh "d:\bin\cygwin\usr\local\bin\pb" -u $*
 sublime=d:\bin\Sublime\sublime_text.exe $*
 sudo=elevate -k $*
 tc=d:\bin\totalcmd\totalcmd.exe $*
@@ -42,3 +40,6 @@ tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1
 vi=vim $*
 winscp=d:\bin\WinSCP\winscp.exe $*
+gh=git hist $*  
+gl=git log --oneline --all --graph --decorate --color $*  
+shn=curl -F "shorten=$*" "https://envs.sh"  
