@@ -108,3 +108,6 @@ history.shared = True
 # name: Support Windows' Ctrl-Alt substitute for AltGr
 # type: boolean
 terminal.use_altgr_substitute = True
+
+# Don't echo errorlevel to file
+cmd.get_errorlevel = False
