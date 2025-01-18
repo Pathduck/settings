@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2025-01-18 01:07:47" build="230724">
+		<key name=".Vanilla" modified="2025-01-18 23:18:19" build="230724">
 			<value name="ColorTable00" type="dword" data="00222827"/>
 			<value name="ColorTable01" type="dword" data="009e5401"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
@@ -117,7 +117,7 @@
 			<value name="bgPluginAllowed" type="hex" data="01"/>
 			<value name="AlphaValue" type="hex" data="FF"/>
 			<value name="AlphaValueSeparate" type="hex" data="01"/>
-			<value name="AlphaValueInactive" type="hex" data="F0"/>
+			<value name="AlphaValueInactive" type="hex" data="F5"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
@@ -126,8 +126,8 @@
 			<value name="ConWnd Width" type="dword" data="00000050"/>
 			<value name="ConWnd Height" type="dword" data="0000002d"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="84"/>
-			<value name="ConWnd Y" type="long" data="-1"/>
+			<value name="ConWnd X" type="long" data="1221"/>
+			<value name="ConWnd Y" type="long" data="167"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="00"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -943,9 +943,6 @@
 				<line data="# set ConEmuPromptNL=NO"/>
 				<line data="# set ConEmuSudoSplit=NO"/>
 				<line data="# set ConEmuSudoConfirm=NO"/>
-				<line data=" "/>
-				<line data="# set LANG=ru_RU.utf8"/>
-				<line data="# set LANG=ru_RU.CP1251"/>
 				<line data=" "/>
 				<line data='# alias cdc=cd /d "%ConEmuDir%"'/>
 				<line data='# alias cd~=cd /d "%UserProfile%"'/>
