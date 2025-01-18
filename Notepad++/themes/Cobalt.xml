@@ -268,6 +268,30 @@
             <WordsStyle name="LD KEYWORD" styleID="12" fgColor="FF6464" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
             <WordsStyle name="ERROR" styleID="13" fgColor="FF0000" bgColor="FF3535" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
+        <LexerType name="lua" desc="Lua" ext="">
+            <WordsStyle name="DEFAULT" styleID="0" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="COMMENT" styleID="1" fgColor="1E9AE0" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="1E9AE0" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="COMMENT DOC" styleID="3" fgColor="1E9AE0" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="NUMBER" styleID="4" fgColor="FF3A83" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="INSTRUCTION WORD" styleID="5" fgColor="F6F080" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="STRING" styleID="6" fgColor="55E439" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="CHARACTER" styleID="7" fgColor="55E439" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="LITERALSTRING" styleID="8" fgColor="55E439" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PREPROCESSOR" styleID="9" fgColor="FFAA00" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="FFAA00" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="FUNC1" styleID="13" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
+            <WordsStyle name="FUNC2" styleID="14" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type1"></WordsStyle>
+            <WordsStyle name="FUNC3" styleID="15" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type2"></WordsStyle>
+            <WordsStyle name="USER KEYWORD 1" styleID="16" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type3"></WordsStyle>
+            <WordsStyle name="USER KEYWORD 2" styleID="17" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type4"></WordsStyle>
+            <WordsStyle name="USER KEYWORD 3" styleID="18" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type5"></WordsStyle>
+            <WordsStyle name="USER KEYWORD 4" styleID="19" fgColor="F8F8F8" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type6"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 5" styleID="128" fgColor="F6F080" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 6" styleID="129" fgColor="F6F080" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 7" styleID="130" fgColor="F6F080" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 8" styleID="131" fgColor="F6F080" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="substyle4"></WordsStyle>
+        </LexerType>
         <LexerType name="makefile" desc="Makefile" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="C8C8C8" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="1" fgColor="0088FF" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -303,9 +327,9 @@
             <WordsStyle name="REGEX MATCH" styleID="17" fgColor="8080FF" bgColor="F8FEDE" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="REGEX SUBSTITUTION" styleID="18" fgColor="8080C0" bgColor="FFEEEC" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="TRANSLATION" styleID="44" fgColor="8080C0" bgColor="FFEEEC" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="HEREDOC DELIMITER" styleID="22" fgColor="550055" bgColor="EEEEFF" fontName="" fontStyle="1" fontSize=""></WordsStyle>
-            <WordsStyle name="HEREDOC SINGLEQUOTE" styleID="23" fgColor="7F007F" bgColor="EEEEFF" fontName="" fontStyle="2" fontSize=""></WordsStyle>
-            <WordsStyle name="HEREDOC DOUBLEQUOTE" styleID="24" fgColor="7F007F" bgColor="EEEEFF" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="HEREDOC DELIMITER" styleID="22" fgColor="8C008C" bgColor="EEEEFF" fontName="" fontStyle="1" fontSize=""></WordsStyle>
+            <WordsStyle name="HEREDOC SINGLEQUOTE" styleID="23" fgColor="D900D9" bgColor="EEEEFF" fontName="" fontStyle="2" fontSize=""></WordsStyle>
+            <WordsStyle name="HEREDOC DOUBLEQUOTE" styleID="24" fgColor="D900D9" bgColor="EEEEFF" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="HEREDOC BACKTICK" styleID="25" fgColor="8000FF" bgColor="FFEEEC" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="VAR IN STRING" styleID="43" fgColor="808080" bgColor="FFFFFF" fontName="" fontStyle="3" fontSize=""></WordsStyle>
             <WordsStyle name="VAR IN REGEX" styleID="54" fgColor="8080FF" bgColor="F8FEDE" fontName="" fontStyle="3" fontSize=""></WordsStyle>
@@ -477,7 +501,7 @@
     </LexerStyles>
     <GlobalStyles>
         <!-- Attention : Don't modify the name of styleID="0" -->
-        <WidgetStyle name="Global override" styleID="0" fgColor="FFFFFF" bgColor="001B33" fontName="Consolas" fontStyle="0" fontSize="11" colorStyle="2"></WidgetStyle>
+        <WidgetStyle name="Global override" styleID="0" fgColor="FFFFFF" bgColor="001B33" fontName="Consolas" fontStyle="0" fontSize="11"></WidgetStyle>
         <WidgetStyle name="Default Style" styleID="32" fgColor="FFFFFF" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Indent guideline style" styleID="37" fgColor="0064BE" bgColor="001B33" fontName="" fontStyle="0" fontSize="" colorStyle="1"></WidgetStyle>
         <WidgetStyle name="Brace highlight style" styleID="34" fgColor="FF0000" bgColor="4F93CD" fontName="" fontStyle="0" fontSize="" colorStyle="1"></WidgetStyle>
@@ -535,6 +559,5 @@
         <WidgetStyle name="Document map" styleID="0" fgColor="FF8000" bgColor="FFFFFF"></WidgetStyle>
         <WidgetStyle name="EOL custom color" styleID="0" fgColor="DADADA" fontStyle="0"></WidgetStyle>
         <WidgetStyle name="Non-printing characters custom color" styleID="0" fgColor="FFB56A"></WidgetStyle>
-        <WidgetStyle name="Global override" styleID="0" fgColor="FFFFFF" bgColor="001B33" fontName="Consolas" fontStyle="0" fontSize="11" colorStyle="2"></WidgetStyle>
     </GlobalStyles>
 </NotepadPlus>
