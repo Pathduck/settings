@@ -16,6 +16,7 @@ far=d:\bin\FarManager\Far.exe $*
 ga=git add -A $*
 gc=git commit $*  
 gs=git status $*
+gg=global /1 /E .git $*  
 home=cd /d "%USERPROFILE%"
 la=ls -la --color=auto --group-directories-first $*
 ll=ls -l --color=auto --group-directories-first $*
