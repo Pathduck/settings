@@ -17,7 +17,10 @@ ga=git add -A $*
 gc=git commit $*  
 gs=git status $*
 gg=global /1 /E .git $*  
+gh=git hist $*  
+gl=git log --oneline --all --graph --decorate --color $*  
 home=cd /d "%USERPROFILE%"
+kill=pskill $?  
 la=ls -la --color=auto --group-directories-first $*
 ll=ls -l --color=auto --group-directories-first $*
 ls=ls --color=auto --group-directories-first $*
@@ -33,6 +36,7 @@ putty=d:\bin\putty\putty.exe $*
 pwd=cd
 python=d:\bin\python\python.exe $*
 rm=rm -i $*
+shn=curl -F "shorten=$*" "https://envs.sh"  
 sublime=d:\bin\Sublime\sublime_text.exe $*
 sudo=elevate -k $*
 tc=d:\bin\totalcmd\totalcmd.exe $*
@@ -41,6 +45,3 @@ tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1
 vi=vim $*
 winscp=d:\bin\WinSCP\winscp.exe $*
-gh=git hist $*  
-gl=git log --oneline --all --graph --decorate --color $*  
-shn=curl -F "shorten=$*" "https://envs.sh"  
