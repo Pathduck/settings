@@ -20,7 +20,7 @@ gg=global /1 /E .git $*
 gh=git hist $*  
 gl=git log --oneline --all --graph --decorate --color $*  
 home=cd /d "%USERPROFILE%"
-kill=pskill $?  
+kill=pskill $*
 la=ls -la --color=auto --group-directories-first $*
 ll=ls -l --color=auto --group-directories-first $*
 ls=ls --color=auto --group-directories-first $*

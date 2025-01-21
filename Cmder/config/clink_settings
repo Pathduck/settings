@@ -112,7 +112,7 @@ history.max_lines = 10000
 
 # name: Share history between instances
 # type: boolean
-history.shared = False
+history.shared = True
 
 # name: Expand envvars when completing
 # type: boolean

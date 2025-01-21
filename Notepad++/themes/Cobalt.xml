@@ -26,7 +26,7 @@
             <WordsStyle name="USER SCALAR 4" styleID="135" fgColor="FF8040" bgColor="FFFFD9" fontName="" fontStyle="1" fontSize="" keywordClass="substyle8"></WordsStyle>
         </LexerType>
         <LexerType name="batch" desc="Batch" ext="">
-            <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E1E1" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="DEFAULT" styleID="0" fgColor="F0F0F0" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="1" fgColor="0088FF" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="KEYWORDS" styleID="2" fgColor="FF9D00" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="LABEL" styleID="3" fgColor="FF3E3E" bgColor="001B33" fontName="" fontStyle="1" fontSize=""></WordsStyle>
@@ -371,7 +371,7 @@
         </LexerType>
         <LexerType name="powershell" desc="PowerShell" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E5E5E5" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="COMMENT" styleID="1" fgColor="969696" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="COMMENT" styleID="1" fgColor="A8A8A8" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="STRING" styleID="2" fgColor="3AD900" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="CHARACTER" styleID="3" fgColor="3AD900" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="NUMBER" styleID="4" fgColor="FF0044" bgColor="001B33" fontName="" fontStyle="0" fontSize="">if else for while</WordsStyle>
@@ -381,12 +381,12 @@
             <WordsStyle name="INSTRUCTION WORD" styleID="8" fgColor="FF9D00" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="instre1"></WordsStyle>
             <WordsStyle name="CMDLET" styleID="9" fgColor="0088FF" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="instre2"></WordsStyle>
             <WordsStyle name="ALIAS" styleID="10" fgColor="0080FF" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type1"></WordsStyle>
-            <WordsStyle name="FUNCTION" styleID="11" fgColor="C40062" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS" styleID="12" fgColor="800000" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type3"></WordsStyle>
-            <WordsStyle name="COMMENT STREAM" styleID="13" fgColor="008080" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="HERE STRING" styleID="14" fgColor="808080" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="FUNCTION" styleID="11" fgColor="FF48A4" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS" styleID="12" fgColor="FF2F2F" bgColor="001B33" fontName="" fontStyle="0" fontSize="" keywordClass="type3"></WordsStyle>
+            <WordsStyle name="COMMENT STREAM" styleID="13" fgColor="A8A8A8" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="HERE STRING" styleID="14" fgColor="A8A8A8" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="HERE CHARACTER" styleID="15" fgColor="808080" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="COMMENT DOC KEYWORD" styleID="16" fgColor="008080" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="type4"></WordsStyle>
+            <WordsStyle name="COMMENT DOC KEYWORD" styleID="16" fgColor="8B8B8B" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="type4"></WordsStyle>
         </LexerType>
         <LexerType name="props" desc="Properties file" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="FFFF00" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
