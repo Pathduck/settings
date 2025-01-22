@@ -12,18 +12,18 @@
             <WordsStyle name="IDENTIFIER" styleID="8" fgColor="80FFBB" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SCALAR" styleID="9" fgColor="FF8040" bgColor="001B33" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT LINE" styleID="2" fgColor="0088FF" bgColor="001B33" fontName="" fontStyle="2" fontSize=""></WordsStyle>
-            <WordsStyle name="PARAM" styleID="10" fgColor="00BDBD" bgColor="00FFFF" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="PARAM" styleID="10" fgColor="00BDBD" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="BACKTICKS" styleID="11" fgColor="99994D" bgColor="001B33" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="HERE DELIM" styleID="12" fgColor="FF2020" bgColor="001B33" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="HERE Q" styleID="13" fgColor="FF6868" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="" keywordClass="substyle1"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="" keywordClass="substyle2"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="" keywordClass="substyle3"></WordsStyle>
-            <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="" keywordClass="substyle4"></WordsStyle>
-            <WordsStyle name="USER SCALAR 1" styleID="132" fgColor="FF8040" bgColor="FFFFD9" fontName="" fontStyle="1" fontSize="" keywordClass="substyle5"></WordsStyle>
-            <WordsStyle name="USER SCALAR 2" styleID="133" fgColor="FF8040" bgColor="FFFFD9" fontName="" fontStyle="1" fontSize="" keywordClass="substyle6"></WordsStyle>
-            <WordsStyle name="USER SCALAR 3" styleID="134" fgColor="FF8040" bgColor="FFFFD9" fontName="" fontStyle="1" fontSize="" keywordClass="substyle7"></WordsStyle>
-            <WordsStyle name="USER SCALAR 4" styleID="135" fgColor="FF8040" bgColor="FFFFD9" fontName="" fontStyle="1" fontSize="" keywordClass="substyle8"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 1" styleID="128" fgColor="000000" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle1"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 2" styleID="129" fgColor="000000" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle2"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 3" styleID="130" fgColor="000000" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle3"></WordsStyle>
+            <WordsStyle name="USER KEYWORDS 4" styleID="131" fgColor="000000" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle4"></WordsStyle>
+            <WordsStyle name="USER SCALAR 1" styleID="132" fgColor="FF8040" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle5"></WordsStyle>
+            <WordsStyle name="USER SCALAR 2" styleID="133" fgColor="FF8040" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle6"></WordsStyle>
+            <WordsStyle name="USER SCALAR 3" styleID="134" fgColor="FF8040" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle7"></WordsStyle>
+            <WordsStyle name="USER SCALAR 4" styleID="135" fgColor="FF8040" bgColor="001B33" fontName="" fontStyle="1" fontSize="" keywordClass="substyle8"></WordsStyle>
         </LexerType>
         <LexerType name="batch" desc="Batch" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="F0F0F0" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -505,7 +505,7 @@
         <WidgetStyle name="Default Style" styleID="32" fgColor="FFFFFF" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Indent guideline style" styleID="37" fgColor="0064BE" bgColor="001B33" fontName="" fontStyle="0" fontSize="" colorStyle="1"></WidgetStyle>
         <WidgetStyle name="Brace highlight style" styleID="34" fgColor="FF0000" bgColor="4F93CD" fontName="" fontStyle="0" fontSize="" colorStyle="1"></WidgetStyle>
-        <WidgetStyle name="Bad brace colour" styleID="35" fgColor="800000" bgColor="002F29" fontName="" fontStyle="0" fontSize="" colorStyle="2"></WidgetStyle>
+        <WidgetStyle name="Bad brace colour" styleID="35" fgColor="800000" bgColor="FF0000" fontName="" fontStyle="0" fontSize="" colorStyle="2"></WidgetStyle>
         <WidgetStyle name="Current line background colour" styleID="0" bgColor="003464" fgColor="FFFFFF" fontSize="" fontStyle="0" colorStyle="2"></WidgetStyle>
         <!-- In below rule 'fgColor' attribute for 'Selected text colour' can be unlocked with a enableSelectFgColor.xml file -->
         <WidgetStyle name="Selected text colour" styleID="0" bgColor="0066C1" fgColor="FFFFFF" colorStyle="2" fontStyle="0"></WidgetStyle>
