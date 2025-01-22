@@ -51,8 +51,8 @@ v::Send("^u") ; V - Hide Units
 
 ; Mouse click handling
 +e::Send("{Click,right}")
-AppsKey::Send("{F13 Down}{Click,right}{F13 Up}") 
-RButton::Send("{F13 Down}{Click,right}{F13 Up}") 
+AppsKey::Send("{Shift Down}{Click,right}{Shift Up}")
+RButton::Send("{Shift Down}{Click,right}{Shift Up}") 
 
 ; Ctrl+Shift+S - Save game
 ^+s::Send("{Alt Down},g,a,p,{Alt Up}")
@@ -73,7 +73,7 @@ d::Send("{Right}")
 
 ; Handle RMB click if menu already showing
 #HotIf WinExist("ahk_class #32768")
-RButton::Send("{F13 Down}{Click,right}{F13 Up}") 
+RButton::Send("{Shift Down}{Click,right}{Shift Up}") 
 #HotIf ; End
 
 ; Unit Dashboard
