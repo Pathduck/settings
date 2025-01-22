@@ -1,6 +1,6 @@
 # Get-AppxPackage, Get-AppxProvisionedPackage
 
-Write-Output "AppxPackage"
+Write-Output "     AppxPackages"
 Write-Output "======================"
 
 #Get-AppxPackage -AllUsers
@@ -8,10 +8,10 @@ Get-AppxPackage -Allusers * | Select Name, PackageFullName
 
 #Get-AppxPackage *Windows.DevHome* | Remove-AppxPackage
 #Get-AppxPackage -AllUsers -PackageTypeFilter Bundle -Name "*Windows.DevHome*" | Remove-AppxPackage
-#Get-appxprovisionedpackage -online | where-object {$_.packagename -like '*Windows.DevHome*'} | remove-appxprovisionedpackage -online  
+#Get-appxProvisionedPackage -online | where-object {$_.packagename -like '*Windows.DevHome*'} | remove-appxprovisionedpackage -online  
 
-Write-Output "AppxProvisionedPackage"
-Write-Output "======================"
+Write-Output "AppxProvisionedPackages"
+Write-Output "======================="
 
 Get-AppxProvisionedPackage -online | select PackageName
 

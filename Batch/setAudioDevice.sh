@@ -10,7 +10,9 @@ SVCL="/d/bin/NirsoftLauncher/NirSoft/svcl.exe"
 RENDER_DEVICES=$($SVCL /scomma | grep "Device,Render" | cut -d "," -f1)
 
 if  [ $# -eq 0 ]; then 
-	echo -e "Available audio devices:\n$RENDER_DEVICES"
+	echo "Usage: $(basename $0) [devicename]"
+	echo "Available audio devices:"
+	echo "$RENDER_DEVICES"
 	exit 0;
 fi
 
