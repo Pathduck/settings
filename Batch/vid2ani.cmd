@@ -218,7 +218,6 @@ IF DEFINED colormax (
 
 :: Executing command to generate palette
 ECHO %GREEN%Generating palette...%OFF%
-echo ffmpeg -v %loglevel% %trim% -i %input% -vf "%filters%,%encode%%mcol%" -y "%palette%"
 ffmpeg -v %loglevel% %trim% -i %input% -vf "%filters%,%encode%%mcol%" -y "%palette%"
 
 :: Checking if the palette file is in the Working Directory, if not cleaning up
@@ -271,7 +270,6 @@ IF "%filetype%" == "webp" (
 
 :: Executing the encoding command
 ECHO %GREEN%Encoding animation...%OFF%
-echo ffmpeg -v %loglevel% %trim% -i %input% -thread_queue_size 512 -i "%palette%" -lavfi "%filters% [x]; [x][1:v] %decode%%errordiff%%ditherenc%%bayer%" -f %filetype% %webp_lossy% -loop 0 -plays 0 -y "%output%"
 ffmpeg -v %loglevel% %trim% -i %input% -thread_queue_size 512 -i "%palette%" -lavfi "%filters% [x]; [x][1:v] %decode%%errordiff%%ditherenc%%bayer%" -f %filetype% %webp_lossy% -loop 0 -plays 0 -y "%output%"
 
 :: Checking if file was created and cleaning up if not
