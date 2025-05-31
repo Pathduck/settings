@@ -1,6 +1,9 @@
 @echo off
+SETLOCAL ENABLEDELAYEDEXPANSION
+
 set PID=%~1
 set INTERVAL=1
+SET "MEMORY="
 
 echo "Timestamp","Memory Usage (KB)"
 
