@@ -5,6 +5,15 @@
         <Shortcut id="41007" Ctrl="yes" Alt="no" Shift="yes" Key="83" />
         <Shortcut id="44019" Ctrl="yes" Alt="yes" Shift="no" Key="65" />
         <Shortcut id="44025" Ctrl="yes" Alt="yes" Shift="no" Key="84" />
+        <Shortcut id="41022" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="44085" Ctrl="yes" Alt="no" Shift="no" Key="117" />
+        <Shortcut id="44108" Ctrl="no" Alt="no" Shift="no" Key="120" />
+        <Shortcut id="44084" Ctrl="yes" Alt="no" Shift="no" Key="120" />
+        <Shortcut id="44107" Ctrl="no" Alt="no" Shift="no" Key="117" />
+        <Shortcut id="44070" Ctrl="yes" Alt="no" Shift="no" Key="116" />
+        <Shortcut id="44109" Ctrl="no" Alt="no" Shift="no" Key="116" />
+        <Shortcut id="44080" Ctrl="no" Alt="no" Shift="no" Key="121" />
+        <Shortcut id="49000" Ctrl="no" Alt="no" Shift="no" Key="0" />
     </InternalCommands>
     <Macros>
         <Macro name="Trim Trailing Space and Save" Ctrl="no" Alt="yes" Shift="yes" Key="83">
