@@ -361,7 +361,7 @@
             <WordsStyle name="ERROR" styleID="1" fgColor="E1E1E1" bgColor="FF0000" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <LexerType name="php" desc="PHP" ext="">
-            <WordsStyle name="QUESTION MARK" styleID="18" fgColor="FF4F4F" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
+            <WordsStyle name="QUESTION MARK" styleID="18" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="DEFAULT" styleID="118" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="STRING" styleID="119" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMPLEX VARIABLE" styleID="104" fgColor="00FF80" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
@@ -574,13 +574,13 @@
         <WidgetStyle name="Bad brace colour" styleID="35" fgColor="FFFFFF" bgColor="FF0000" fontName="" fontStyle="0" fontSize=""></WidgetStyle>
         <WidgetStyle name="Current line background colour" styleID="0" bgColor="003464"></WidgetStyle>
         <!-- In below rule 'fgColor' attribute for 'Selected text colour' can be unlocked with a enableSelectFgColor.xml file -->
-        <WidgetStyle name="Selected text colour" styleID="0" bgColor="00549F" fgColor="FFFFFF"></WidgetStyle>
+        <WidgetStyle name="Selected text colour" styleID="0" fgColor="FFFFFF" bgColor="00549F"></WidgetStyle>
         <WidgetStyle name="Multi-selected text color" styleID="0" bgColor="00549F"></WidgetStyle>
         <WidgetStyle name="Caret colour" styleID="0" fgColor="FFFFFF"></WidgetStyle>
         <WidgetStyle name="Multi-edit carets color" styleID="0" fgColor="A3A3A3"></WidgetStyle>
         <WidgetStyle name="Edge colour" styleID="0" fgColor="80FFFF"></WidgetStyle>
         <WidgetStyle name="Line number margin" styleID="33" fgColor="118EFF" bgColor="000D1A" fontName="" fontStyle="0" fontSize="9"></WidgetStyle>
-        <WidgetStyle name="Bookmark margin" styleID="0" bgColor="FFFF80"></WidgetStyle>
+        <WidgetStyle name="Bookmark margin" styleID="0" bgColor="000D1A"></WidgetStyle>
         <WidgetStyle name="Change History margin" styleID="0" bgColor="000000"></WidgetStyle>
         <WidgetStyle name="Change History modified" styleID="0" fgColor="FF8000" bgColor="FF8000"></WidgetStyle>
         <WidgetStyle name="Change History revert modified" styleID="0" fgColor="A0C000" bgColor="A0C000"></WidgetStyle>
@@ -617,9 +617,9 @@
         <WidgetStyle name="Tab color dark mode 3" styleID="0" bgColor="507094"></WidgetStyle>
         <WidgetStyle name="Tab color dark mode 4" styleID="0" bgColor="804849"></WidgetStyle>
         <WidgetStyle name="Tab color dark mode 5" styleID="0" bgColor="754880"></WidgetStyle>
-        <WidgetStyle name="URL hovered" styleID="0" fgColor="6F6FFF"></WidgetStyle>
-        <WidgetStyle name="Document map" styleID="0" fgColor="FF8000" bgColor="FFFFFF"></WidgetStyle>
-        <WidgetStyle name="EOL custom color" styleID="0" fgColor="DADADA"></WidgetStyle>
+        <WidgetStyle name="URL hovered" styleID="0" fgColor="E1E1E1"></WidgetStyle>
+        <WidgetStyle name="Document map" styleID="0" fgColor="FF8000" bgColor="001B33"></WidgetStyle>
+        <WidgetStyle name="EOL custom color" styleID="0" fgColor="E1E1E1"></WidgetStyle>
         <WidgetStyle name="Non-printing characters custom color" styleID="0" fgColor="FFB56A"></WidgetStyle>
         <WidgetStyle name="Global override" styleID="0" fgColor="FFFFFF" bgColor="001B33" fontName="Consolas" fontStyle="0" fontSize="11"></WidgetStyle>
     </GlobalStyles>
