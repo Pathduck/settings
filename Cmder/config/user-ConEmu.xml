@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2025-02-08 01:12:45" build="230724">
+		<key name=".Vanilla" modified="2025-07-17 15:19:51" build="230724">
 			<value name="ColorTable00" type="dword" data="00222827"/>
 			<value name="ColorTable01" type="dword" data="009e5401"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
@@ -9,9 +9,9 @@
 			<value name="ColorTable04" type="dword" data="004604df"/>
 			<value name="ColorTable05" type="dword" data="009c5689"/>
 			<value name="ColorTable06" type="dword" data="0049b6b6"/>
-			<value name="ColorTable07" type="dword" data="00d2d2d2"/>
+			<value name="ColorTable07" type="dword" data="00dedede"/>
 			<value name="ColorTable08" type="dword" data="007c7c7c"/>
-			<value name="ColorTable09" type="dword" data="00f58303"/>
+			<value name="ColorTable09" type="dword" data="00fdb360"/>
 			<value name="ColorTable10" type="dword" data="0006d08d"/>
 			<value name="ColorTable11" type="dword" data="00e5c258"/>
 			<value name="ColorTable12" type="dword" data="004242ff"/>
@@ -121,13 +121,13 @@
 			<value name="UserScreenTransparent" type="hex" data="00"/>
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
-			<value name="UseCurrentSizePos" type="hex" data="01"/>
+			<value name="UseCurrentSizePos" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
 			<value name="ConWnd Width" type="dword" data="00000050"/>
 			<value name="ConWnd Height" type="dword" data="0000002d"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="1221"/>
-			<value name="ConWnd Y" type="long" data="167"/>
+			<value name="ConWnd X" type="long" data="861"/>
+			<value name="ConWnd Y" type="long" data="139"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="00"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -493,10 +493,10 @@
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="Flags" type="dword" data="00000001"/>
 				</key>
-				<key name="Task2" modified="2024-03-23 16:29:11" build="230724">
+				<key name="Task2" modified="2025-07-17 15:32:26" build="230724">
 					<value name="Name" type="string" data="{cmd::Cmder as Admin}"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
-					<value name="Cmd1" type="string" data='cmd /k "%ConEmuDir%\..\init.bat"  -new_console:a'/>
+					<value name="Cmd1" type="string" data='*cmd /k "%ConEmuDir%\..\init.bat"  -new_console:a'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -589,7 +589,7 @@
 				</key>
 			</key>
 			<key name="Colors" modified="2025-01-23 22:46:48" build="230724">
-				<key name="Palette1" modified="2025-01-23 22:46:48" build="230724">
+				<key name="Palette1" modified="2025-07-11 23:28:23" build="230724">
 					<value name="Name" type="string" data="Stians"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0e"/>
@@ -606,7 +606,7 @@
 					<value name="ColorTable06" type="dword" data="0049b6b6"/>
 					<value name="ColorTable07" type="dword" data="00d2d2d2"/>
 					<value name="ColorTable08" type="dword" data="007c7c7c"/>
-					<value name="ColorTable09" type="dword" data="00f58303"/>
+					<value name="ColorTable09" type="dword" data="00fc9a2e"/>
 					<value name="ColorTable10" type="dword" data="0006d08d"/>
 					<value name="ColorTable11" type="dword" data="00e5c258"/>
 					<value name="ColorTable12" type="dword" data="004242ff"/>
