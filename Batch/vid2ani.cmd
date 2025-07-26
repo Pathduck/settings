@@ -79,7 +79,7 @@ GOTO :safchek
 
 :safchek
 :: Validate output file extension
-echo %filetype% | findstr /r "\<gif\> \<png\> \<apng\> \<webp\>" >nul
+ECHO %filetype% | FINDSTR /r "\<gif\> \<png\> \<apng\> \<webp\>" >nul
 IF %errorlevel% NEQ 0 (
 	ECHO %RED%Not a valid file type: %filetype%%OFF%
 	GOTO :EOF
