@@ -162,15 +162,15 @@
             <WordsStyle name="NUMBER" styleID="5" fgColor="00FF80" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DOUBLE STRING" styleID="6" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SINGLE STRING" styleID="7" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
-            <WordsStyle name="TAG" styleID="1" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
-            <WordsStyle name="TAG END" styleID="11" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="TAG UNKNOWN" styleID="2" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="ATTRIBUTE" styleID="3" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
-            <WordsStyle name="ATTRIBUTE UNKNOWN" styleID="4" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
+            <WordsStyle name="TAG" styleID="1" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="instre1"></WordsStyle>
+            <WordsStyle name="TAG END" styleID="11" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="TAG UNKNOWN" styleID="2" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ATTRIBUTE" styleID="3" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ATTRIBUTE UNKNOWN" styleID="4" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SGML DEFAULT" styleID="21" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="CDATA" styleID="17" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="VALUE" styleID="19" fgColor="00FF80" bgColor="001B33" fontName="" fontStyle="0" fontSize="" colorStyle="1"></WordsStyle>
-            <WordsStyle name="ENTITY" styleID="10" fgColor="FFFFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
+            <WordsStyle name="ENTITY" styleID="10" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
             <WordsStyle name="USER TAGS1" styleID="192" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
             <WordsStyle name="USER TAGS2" styleID="193" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
             <WordsStyle name="USER TAGS3" styleID="194" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
@@ -374,8 +374,8 @@
             <WordsStyle name="COMMENT LINE" styleID="125" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="127" fgColor="9696FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="PREDEFINED" styleID="213" fgColor="00A653" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle6"></WordsStyle>
-            <WordsStyle name="FUNCS AND METHODS 1" styleID="214" fgColor="80FFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle7"></WordsStyle>
-            <WordsStyle name="FUNCS AND METHODS 2" styleID="215" fgColor="00FFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle8"></WordsStyle>
+            <WordsStyle name="FUNCS AND METHODS 1" styleID="214" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle7"></WordsStyle>
+            <WordsStyle name="FUNCS AND METHODS 2" styleID="215" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle8"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 1" styleID="208" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle1"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 2" styleID="209" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle2"></WordsStyle>
             <WordsStyle name="USER KEYWORDS 3" styleID="210" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="substyle3"></WordsStyle>
@@ -523,21 +523,21 @@
             <WordsStyle name="Q OPERATOR" styleID="24" fgColor="9696FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <LexerType name="xml" desc="XML" ext="">
-            <WordsStyle name="XML START" styleID="12" fgColor="FFFFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0"></WordsStyle>
-            <WordsStyle name="XML END" styleID="13" fgColor="FFFFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="XML START" styleID="12" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0"></WordsStyle>
+            <WordsStyle name="XML END" styleID="13" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="9" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
             <WordsStyle name="NUMBER" styleID="5" fgColor="00FF80" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DOUBLE STRING" styleID="6" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SINGLE STRING" styleID="7" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="TAG" styleID="1" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="TAG END" styleID="11" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="TAG UNKNOWN" styleID="2" fgColor="FFA0FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="ATTRIBUTE" styleID="3" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
-            <WordsStyle name="ATTRIBUTE UNKNOWN" styleID="4" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
+            <WordsStyle name="TAG" styleID="1" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="TAG END" styleID="11" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="TAG UNKNOWN" styleID="2" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ATTRIBUTE" styleID="3" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ATTRIBUTE UNKNOWN" styleID="4" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="SGML DEFAULT" styleID="21" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="CDATA" styleID="17" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="ENTITY" styleID="10" fgColor="FFFFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="ENTITY" styleID="10" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="USER ATTRIBUTES 1" styleID="192" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="substyle1"></WordsStyle>
             <WordsStyle name="USER ATTRIBUTES 2" styleID="193" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="substyle2"></WordsStyle>
             <WordsStyle name="USER ATTRIBUTES 3" styleID="194" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="substyle3"></WordsStyle>
