@@ -29,6 +29,8 @@
         <Command name="Launch in Vivaldi" Ctrl="no" Alt="yes" Shift="yes" Key="86">D:\bin\Vivaldi\Application\vivaldi.exe &quot;$(FULL_CURRENT_PATH)&quot;</Command>
         <Command name="Launch in default program" Ctrl="no" Alt="yes" Shift="yes" Key="82">&quot;$(FULL_CURRENT_PATH)&quot;</Command>
     </UserDefinedCommands>
-    <PluginCommands />
+    <PluginCommands>
+        <PluginCommand moduleName="JSMinNPP.dll" internalID="0" Ctrl="no" Alt="yes" Shift="yes" Key="77" />
+    </PluginCommands>
     <ScintillaKeys />
 </NotepadPlus>
