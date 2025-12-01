@@ -1,6 +1,6 @@
 @echo off
-set save_dir="%documents%\My Games\The Long Dark"
 set game_dir="%localappdata%\Hinterland"
+set save_dir="%documents%\My Games\The Long Dark"
 
 for /f "tokens=1-3 delims=. " %%a in ("%DATE%") do (set mydate=%%c-%%b-%%a)
 for /f "tokens=1-3 delims=: " %%a in ("%TIME%") do (set mytime=%%a%%b%%c)
