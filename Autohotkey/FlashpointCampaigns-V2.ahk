@@ -50,7 +50,7 @@ y::Send("^d") ; Y - Range Rings
 v::Send("^u") ; V - Hide Units
 
 ; Mouse click handling
-+e::Send("{Click,right}")
++e::Send("{Click,right}") ; Shift+E - Right-click
 AppsKey::Send("{Shift Down}{Click,right}{Shift Up}")
 RButton::Send("{Shift Down}{Click,right}{Shift Up}") 
 

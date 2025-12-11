@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<NotepadPlus>
+<NotepadPlus modelDate="20251203">
     <LexerStyles>
         <LexerType name="bash" desc="Bash" ext="">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -152,7 +152,7 @@
             <WordsStyle name="COMMENT" styleID="1" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
             <WordsStyle name="COMMAND" styleID="2" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="HEADER" styleID="3" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="POSITION" styleID="4" fgColor="00FF80" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="POSITION" styleID="4" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DELETED" styleID="5" fgColor="FF8080" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="ADDED" styleID="6" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
@@ -252,7 +252,7 @@
             <WordsStyle name="CHARACTER" styleID="7" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="9696FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="VERBATIM" styleID="13" fgColor="FDD802" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="REGEX" styleID="14" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
+            <WordsStyle name="REGEX" styleID="14" fgColor="FF8888" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="1" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT LINE" styleID="2" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT DOC" styleID="3" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
@@ -523,12 +523,11 @@
             <WordsStyle name="COMMENT" styleID="1" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize="">bool long int char</WordsStyle>
             <WordsStyle name="COMMENT LINE" styleID="2" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize="">bool long int char</WordsStyle>
             <WordsStyle name="COMMENT DOC" styleID="3" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="Q OPERATOR" styleID="24" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="E1E1E1" bgColor="001B33" fontName="" fontStyle="0" fontSize="" colorStyle="1"></WordsStyle>
-            <WordsStyle name="COMMENT LINE DOC" styleID="15" fgColor="0088FF" bgColor="001B33" fontName="" fontStyle="2" fontSize="" colorStyle="1"></WordsStyle>
-            <WordsStyle name="Q OPERATOR" styleID="24" fgColor="9696FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
         </LexerType>
         <LexerType name="xml" desc="XML" ext="">
-            <WordsStyle name="XML START" styleID="12" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0"></WordsStyle>
+            <WordsStyle name="XML START" styleID="12" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="XML END" styleID="13" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="COMMENT" styleID="9" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize=""></WordsStyle>
@@ -572,7 +571,7 @@
             <WordsStyle name="Search Header" styleID="1" fgColor="FFFFFF" bgColor="001B33" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="File Header" styleID="2" fgColor="3AD900" bgColor="001B33" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="Line Number" styleID="3" fgColor="00FF80" bgColor="001B33" fontName="" fontStyle="0" fontSize=""></WordsStyle>
-            <WordsStyle name="Hit Word" styleID="4" fgColor="FFFFFF" bgColor="FF0000" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="Hit Word" styleID="4" fgColor="FFFFFF" bgColor="006400" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="Current line background colour" styleID="6" bgColor="003464"></WordsStyle>
         </LexerType>
     </LexerStyles>
@@ -601,15 +600,15 @@
         <WidgetStyle name="Fold margin" styleID="0" fgColor="001B33" bgColor="003B70"></WidgetStyle>
         <WidgetStyle name="White space symbol" styleID="0" fgColor="FFB56A"></WidgetStyle>
         <WidgetStyle name="Smart Highlighting" styleID="29" bgColor="00FF00"></WidgetStyle>
-        <WidgetStyle name="Find Mark Style" styleID="31" bgColor="FF0000"></WidgetStyle>
-        <WidgetStyle name="Find status: Not found" styleID="0" fgColor="FF0000"></WidgetStyle>
-        <WidgetStyle name="Find status: Message" styleID="0" fgColor="0000FF"></WidgetStyle>
-        <WidgetStyle name="Find status: Search end reached" styleID="0" fgColor="008000"></WidgetStyle>
-        <WidgetStyle name="Mark Style 1" styleID="25" bgColor="FF0080"></WidgetStyle>
-        <WidgetStyle name="Mark Style 2" styleID="24" bgColor="FF8000"></WidgetStyle>
+        <WidgetStyle name="Find Mark Style" styleID="31" bgColor="00FF00"></WidgetStyle>
+        <WidgetStyle name="Find status: Not found" styleID="0" fgColor="FF3E3E"></WidgetStyle>
+        <WidgetStyle name="Find status: Message" styleID="0" fgColor="5555FF"></WidgetStyle>
+        <WidgetStyle name="Find status: Search end reached" styleID="0" fgColor="00C400"></WidgetStyle>
+        <WidgetStyle name="Mark Style 1" styleID="25" bgColor="FF64B1"></WidgetStyle>
+        <WidgetStyle name="Mark Style 2" styleID="24" bgColor="FF972F"></WidgetStyle>
         <WidgetStyle name="Mark Style 3" styleID="23" bgColor="FFFF00"></WidgetStyle>
-        <WidgetStyle name="Mark Style 4" styleID="22" bgColor="8000FF"></WidgetStyle>
-        <WidgetStyle name="Mark Style 5" styleID="21" bgColor="008000"></WidgetStyle>
+        <WidgetStyle name="Mark Style 4" styleID="22" bgColor="BB77FF"></WidgetStyle>
+        <WidgetStyle name="Mark Style 5" styleID="21" bgColor="00AA00"></WidgetStyle>
         <WidgetStyle name="Incremental highlight all" styleID="28" bgColor="0080FF"></WidgetStyle>
         <WidgetStyle name="Tags match highlighting" styleID="27" bgColor="8000FF"></WidgetStyle>
         <WidgetStyle name="Tags attribute" styleID="26" bgColor="000000"></WidgetStyle>

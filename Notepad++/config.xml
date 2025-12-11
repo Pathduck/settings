@@ -16,14 +16,14 @@
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="no" fluentColor="7" fluentCustomColor="6161300" fluentMono="no">small</GUIConfig>
         <GUIConfig name="StatusBar">show</GUIConfig>
-        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" pinButton="no" showOnlyPinnedButton="no" buttonsOninactiveTabs="no" doubleClick2Close="no" vertical="no" multiLine="yes" hide="no" quitOnEmpty="no" iconSetNumber="0" />
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" pinButton="no" showOnlyPinnedButton="no" buttonsOninactiveTabs="no" doubleClick2Close="no" vertical="no" multiLine="yes" hide="no" quitOnEmpty="no" iconSetNumber="0" tabCompactLabelLen="0" />
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" backspaceUnindent="no" />
-        <GUIConfig name="AppPosition" x="0" y="0" width="1899" height="827" isMaximized="yes" />
-        <GUIConfig name="FindWindowPosition" left="1075" top="609" right="2022" bottom="1135" isLessModeOn="no" />
+        <GUIConfig name="AppPosition" x="0" y="0" width="1920" height="1080" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="956" top="220" right="1903" bottom="746" isLessModeOn="no" />
         <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" />
-        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20251104" autoUpdateMode="1">no</GUIConfig>
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20251219" autoUpdateMode="1">no</GUIConfig>
         <GUIConfig name="Auto-detection">yes</GUIConfig>
         <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
         <GUIConfig name="TrayIcon">0</GUIConfig>
@@ -65,11 +65,11 @@
         <GUIConfig name="DockingManager" leftWidth="615" rightWidth="319" topHeight="200" bottomHeight="589">
             <FloatingWindow cont="4" x="0" y="64" width="524" height="279" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="yes" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
             <PluginDlg pluginName="JSMinNPP.dll" id="0" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44081" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="NppMarkdownPanel" id="0" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="42051" curr="1" prev="-1" isVisible="no" />
