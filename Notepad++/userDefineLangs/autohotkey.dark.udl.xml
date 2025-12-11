@@ -36,7 +36,7 @@
         </KeywordLists>
         <Styles>
             <WordsStyle name="DEFAULT" fgColor="FFFFFF" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="0" />
-            <WordsStyle name="COMMENTS" fgColor="00AC00" bgColor="FFFFFF" colorStyle="1" fontStyle="2" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="00AC00" bgColor="FFFFFF" fontStyle="2" nesting="0" />
             <WordsStyle name="LINE COMMENTS" fgColor="00AC00" bgColor="FFFFFF" colorStyle="1" fontStyle="2" nesting="0" />
             <WordsStyle name="NUMBERS" fgColor="FFFF00" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
             <WordsStyle name="KEYWORDS1" fgColor="00A3F0" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="0" />
