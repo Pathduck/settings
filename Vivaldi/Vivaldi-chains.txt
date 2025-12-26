@@ -1,0 +1,43 @@
+CHAINS
+======
+Open Downloads Page
+chrome://downloads
+
+Follow PiP
+javascript:(()=>{var visible=true;document.addEventListener("visibilitychange", (e) => {visible = !visible; if (!visible){[...document.querySelectorAll('video')].filter(v => !v.paused)[0].requestPictureInPicture();return;}document.pictureInPictureElement && document.exitPictureInPicture();});history.replaceState({},"",location.href)})();
+
+Force PiP
+javascript:var v=document.querySelector("video");v.removeAttribute("disablePictureInPicture");v.requestPictureInPicture();history.replaceState({},"",location.href);
+
+Rename Tab
+javascript:(function(){var title=prompt("New title?", document.title);if(title){document.title=title;}history.replaceState({},"",location.href);})();
+
+Copy URL as link
+javascript:(function copy(c){c.clipboardData.setData('text/html','<a href="'+location.href+'">'+document.title+'</a>');c.clipboardData.setData("text/plain", location.href);c.preventDefault();}document.addEventListener("copy",copy);document.execCommand("copy");document.removeEventListener("copy",copy);history.replaceState({},"",location.href);)();
+
+Press This Page
+https://stian.sdf.org/wp/wp-admin/press-this.php?url-scan-submit=Scan&u={page_url}
+
+Mail Link
+javascript:document.location.href='mailto:?subject='+encodeURIComponent(document.title)+'&body='+encodeURIComponent(document.location);
+
+Share on Vivaldi Social
+https://social.vivaldi.net/share?text={page_title}&url={page_url}
+
+Archive Page
+https://archive.today/submit/?url={page_url}
+
+Search Yandex Images
+https://yandex.com/images/search?rpt=imageview&url={src_url}
+
+Search ImgOPS
+https://imgops.com/{src_url}
+
+Translate selection with DeepL
+https://www.deepl.com/translator#auto/en/{selection}
+
+Translate Page with Google
+https://translate.google.com/website?u={page_url}
+
+Translate Selection with Google
+https://translate.google.com/?sl=auto&tl=auto&text={selection}
