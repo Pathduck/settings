@@ -1,0 +1,33 @@
+/* Speed Dials Mods */
+.SpeedDialView, .SpeedDialView:empty {
+	padding: 40px 0 !important;
+}
+
+/* Speed Dials search field position (if shown) */
+.sdwrapper .iconmenu-container.SearchField {
+	background: var(--colorBgAlphaHeavy);
+}
+
+/* Speed Dials look */
+.SpeedDial {
+	opacity: 0.8 !important;
+	transition: opacity 0.2s linear;
+	background: var(--colorBgAlphaHeavy);
+}
+
+/* Speed Dials opaque when hovering */
+.SpeedDial:hover, .SpeedDial:focus {
+	opacity: 1 !important;
+}
+
+/* Speed Dials thumbnail */
+.SpeedDial .thumbnail-image {
+	display: block;
+}
+
+/* Speed Dials thumbnail fit container */
+.SpeedDial .thumbnail-image img {
+	object-fit: contain;
+	object-position: center;
+	padding: 1em;
+}

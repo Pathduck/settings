@@ -1,0 +1,222 @@
+/* CUSTOM CSS for Vivaldi */
+
+/* Vivaldi logo */
+.vivaldi-v svg {
+	background: radial-gradient(white, white 50%, transparent 50%); 
+	fill: #383838;
+} 
+
+/* Remove V button expand arrow */
+.vivaldi .expand-arrow {display: none;}
+#browser:has(.vivaldi-v), #browser:has(.burger-icon) {--menuWidth: 25px;}
+
+/* Skinnier mainbar */
+.mainbar .toolbar-mainbar.toolbar-addressbar,
+.mainbar .toolbar-mainbar .button-toolbar button {
+	border-radius: var(--radius);
+	min-height: unset !important;
+	height: 30px;
+}
+/* Skinnier mainbar - fix BookmarkButton focus */
+.toolbar-mainbar .UrlBar-AddressField .BookmarkButton button {
+	height: 100%;
+}
+
+/* Skinnier statusbar */
+#browser footer .toolbar-statusbar {
+	height: 20px;
+}
+#browser footer .toolbar-statusbar button {
+	height: 20px;
+	width: 100%;
+}
+#browser footer .toolbar-statusbar .button-icon.override {
+	height: 100%;
+}
+
+/* Unset statusbar top border */ 
+#browser footer#footer {
+	border-top: unset !important;
+}
+
+/* SiteInfoButton */
+.SiteInfoButton {
+	opacity: unset !important;
+	height: 22px;
+	width: 22px;
+}
+
+/* SiteInfo V logo */
+.SiteInfoButton.internal svg path, .SiteInfoButton.warning svg path {
+	d: path("M10.4 5c-.4-.8 0-1.8 1-2 .7 0 1.5.4 1.6 1.2a1.4 1.4 0 0 1-.2 1l-4 7c-.3.5-.7.8-1.2.8-.6 0-1-.2-1.3-.7L3.8 7.8 2.2 5c-.5-.8 0-2 1-2 .7 0 1 .2 1.4.7l1 2 1 1.4a2 2 0 0 0 1.7 1.5 2.2 2.2 0 0 0 2.3-2V6c0-.3 0-.6-.2-1z");
+}
+
+/* SiteInfo old style lock */
+.SiteInfoButton.secure svg path, .SiteInfoButton.certified svg path {
+	d: path("M12.2 6.7C12.2 4 10.5 2 8 2 5.8 2 3.8 4 3.8 6.7V7H3v7h10V7h-.8v-.3zM10.7 8H5.3V6.7c0-1.7 1.4-3 2.8-3 1.7 0 2.8 1.3 2.8 3V8z");
+	fill: #00a100;
+}
+
+/* SiteInfo secure background colour */
+.SiteInfoButton.secure, .SiteInfoButton.certified {
+	background-color: #004400 !important;
+}
+
+/* SiteInfo hide EV/Not Secure text */
+.SiteInfoButton .siteinfo-text {
+	display: none;
+}
+
+/* Remove panels switch top padding */
+#switch {
+	padding-top: unset;
+}
+
+/* Smaller icon for internal webpanels */
+#switch .button-toolbar-webpanel .button-icon svg {
+	width: 20px;
+	height: 20px;
+}
+
+/* Add drop-shadow to some buttons */
+#switch button img,
+.tab:not(.active) .favicon img,
+.OmniLinkItem-Favicon img,
+.SiteInfoButton-Favicon,
+.item-icon {
+	filter: drop-shadow(0 0 1px white);
+}
+
+/* Hide AddressField stuff */
+.UrlBar-AddressField .permission-popup,
+.UrlBar-AddressField .UrlBar-UrlObfuscationWarning,
+.UrlBar-AddressField .ContentBlocker-Control,
+.UrlBar-AddressField .ToolbarButton-Button[title^="Translate"] {
+	display: none;
+}
+
+/* AddressField show allowed permission buttons */
+.UrlBar-AddressField .permission-popup.is-allowing {
+	display: flex;
+}
+
+/* AddressField URL scheme part */
+.UrlFragment--Lowlight:first-of-type {
+	color: var(--colorFgFadedMost);
+}
+
+/* AddressField URL host part */
+.UrlFragment-HostFragment-Subdomain, .UrlFragment-HostFragment-Basedomain, .UrlFragment-HostFragment-TLD {
+	color: var(--colorFgIntense) !important;
+	font-weight: bold;
+}
+/* AddressField dropdown URL color */
+.OmniLinkItem-DisplayText .displayUrl {
+    color: var(--colorHighlightBgFaded);
+}
+
+/* AddressField pageload indicator */
+.UrlBar-AddressField .pageload .pageload-indicator {
+  background-color: var(--colorAccentBg) !important;
+}
+
+/* Extensions toggle button */
+.toolbar-extensions .ToolbarButton-Button[name="Extensions"] .button-icon {
+	opacity: 0.5 !important;
+}
+
+/* Extensions buttons background */
+.toolbar-extensions .ExtensionIcon,
+.toolbar-extensions .ExtensionToggleIcon {
+	background-color: transparent !important;
+}
+
+/* Hide Extension buttons */
+.button-toolbar.extensionId button[title="Spatial Navigation"] {display: none;}
+
+/* Toolbar buttons keyboard focus */
+.button-toolbar button:focus-within, .button-toolbar button:hover {
+	background-color: var(--colorAccentBgDark) !important;
+}
+
+/* Search + Address field buttons dimmed */
+.UrlBar-SearchField .toolbar-insideinput button,
+.UrlBar-AddressField .toolbar-insideinput button {
+	opacity: 0.5;
+}
+
+/* Trashcan dimmed */
+#tabs-container .synced-tabs-button button,
+#tabs-container .toggle-trash button {
+	opacity: 0.5;
+}
+
+/* Bookmark button fill colour */
+.BookmarkButton .bookmark-animated-fill {
+	fill: var(--colorAccentBgFaded) !important;
+}
+
+/* Bookmark button active opacity */
+.BookmarkButton .button-on {
+	opacity: unset !important;
+}
+
+/* Bookmarks thumbnails hide */
+.panel-bookmarks-edit .cardview .preview,
+.manager-editor .cardview .preview {
+	display: none;
+}
+
+/* Hide Image Properties button */
+.webpageview button.inspector {
+	display: none;
+}
+
+/* Unread tabs bold font */
+.tab-strip .tab.unread {
+	font-weight: bold;
+}
+
+/* Tab tooltip hide thumbnail */
+#vivaldi-tooltip .tooltip .thumbnail-image {
+	display: none !important;
+}
+
+/* Tab tooltip size */
+#vivaldi-tooltip .tooltip .tab-group .tooltip-item {
+	width: 250px;
+	height: auto;
+}
+
+/* Dim empty UrlField text colour */
+.UrlField--IsEmpty {
+	color: var(--colorFgFadedMost);
+}
+
+/* Input text selection background */
+#browser input:focus::selection,
+#browser textarea:focus::selection,
+#browser [contenteditable]:focus::selection,
+.OmniLinkItem--Highlighted,
+.vivaldi-settings .settings-sidebar .button-category.category-selected {
+  background-color: var(--colorHighlightBgDark) !important;
+}
+
+/* Hide overlay info bubble + Fullscreen reminder */
+.overlayinfobubble {
+	display: none;
+}
+
+/* Width of empty spacer before tabs */
+.tabs-top #tabs-tabbar-container .toolbar-tabbar-before:empty {
+	min-width: 0px;
+}
+
+/* FIX for duplicate window controls */
+/*#browser:not(.tabs-off) .toolbar-mainbar .window-buttongroup.on-mainbar {
+	display: none;
+}
+#browser:not(.tabs-off) .toolbar-mainbar {
+	padding-right: unset !important;
+}*/
+

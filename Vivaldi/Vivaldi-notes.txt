@@ -1,0 +1,70 @@
+INSTALLER COMMAND LINE OPTIONS
+--vivaldi-install-dir 
+--vivaldi-silent
+--vivaldi-standalone
+--vivaldi-register-standalone
+--disable-vivaldi
+
+INSPECT UI
+vivaldi --debug-packed-apps --silent-debugger-extension-api
+vivaldi://inspect/#apps/
+
+https://forum.vivaldi.net/topic/16684/inspecting-the-vivaldi-ui-with-devtools
+
+SSL CAPTURE
+vivaldi --ssl-key-log-file="%appdata%\wireshark\ssl-keys.log
+
+PROXY
+vivaldi --proxy-server="localhost:8080"
+
+DEBUGGING
+https://chromedevtools.github.io/devtools-protocol/
+
+vivaldi --remote-debugging-port=9222
+curl -X put 'http://localhost:9222/json/new?https://example.com'
+curl -X PUT 'http://localhost:9222/json/new?chrome://vivaldi-webui/startpage'
+curl "http://localhost:9222/json/activate/85C9AEF32E9D46B1B94BF1F9EB9241C3"
+
+List WS endpoints:
+curl 'http://127.0.0.1:9222/json'
+
+websocat --jsonrpc --jsonrpc-omit-jsonrpc 'ws://127.0.0.1:9222/devtools/page/0F3F891DF180310443ECDEEC986678F2'
+Page.navigate {"url":"https://example.com"}
+
+DEBUG LOGS
+vivaldi --enable-logging
+Verbose: --v=3
+vivaldi --enable-logging=stderr --v=3 > log.txt 2>&1
+https://www.chromium.org/for-testers/enable-logging/
+
+DELETE BOOKMARK THUMBS
+jq 'del(recurse | objects | select(has("Thumbnail")) .Thumbnail | select(startswith("data:image")))' Bookmarks > Bookmarks.new
+Dangerous, deletes all thumbs:
+jq 'del(recurse | objects | .Thumbnail)' Bookmarks > Bookmarks.new
+
+EXPORT HOTKEYS
+jq '.vivaldi.actions' Preferences > actions.json
+
+IMPORT HOTKEYS
+jq '.vivaldi.actions = input' Preferences actions.json > Preferences.new
+
+COUNT BOOKMARKS
+grep -c 'url":' Bookmarks
+grep -c 'Thumbnail":' Bookmarks
+
+DOWNLOAD CHANGELOGS
+wget -mH -nd -e robots=off -A .html -I "/update" "https://vivaldi.com/download/archive/?platform=win"
+wget -mH -nd -e robots=off -A .txt --user "sopranos" --password "xxx" "https://sopranos.vivaldi.com/oldsopranosmails.html"
+
+LIST HISTORY URLS
+sqlite3 -csv -header History "SELECT urls.url as 'URL', urls.title as 'Title', urls.visit_count as 'Visit Count', datetime(visits.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch', 'localtime')  as 'Date' \
+FROM urls, visits \
+WHERE urls.id = visits.url;" > history.csv
+
+BACKUP SEARCH ENGINES
+sqlite3 "Web Data" -line "select short_name, keyword, url, suggest_url, image_url, search_url_post_params, suggest_url_post_params, image_url_post_params from keywords;" > keywords.txt
+sqlite3 "Web Data" -markdown "select short_name, keyword, url, suggest_url, image_url, search_url_post_params, suggest_url_post_params, image_url_post_params from keywords;" > keywords.md
+sqlite3 "Web Data" ".dump keywords" > keywords.sql
+
+TRANSLATION TEST
+curl -H 'Content-Type: application/json' -d '{"source":"en","target":"zh-Hans","q":["Customizations & Extensions"]}' "https://mimir2.vivaldi.com/api/translate"
