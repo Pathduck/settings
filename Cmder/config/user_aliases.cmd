@@ -27,7 +27,7 @@ kill=pskill $*
 la=ls -la --color=auto --group-directories-first $*
 ll=ls -l --color=auto --group-directories-first $*
 ls=ls --color=auto --group-directories-first $*
-musify=node d:\bin\node\dl-musify.club\download_album.js $*  
+musify=node --no-deprecation d:\bin\node\dl-musify.club\download_album.js $*  
 mv=mv -i $*
 ncat=D:\bin\nettools\Nmap\ncat.exe $*  
 nginx=start /d d:\bin\Nginx /b d:\bin\Nginx\nginx.exe $*
