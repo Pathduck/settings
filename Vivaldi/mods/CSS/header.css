@@ -8,11 +8,9 @@
 	display: none;
 }
 
-/* Set mainbar/bookmark-bar l/r padding */
-#browser:not(.tabs-top) .toolbar-mainbar,
-#browser:not(.tabs-top):not(.address-top):not(.normal) .bookmark-bar {
-	padding-left: 26px;
-	padding-right: 130px;
+/* Unset padding of page title */
+#browser #header #titlebar #pagetitle {
+    padding: unset;
 }
 
 /* Remove tabbar/icon padding/margin when windowed */
@@ -31,14 +29,15 @@
 }
 
 /* Window buttons size when windowed */
-#browser.normal:not(.tabs-top) #titlebar .vivaldi,
+#browser.normal:not(.tabs-top) .toolbar-mainbar .vivaldi,
 #browser.normal:not(.tabs-top) .window-buttongroup button {
-	height: 25px !important;
+	height: 30px !important;
 }
 
 /* V icon size + zindex */
-#browser:not(.tabs-top) #titlebar .vivaldi {
+#browser:not(.tabs-top) .toolbar-mainbar .vivaldi {
 	width: 25px;
+	margin: unset;
 	scale: unset;
 	z-index: 10;
 }
@@ -57,14 +56,15 @@
 }
 
 /* Show buttons on windowed/minimal-ui */
-#browser.normal .vivaldi,
-#browser.minimal-ui:not(.fullscreen) .vivaldi,
-#browser.normal .window-buttongroup,
-#browser.normal .window-buttongroup button,
-#browser.minimal-ui .window-buttongroup,
-#browser.minimal-ui .window-buttongroup button {
-	display: initial !important;
+#browser.normal #titlebar .vivaldi,
+#browser.minimal-ui #titlebar .vivaldi,
+#browser.normal #titlebar .window-buttongroup,
+#browser.minimal-ui #titlebar .window-buttongroup,
+#browser.normal #titlebar .window-buttongroup button,
+#browser.minimal-ui #titlebar .window-buttongroup button {
+	display: initial;
 	height: calc(24px / var(--uiZoomLevel)) !important;
+	scale: unset;
 }
 
 /* Reset header on windowed/minimal-ui/bottom-UrlBar/horizontal-menu */
@@ -75,7 +75,7 @@
 	min-height: calc(25px / var(--uiZoomLevel)) !important;
 }
 
-/* Reset header on windowed/minimal-ui/bottom-UrlBar/horizontal-menu */
+/* Reset mainbar on windowed/minimal-ui/bottom-UrlBar/horizontal-menu */
 #browser.normal .toolbar-mainbar,
 #browser.minimal-ui .toolbar-mainbar,
 #browser.address-bottom .toolbar-mainbar,
