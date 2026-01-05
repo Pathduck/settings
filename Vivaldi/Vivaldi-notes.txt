@@ -1,5 +1,5 @@
 INSTALLER COMMAND LINE OPTIONS
---vivaldi-install-dir 
+--vivaldi-install-dir
 --vivaldi-silent
 --vivaldi-standalone
 --vivaldi-register-standalone
@@ -17,7 +17,13 @@ vivaldi --ssl-key-log-file="%appdata%\wireshark\ssl-keys.log
 PROXY
 vivaldi --proxy-server="localhost:8080"
 
-DEBUGGING
+DEBUG LOGS
+https://www.chromium.org/for-testers/enable-logging/
+vivaldi --enable-logging
+Verbose: --v=3
+vivaldi --enable-logging=stderr --v=3 > log.txt 2>&1
+
+REMOTE DEBUGGING
 https://chromedevtools.github.io/devtools-protocol/
 
 vivaldi --remote-debugging-port=9222
@@ -30,12 +36,6 @@ curl 'http://127.0.0.1:9222/json'
 
 websocat --jsonrpc --jsonrpc-omit-jsonrpc 'ws://127.0.0.1:9222/devtools/page/0F3F891DF180310443ECDEEC986678F2'
 Page.navigate {"url":"https://example.com"}
-
-DEBUG LOGS
-vivaldi --enable-logging
-Verbose: --v=3
-vivaldi --enable-logging=stderr --v=3 > log.txt 2>&1
-https://www.chromium.org/for-testers/enable-logging/
 
 DELETE BOOKMARK THUMBS
 jq 'del(recurse | objects | select(has("Thumbnail")) .Thumbnail | select(startswith("data:image")))' Bookmarks > Bookmarks.new
