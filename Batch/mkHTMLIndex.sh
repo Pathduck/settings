@@ -1,5 +1,6 @@
 #!/bin/bash
 # Script to generate HTML index files for directories using 'tree'
+# Works with 'tree' 1.7.0 under Cygwin
 
 # Array of dirs to exclude
 exclude_paths=(
@@ -45,7 +46,7 @@ for dir in "${dirs[@]}"; do
 		| sed \
 			-e '/<hr>/,+7d' \
 			-e 's/href="\.">\./href="..">../' \
-			-e 's/BODY {/BODY { color: lime; background: black;/' \
+			-e 's/BODY {\(.*\)}/BODY {\1color: lime; background: black; }/' \
 			-e 's/color: black;/color: lime;/' \
 			-e 's/color: blue;/color: deepskyblue;/' \
 			-e 's/color: green;/color: limegreen;/' \
