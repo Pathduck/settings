@@ -25,10 +25,10 @@
 #browser.maximized .window-buttongroup button,
 #browser.normal.tabs-top .window-buttongroup button {
 	height: 30px !important;
-	z-index: 10 !important;
 }
 
 /* Window buttons size when windowed */
+#browser.disable-titlebar .window-buttongroup,
 #browser.normal:not(.tabs-top) .toolbar-mainbar .vivaldi,
 #browser.normal:not(.tabs-top) .window-buttongroup button {
 	height: 30px !important;
