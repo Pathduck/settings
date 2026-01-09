@@ -1,0 +1,7 @@
+# Clink specific bindings
+$if clink
+"\e[6;7~":	clink-popup-history		# Ctrl+Alt+PageDown - Clink History popup
+$endif
+
+# Include main inputrc
+$include C:\Users\Stian\.inputrc
