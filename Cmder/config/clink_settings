@@ -13,6 +13,11 @@ clink.default_bindings = bash
 # options: delete,space,ampersand,crlf
 clink.paste_crlf = space
 
+# name: Default search mode in popup lists
+# type: enum
+# options: find,filter
+clink.popup_search_mode = filter
+
 # name: Auto-answer terminate prompt
 # type: enum
 # options: off,answer_yes,answer_no
@@ -122,6 +127,10 @@ history.shared = True
 # name: Expand envvars when completing
 # type: boolean
 match.expand_envvars = True
+
+# name: Start with the suggestion list enabled
+# type: boolean
+suggestionlist.default = True
 
 # name: Support Windows' Ctrl-Alt substitute for AltGr
 # type: boolean

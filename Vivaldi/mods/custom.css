@@ -8,7 +8,9 @@
 
 /* Remove V button expand arrow */
 .vivaldi .expand-arrow {display: none;}
-#browser:has(.vivaldi-v), #browser:has(.burger-icon) {--menuWidth: 25px;}
+#browser:has(.vivaldi-v), #browser:has(.burger-icon) {
+	--menuWidth: 25px !important;
+}
 
 /* Skinnier mainbar */
 .mainbar .toolbar-mainbar.toolbar-addressbar,
@@ -211,12 +213,3 @@
 .tabs-top #tabs-tabbar-container .toolbar-tabbar-before:empty {
 	min-width: 0px;
 }
-
-/* FIX for duplicate window controls */
-/*#browser:not(.tabs-off) .toolbar-mainbar .window-buttongroup.on-mainbar {
-	display: none;
-}
-#browser:not(.tabs-off) .toolbar-mainbar {
-	padding-right: unset !important;
-}*/
-
