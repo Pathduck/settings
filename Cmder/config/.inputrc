@@ -1,6 +1,7 @@
 # Clink specific bindings
 $if clink
 "\e[6;7~":	clink-popup-history		# Ctrl+Alt+PageDown - Clink History popup
+"\e[3;3~":	remove-history			# Alt-Del
 $endif
 
 # Include main inputrc
