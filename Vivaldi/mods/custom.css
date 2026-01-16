@@ -114,12 +114,12 @@
 }
 /* AddressField dropdown URL color */
 .OmniLinkItem-DisplayText .displayUrl {
-    color: var(--colorHighlightBgFaded);
+	color: var(--colorHighlightBgFaded);
 }
 
 /* AddressField pageload indicator */
 .UrlBar-AddressField .pageload .pageload-indicator {
-  background-color: var(--colorAccentBg) !important;
+	background-color: var(--colorAccentBg) !important;
 }
 
 /* Extensions toggle button */
@@ -201,7 +201,7 @@
 #browser [contenteditable]:focus::selection,
 .OmniLinkItem--Highlighted,
 .vivaldi-settings .settings-sidebar .button-category.category-selected {
-  background-color: var(--colorHighlightBgDark) !important;
+	background-color: var(--colorHighlightBgDark) !important;
 }
 
 /* Hide overlay info bubble + Fullscreen reminder */
