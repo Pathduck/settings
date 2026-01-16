@@ -5,12 +5,12 @@ body {
 
 /* Hide synced tab button */
 .button-toolbar.synced-tabs-button {
-    display: none;
+	display: none;
 }
 
 /* Highlight expanded bookmark folder */
 .panel-bookmarks .tree-item[data-expanded] {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 /* Vivaldi logo old style */
@@ -20,7 +20,7 @@ body {
 /* Hide trash can when empty */
 /* No longer works */
 .toggle-trash > button:disabled {
-    display: none;
+	display: none;
 }
 
 /* Scrollable web panels */
@@ -44,12 +44,12 @@ body {
 }
 /* Tabcycler hide scrollbar */
 .tabswitcher.list .listed-tabs::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 /* TEMP(?) fix for url bar dropdown */
 .OmniLinkItem--Highlighted, OmniLinkItem:hover {
-    background-color: var(--colorHighlightBg) !important;
+	background-color: var(--colorHighlightBg) !important;
 }
 
 /* Floating multiline StatusInfo URL */

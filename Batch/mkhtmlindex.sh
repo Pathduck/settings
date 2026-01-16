@@ -39,10 +39,10 @@ for dir in "${dirs[@]}"; do
     (
 		cd "$dir" || exit 1
 
-		# Generate HTML index - Color, Date, Size(h), No lines(i), Title(T), filter self(I)
+		# Generate HTML index - Color, Size(h), No lines(i), Title(T), filter self(I)
 		# Pipe to sed: Remove credits, link to parent dir, change colours
-		tree -CDhi -H "." -T "$(basename "$PWD")" -I "index.html" -L 1 \
-		--dirsfirst --charset "utf-8" --timefmt "%b %e %Y" \
+		tree -Chi -H "." -T "$(basename "$PWD")" -I "index.html" -L 1 \
+		--dirsfirst --charset "utf-8" \
 		| sed \
 			-e '/<hr>/,+7d' \
 			-e 's/href="\.">\./href="..">../' \

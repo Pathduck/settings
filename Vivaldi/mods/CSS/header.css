@@ -10,7 +10,7 @@
 
 /* Unset padding of page title */
 #browser #header #titlebar #pagetitle {
-    padding: unset;
+	padding: unset;
 }
 
 /* Remove tabbar/icon padding/margin when windowed */
