@@ -44,6 +44,7 @@ sublime=d:\bin\Sublime\sublime_text.exe $*
 sudo=gsudo $*
 tc=d:\bin\totalcmd\totalcmd.exe $*
 top=d:\bin\tools\pmon.exe $*
+tree=d:\bin\cygwin\bin\tree.exe  
 tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1
 vi=vim $*
