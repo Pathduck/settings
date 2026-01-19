@@ -39,7 +39,7 @@ putty=d:\bin\putty\putty.exe $*
 pwd=cd
 python=d:\bin\python\python.exe $*
 rm=rm -i $*
-shn=curl -F "shorten=$*" "https://envs.sh"
+shn=curl -F "format=simple" -F "url=$1" "https://is.gd/create.php"
 sublime=d:\bin\Sublime\sublime_text.exe $*
 sudo=gsudo $*
 tc=d:\bin\totalcmd\totalcmd.exe $*
