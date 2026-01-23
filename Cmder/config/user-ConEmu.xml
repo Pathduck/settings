@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2026-01-18 12:09:35" build="230724">
+		<key name=".Vanilla" modified="2026-01-23 10:05:51" build="230724">
 			<value name="ColorTable00" type="dword" data="00222827"/>
 			<value name="ColorTable01" type="dword" data="00e97a01"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
@@ -109,8 +109,8 @@
 			<value name="FontBold" type="hex" data="00"/>
 			<value name="FontItalic" type="hex" data="00"/>
 			<value name="Monospace" type="hex" data="01"/>
-			<value name="BackGround Image show" type="hex" data="00"/>
-			<value name="BackGround Image" type="string" data="E:\Bilder\Diverse\crt-lines.png"/>
+			<value name="BackGround Image show" type="hex" data="01"/>
+			<value name="BackGround Image" type="string" data="C:\Users\Stian\Documents\Settings\Cmder\config\crt-lines.png"/>
 			<value name="bgImageDarker" type="hex" data="FF"/>
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="02"/>
@@ -589,7 +589,7 @@
 				</key>
 			</key>
 			<key name="Colors" modified="2025-01-23 22:46:48" build="230724">
-				<key name="Palette1" modified="2025-07-11 23:28:23" build="230724">
+				<key name="Palette1" modified="2026-01-22 19:51:59" build="230724">
 					<value name="Name" type="string" data="Stians"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0e"/>
@@ -598,11 +598,11 @@
 					<value name="PopTextColorIdx" type="hex" data="10"/>
 					<value name="PopBackColorIdx" type="hex" data="10"/>
 					<value name="ColorTable00" type="dword" data="00222827"/>
-					<value name="ColorTable01" type="dword" data="009e5401"/>
+					<value name="ColorTable01" type="dword" data="00e97a01"/>
 					<value name="ColorTable02" type="dword" data="0004aa74"/>
 					<value name="ColorTable03" type="dword" data="00a6831a"/>
-					<value name="ColorTable04" type="dword" data="004604df"/>
-					<value name="ColorTable05" type="dword" data="009c5689"/>
+					<value name="ColorTable04" type="dword" data="008c5cfc"/>
+					<value name="ColorTable05" type="dword" data="00b67aa6"/>
 					<value name="ColorTable06" type="dword" data="0049b6b6"/>
 					<value name="ColorTable07" type="dword" data="00d2d2d2"/>
 					<value name="ColorTable08" type="dword" data="007c7c7c"/>
