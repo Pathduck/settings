@@ -484,7 +484,7 @@
 			<value name="WndDragKey" type="dword" data="00121101"/>
 			<key name="Tasks" modified="2020-08-23 01:32:42" build="191012">
 				<value name="Count" type="long" data="8"/>
-				<key name="Task1" modified="2021-01-28 23:58:45" build="191012">
+				<key name="Task1" modified="2026-02-05 12:17:34" build="230724">
 					<value name="Name" type="string" data="{cmd::Cmder}"/>
 					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder.ico"'/>
 					<value name="Cmd1" type="string" data='cmd /k "%ConEmuDir%\..\init.bat" -new_console'/>

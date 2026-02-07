@@ -35,12 +35,14 @@
 }
 
 /* V icon size + zindex */
+#browser:not(.tabs-top) #titlebar .vivaldi,
 #browser:not(.tabs-top) .toolbar-mainbar .vivaldi {
 	width: 25px;
 	margin: unset;
 	scale: unset;
 	z-index: 10;
 }
+
 /* V icon SVG size */
 #browser:not(.tabs-top) .vivaldi svg {
 	height: 22px;

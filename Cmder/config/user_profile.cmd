@@ -17,7 +17,7 @@
 :: %ccall% "/customOption" "command/program"
 
 @echo off
-set "GREP_COLORS=ms=30;43"
+set "GREP_COLORS=ms=30;43:fn=94"
 set "LESS=-iRM"
 set "LYNX_CFG=~/.config/lynx/lynx.cfg"
 set "EDITOR=nano"
