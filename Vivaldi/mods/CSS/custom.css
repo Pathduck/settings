@@ -8,8 +8,9 @@
 
 /* Remove V button expand arrow */
 .vivaldi .expand-arrow {display: none;}
-#browser:has(.vivaldi-v), #browser:has(.burger-icon) {
-	--menuWidth: 25px !important;
+#browser.menu-icon .vivaldi, #browser.menu-burger .vivaldi {
+	width: 25px;
+	grid-template-columns: unset;
 }
 
 /* Skinnier mainbar */
