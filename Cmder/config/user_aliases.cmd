@@ -43,7 +43,7 @@ shn=curl -F "format=simple" -F "url=$1" "https://is.gd/create.php"
 sublime=d:\bin\Sublime\sublime_text.exe $*
 sudo=gsudo $*
 tc=d:\bin\totalcmd\totalcmd.exe $*
-top=d:\bin\tools\pmon.exe $*
+top=ntop -s "CPU%" $*  
 tree=d:\bin\cygwin\bin\tree.exe  
 tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1

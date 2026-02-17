@@ -91,6 +91,10 @@ color.yarn.module = bright green
 # type: color
 color.yarn.script = bright blue
 
+# name: Allow showing input hints in the comment row
+# type: boolean
+comment_row.show_hints = False
+
 # name: Match executables in current directory
 # type: boolean
 exec.cwd = True
@@ -134,5 +138,5 @@ suggestionlist.default = True
 
 # name: Support Windows' Ctrl-Alt substitute for AltGr
 # type: boolean
-terminal.use_altgr_substitute = True
+terminal.use_altgr_substitute = False
 
