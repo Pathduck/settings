@@ -1,8 +1,11 @@
 # Clink specific bindings
 $if clink
-"\e[6;7~":	clink-popup-history		# Ctrl+Alt+PageDown - Clink History popup
-"\e[1;7B":  clink-popup-directories # Ctrl+Alt+Down - Clink Directories popup
-"\e[3;3~":	remove-history			# Alt-Del - Remove suggest list history
+"\e[6;3~": clink-popup-history		# Alt+PageDown - Clink History popup
+"\e[5;3~": clink-popup-directories	# Alt+PageUp - Clink Directories popup
+"\e[1;4A": clink-popup-history		# Shift+Alt+Up - Clink History popup
+"\e[1;4B": clink-popup-directories	# Shift+Alt+Down - Clink Directories popup
+"\e[3;3~": remove-history			# Alt-Del - Remove suggest list history
+"\e[1;7A":							# Clear Ctrl+Alt+Up
 $endif
 
 # Include main inputrc
