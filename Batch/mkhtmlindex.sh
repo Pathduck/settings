@@ -41,7 +41,7 @@ for dir in "${dirs[@]}"; do
 
 		# Generate HTML index - Color, Size(h), No lines(i), Title(T), filter self(I)
 		# Pipe to sed: Remove credits, link to parent dir, change colours
-		tree -Chi -H "." -T "$(basename "$PWD")" -I "index.html" -L 1 \
+		tree -Chi -H "." -T "🗁 $(basename "$PWD")" -I "index.html" -L 1 \
 		--dirsfirst --charset "utf-8" \
 		| sed \
 			-e '/<hr>/,+7d' \
