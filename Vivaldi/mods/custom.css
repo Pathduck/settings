@@ -8,8 +8,9 @@
 
 /* Remove V button expand arrow */
 .vivaldi .expand-arrow {display: none;}
-#browser:has(.vivaldi-v), #browser:has(.burger-icon) {
-	--menuWidth: 25px !important;
+#browser.menu-icon .vivaldi, #browser.menu-burger .vivaldi {
+	width: 25px;
+	grid-template-columns: unset;
 }
 
 /* Skinnier mainbar */
@@ -212,4 +213,9 @@
 /* Width of empty spacer before tabs */
 .tabs-top #tabs-tabbar-container .toolbar-tabbar-before:empty {
 	min-width: 0px;
+}
+
+/* TEMP FIX FOR TAB BAR */
+#tabs-tabbar-container.top {
+    padding-top: unset;
 }

@@ -1,0 +1,27 @@
+/* SiteInfoButton */
+.SiteInfoButton {
+	opacity: unset !important;
+	height: 22px;
+	width: 22px;
+}
+
+/* SiteInfo V logo */
+.SiteInfoButton.internal svg path, .SiteInfoButton.warning svg path {
+	d: path("M10.4 5c-.4-.8 0-1.8 1-2 .7 0 1.5.4 1.6 1.2a1.4 1.4 0 0 1-.2 1l-4 7c-.3.5-.7.8-1.2.8-.6 0-1-.2-1.3-.7L3.8 7.8 2.2 5c-.5-.8 0-2 1-2 .7 0 1 .2 1.4.7l1 2 1 1.4a2 2 0 0 0 1.7 1.5 2.2 2.2 0 0 0 2.3-2V6c0-.3 0-.6-.2-1z");
+}
+
+/* SiteInfo old style lock */
+.SiteInfoButton.secure svg path, .SiteInfoButton.certified svg path {
+	d: path("M12.2 6.7C12.2 4 10.5 2 8 2 5.8 2 3.8 4 3.8 6.7V7H3v7h10V7h-.8v-.3zM10.7 8H5.3V6.7c0-1.7 1.4-3 2.8-3 1.7 0 2.8 1.3 2.8 3V8z");
+	fill: #00a100;
+}
+
+/* SiteInfo secure background colour */
+.SiteInfoButton.secure, .SiteInfoButton.certified {
+	background-color: #004400 !important;
+}
+
+/* SiteInfo hide EV/Not Secure text */
+.SiteInfoButton .siteinfo-text {
+	display: none;
+}

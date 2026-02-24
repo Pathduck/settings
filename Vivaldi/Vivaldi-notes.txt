@@ -42,10 +42,12 @@ jq 'del(recurse | objects | select(has("Thumbnail")) .Thumbnail | select(startsw
 Dangerous, deletes all thumbs:
 jq 'del(recurse | objects | .Thumbnail)' Bookmarks > Bookmarks.new
 
-EXPORT HOTKEYS
-jq '.vivaldi.actions' Preferences > actions.json
+EXPORT/IMPORT SETTINGS
+jq '.vivaldi' Preferences > vivaldi-settings.json
+jq '.vivaldi = input' Preferences vivaldi-settings.json > Preferences.new
 
-IMPORT HOTKEYS
+EXPORT/IMPORT HOTKEYS
+jq '.vivaldi.actions' Preferences > actions.json
 jq '.vivaldi.actions = input' Preferences actions.json > Preferences.new
 
 COUNT BOOKMARKS
