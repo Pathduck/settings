@@ -17,11 +17,10 @@ far=d:\bin\FarManager\Far.exe $*
 ga=git add -A $*
 gc=git commit $*
 gg=global /V /1 /E .git $*
-gh=git hist $*
-gl=git log --oneline --all --graph --decorate --color $*
+gl=git hist $*
+gw=git hist --raw --no-merges $*
 grep=grep --color --ignore-case $*
 gs=git status $*
-gw=git whatchanged $*
 home=cd /d "%USERPROFILE%"
 kill=pskill $*
 la=ls -la --color=auto --group-directories-first $*
