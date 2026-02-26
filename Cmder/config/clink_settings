@@ -59,6 +59,10 @@ color.description = bright cyan
 # type: color
 color.doskey = bold cyan
 
+# name: Color for executable command word
+# type: color
+color.executable = bright cyan
+
 # name: Filtered completion color
 # type: color
 color.filtered = bold
@@ -71,6 +75,10 @@ color.flag = default
 # type: color
 color.git.star = bright green
 
+# name: Input text color
+# type: color
+color.input = default
+
 # name: For user-interaction prompts
 # type: color
 color.interact = bold
@@ -79,9 +87,17 @@ color.interact = bold
 # type: color
 color.message = default
 
+# name: Color for popup lists and messages
+# type: color
+color.popup = bright white on black
+
 # name: Unexpected argument color
 # type: color
 color.unexpected = default
+
+# name: Color for unrecognized command word
+# type: color
+color.unrecognized = default
 
 # name: Color for yarn run local module
 # type: color
