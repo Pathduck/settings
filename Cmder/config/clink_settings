@@ -8,6 +8,11 @@ clink.autoupdate = off
 # options: bash,windows
 clink.default_bindings = bash
 
+# name: Controls what startup logo to show
+# type: enum
+# options: none,full,short
+clink.logo = none
+
 # name: Strips CR and LF chars on paste
 # type: enum
 # options: delete,space,ampersand,crlf
@@ -61,7 +66,7 @@ color.doskey = bold cyan
 
 # name: Color for executable command word
 # type: color
-color.executable = bright cyan
+color.executable = bold cyan
 
 # name: Filtered completion color
 # type: color
@@ -74,6 +79,10 @@ color.flag = default
 # name: Color for preferred branch completions
 # type: color
 color.git.star = bright green
+
+# name: Hidden file completions
+# type: color
+color.hidden = default
 
 # name: Input text color
 # type: color
@@ -90,6 +99,10 @@ color.message = default
 # name: Color for popup lists and messages
 # type: color
 color.popup = bright white on black
+
+# name: Color for popup border
+# type: color
+color.popup_border = bright cyan
 
 # name: Unexpected argument color
 # type: color
