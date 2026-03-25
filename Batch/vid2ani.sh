@@ -27,12 +27,10 @@ case "$1" in
 	--help) print_help; exit;;
 esac
 
-# Check if ffmpeg/ffplay exists on PATH, if not exit
-for cmd in ffmpeg ffplay; do
-    if ! command -v "$cmd" >/dev/null 2>&1; then
-        echo ${RED}"'$cmd' not found in PATH, please install it first"${OFF}; exit 1
-    fi
-done
+# Check if ffmpeg exists on PATH, if not exit
+if ! command -v 'ffmpeg' >/dev/null 2>&1; then
+	echo ${RED}"FFmpeg not found in PATH, please install it first"${OFF}; exit 1
+fi
 
 # Assign input and output
 input="$1"
@@ -183,6 +181,10 @@ fi
 
 # FFplay preview
 if [[ -n $playswitch ]]; then
+	# Check if ffplay exists on PATH, if not exit
+	if ! command -v 'ffplay' >/dev/null 2>&1; then
+		echo ${RED}"FFplay not found in PATH, please install it first"${OFF}; exit 1
+	fi
 	echo ${YELLOW}"$(ffplay -version | head -n2)"${OFF}
 	ffplay -v ${loglevel} -i "${input}" -vf "${filters}" -an -loop 0 -ss ${start_time:-0} -t ${end_time:-3}
 	exit 0
@@ -266,21 +268,21 @@ else
 fi
 
 # Checking for Bayer Scale and adjusting command
-if [[ -n $bayerscale ]]; then bayer=":bayer_scale=$bayerscale"; fi
 if [[ -z $bayerscale ]]; then bayer=""; fi
+if [[ -n $bayerscale ]]; then bayer=":bayer_scale=$bayerscale"; fi
 
 # WEBP pixel format and lossy quality
 if [[ $filetype == "webp" && -n $webp_lossy ]]; then
-	webp_lossy="-lossless 0 -pix_fmt yuva420p -quality $webp_lossy_q"
+	type_opts="-lossless 0 -pix_fmt yuva420p -quality $webp_lossy_q"
 elif [[ $filetype == "webp" && -z $webp_lossy ]]; then
-	webp_lossy="-lossless 1"
+	type_opts="-lossless 1"
 fi
 
 # Executing the encoding command
 echo ${GREEN}"Encoding animation..."${OFF}
 ffmpeg -v ${loglevel} ${trim:-} -i "${input}" -thread_queue_size 512 -i "${palette}" \
 -lavfi "${filters} [x]; [x][1:v] ${decode}${errordiff:-}${ditherenc}${bayer}" \
--f ${filetype} ${webp_lossy:-} -loop 0 -plays 0 -y "${output}"
+-f ${filetype} ${type_opts:-} -loop 0 -plays 0 -y "${output}"
 
 # Checking if output file was created
 if [[ ! -f "$output" ]]; then
@@ -316,12 +318,13 @@ ${GREEN}Arguments:${OFF}
   -s  Start time of the animation (HH:MM:SS.MS)
   -e  End time of the animation (HH:MM:SS.MS)
   -x  Crop the input video (out_w:out_h:x:y)
+      Note that cropping occurs before output is scaled
   -d  Dithering algorithm to be used (default 0)
   -b  Bayer Scale setting, range 0-5 (default 2)
   -m  Palettegen mode: 1 (diff, default), 2 (single), 3 (full)
   -k  Enables paletteuse error diffusion
-  -y  Preview animation using 'ffplay' (part of ffmpeg)
-      (Useful for testing cropping, but will not use exact start/end time)
+  -y  Preview animation using 'FFplay' (part of FFmpeg)
+      Useful for testing cropping, but will not use exact start/end time
   -p  Opens the resulting animation in the default image viewer
   -v  Set FFmpeg log level (default: error)
 
