@@ -22,13 +22,8 @@ IF "%~1"=="-?" GOTO :help_message
 IF "%~1"=="/?" GOTO :help_message
 IF "%~1"=="--help" GOTO :help_message
 
-:: Check if ffmpeg/ffplay exists on PATH, if not exit
-FOR %%x in (ffmpeg.exe ffplay.exe) DO (
-    WHERE /q %%x || (
-        ECHO %RED%%%x not found in PATH, please install it first%OFF%
-        GOTO :EOF
-    )
-)
+:: Check if FFmpeg exists on PATH, if not exit
+WHERE /q ffmpeg.exe || ( ECHO %RED%FFmpeg not found in PATH, please install it first%OFF% & GOTO :EOF )
 
 :: Assign input and output
 SET "input=%~1"
@@ -36,7 +31,7 @@ SET "output=%~n1"
 
 :: Validate input file
 IF NOT EXIST "%input%" (
-	ECHO %RED%Input file not found: "%input%"%OFF%
+	ECHO %RED%Input file not found: !input! %OFF%
 	GOTO :EOF
 )
 
@@ -64,7 +59,6 @@ SHIFT
 :parse_loop
 IF NOT "%~1"=="" (
 	IF "%~1"=="-o" SET "output=%~dpn2" & SHIFT
-	REM IF "%~1"=="-o" SET "output=%~dpn2" & SHIFT
 	IF "%~1"=="-t" SET "filetype=%~2" & SHIFT
 	IF "%~1"=="-r" SET "scale=%~2" & SHIFT
 	IF "%~1"=="-l" ( IF 1%2 NEQ +1%2 ( SET "webp_lossy=1"
@@ -88,12 +82,7 @@ IF NOT "%~1"=="" (
 
 :safchek
 :: Validate if output file is set
-FOR %%f IN ("%output%") DO SET "out_path=%%~dpf"
 FOR %%f IN ("%output%") DO SET "out_base=%%~nf"
-echo output="%output%"
-echo out_path="%out_path%"
-echo out_base="%out_base%"
-echo path+base="%out_path%%out_base%"
 IF "%output%"=="" ( ECHO %RED%Missing value for -o%OFF% & GOTO :EOF )
 IF DEFINED out_base (
 	IF "!out_base:~0,1!"=="-" ( ECHO %RED%Missing value for -o%OFF% & GOTO :EOF )
@@ -210,25 +199,28 @@ MD "%WD%"
 :: Putting together command to generate palette
 SET palette=%WD%\palette_%%05d.png
 SET "filters=fps=%fps%"
-IF DEFINED crop (SET "filters=%filters%,crop=%crop%")
+IF DEFINED crop ( SET "filters=%filters%,crop=%crop%" )
 SET "filters=%filters%,scale=%scale%:-1:flags=lanczos"
 
 :: FFplay preview
 IF DEFINED playswitch (
+:: Check if ffplay exists on PATH, if not exit
+	WHERE /q ffplay.exe || ( ECHO %RED%FFplay not found in PATH, please install it first%OFF% & GOTO :EOF )
+
 	FOR /F "delims=" %%a in ('ffplay -version') DO (
 		IF NOT DEFINED ffplay_version ( SET "ffplay_version=%%a" 
 		 ) ELSE IF NOT DEFINED ffplay_build ( SET "ffplay_build=%%a" )
 	)
 	ECHO %YELLOW%!ffplay_version!%OFF%
 	ECHO %YELLOW%!ffplay_build!%OFF%
+
 	IF NOT DEFINED start_time SET "start_time=0"
 	IF NOT DEFINED end_time SET "end_time=3"
-	echo ffplay -v %loglevel% -i "%input%" -vf "%filters%" -an -loop 0 -ss !start_time! -t !end_time!
 	ffplay -v %loglevel% -i "%input%" -vf "%filters%" -an -loop 0 -ss !start_time! -t !end_time!
 	GOTO :EOF
 )
 
-:: APNG muxer does not support multiple palettes, fallback to using palettegen diff mode
+:: APNG muxer does not support multiple palettes, fallback to palettegen diff mode
 IF "%filetype%"=="apng" (
 	IF !mode! EQU 2 (
 		ECHO %YELLOW%APNG does not support multiple palettes, falling back to Palettegen mode 1 ^(diff^).%OFF%
@@ -243,8 +235,8 @@ IF !mode! EQU 3 SET "encode=palettegen"
 
 :: Max colors
 IF DEFINED colormax (
-	IF !mode! LEQ 2 SET "mcol=:max_colors=%colormax%"
-	IF !mode! EQU 3 SET "mcol==max_colors=%colormax%"
+	IF !mode! LEQ 2 SET "mcol=:max_colors=!colormax!"
+	IF !mode! EQU 3 SET "mcol==max_colors=!colormax!"
 )
 
 :: Storing FFmpeg version string
@@ -264,7 +256,7 @@ ffmpeg -v %loglevel% %trim% -i "%input%" -vf "%filters%,%encode%%mcol%" -y "%pal
 
 :: Checking if the palette file is in the Working Directory, if not cleaning up
 IF NOT EXIST "%WD%\palette_00001.png" (
-	ECHO %RED%Palette generation failed: %palette% not found.%OFF%
+	ECHO %RED%Palette generation failed: !palette! not found.%OFF%
 	GOTO :cleanup
 )
 
@@ -306,19 +298,19 @@ IF DEFINED bayerscale SET "bayer=:bayer_scale=%bayerscale%"
 :: WEBP pixel format and lossy quality
 IF "%filetype%"=="webp" (
 	IF DEFINED webp_lossy (
-		SET "webp_lossy=-lossless 0 -pix_fmt yuva420p -quality %webp_lossy_q%"
-	) ELSE SET "webp_lossy=-lossless 1"
+		SET "type_opts=-lossless 0 -pix_fmt yuva420p -quality !webp_lossy_q!"
+	) ELSE SET "type_opts=-lossless 1"
 )
 
 :: Executing the encoding command
 ECHO %GREEN%Encoding animation...%OFF%
 ffmpeg -v %loglevel% %trim% -i "%input%" -thread_queue_size 512 -i "%palette%" ^
 -lavfi "%filters% [x]; [x][1:v] %decode%%errordiff%%ditherenc%%bayer%" ^
--f %filetype% %webp_lossy% -loop 0 -plays 0 -y "%output%"
+-f %filetype% %type_opts% -loop 0 -plays 0 -y "%output%"
 
 :: Checking if file was created and cleaning up if not
 IF NOT EXIST "%output%" (
-	ECHO ECHO %RED%Failed to generate animation: %output% not found.%OFF%
+	ECHO %RED%Failed to generate animation: !output! not found.%OFF%
 	GOTO :cleanup
 )
 
@@ -343,19 +335,20 @@ ECHO:
 ECHO %GREEN%Arguments:%OFF%
 ECHO  -o  Output file. Default is the same as input file, sans extension
 ECHO  -t  Output file type: 'gif' (default), 'apng', 'png', 'webp'
-ECHO  -r  Scale or size. Width of the animation in pixels
+ECHO  -r  Resize output width in pixels. Default is original input size
 ECHO  -l  Enable lossy WebP compression and quality, range 0-100 (default 75)
 ECHO  -f  Framerate in frames per seconds (default 15)
 ECHO  -c  Maximum colors usable per palette, range 3-256 (default 256)
 ECHO  -s  Start time of the animation (HH:MM:SS.MS)
 ECHO  -e  End time of the animation (HH:MM:SS.MS)
 ECHO  -x  Crop the input video (out_w:out_h:x:y)
+ECHO      Note that cropping occurs before output is scaled
 ECHO  -d  Dithering algorithm to be used (default 0)
 ECHO  -b  Bayer Scale setting, range 0-5 (default 2)
 ECHO  -m  Palettegen mode: 1 (diff, default), 2 (single), 3 (full)
 ECHO  -k  Enables paletteuse error diffusion
-ECHO  -y  Preview animation using 'ffplay' (part of ffmpeg)
-ECHO      (Useful for testing cropping, but will not use exact start/end time)
+ECHO  -y  Preview animation using FFplay (part of FFmpeg)
+ECHO      Useful for testing cropping, but will not use exact start/end time
 ECHO  -p  Opens the resulting animation in the default image viewer
 ECHO  -v  Set FFmpeg log level (default: error)
 ECHO:

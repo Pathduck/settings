@@ -96,7 +96,7 @@
 }
 
 /* Extensions toggle button */
-.toolbar-extensions .ToolbarButton-Button[name="Extensions"] .button-icon {
+.toolbar-extensions .ExtensionToggleIcon .button-icon {
 	opacity: 0.5 !important;
 }
 
