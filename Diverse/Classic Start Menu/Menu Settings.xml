@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<Settings component="StartMenu" version="4.4.169">
+<Settings component="StartMenu" version="4.4.197">
 	<MenuStyle value="Classic1"/>
+	<ShiftRight value="1"/>
 	<Computer value="Hide"/>
 	<Favorites value="Hide"/>
 	<Documents value="Hide"/>
@@ -15,7 +16,9 @@
 	<RecentSortName value="1"/>
 	<StartScreenShortcut value="0"/>
 	<HighlightNew value="0"/>
+	<SameSizeColumns value="1"/>
 	<SearchInternet value="0"/>
+	<InvertMetroIcons value="1"/>
 	<MenuCaption value="Crapstation"/>
 	<MenuShadow value="1"/>
 	<EnableGlass value="1"/>
@@ -31,8 +34,7 @@
 		<Line>CENTER_NAME=0</Line>
 		<Line>SMALL_ICONS=0</Line>
 		<Line>LARGE_FONT=0</Line>
-		<Line>ICON_FRAMES=1</Line>
-		<Line>OPAQUE=0</Line>
+		<Line>DISABLE_MASK=1</Line>
 	</SkinOptionsC1>
 	<SkinW7 value="Midnight"/>
 	<SkinVariationW7 value=""/>
@@ -44,9 +46,9 @@
 		<Line>OPAQUE=0</Line>
 	</SkinOptionsW7>
 	<EnableStartButton value="1"/>
+	<AllTaskbars value="1"/>
 	<StartButtonType value="CustomButton"/>
-	<StartButtonPath value="%USERPROFILE%\Documents\Settings\StartOrb\Win7.png"/>
-	<StartButtonSize value="80"/>
+	<StartButtonPath value="%USERPROFILE%\Documents\Settings\Diverse\Classic Start Menu\EMad777.bmp"/>
 	<StartButtonAlign value="0"/>
 	<CustomTaskbar value="1"/>
 	<TaskbarLook value="Glass"/>

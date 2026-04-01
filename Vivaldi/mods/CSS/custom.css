@@ -13,6 +13,11 @@
 	grid-template-columns: unset;
 }
 
+/* Width of empty spacer before tabs */
+#browser #tabs-tabbar-container .toolbar-tabbar-before {
+	min-width: 0px;
+}
+
 /* Skinnier mainbar */
 .mainbar .toolbar-mainbar.toolbar-addressbar,
 .mainbar .toolbar-mainbar .button-toolbar button {
@@ -63,16 +68,11 @@
 }
 
 /* Hide AddressField stuff */
-.UrlBar-AddressField .permission-popup,
+.UrlBar-AddressField .permission-popup.is-blocking,
 .UrlBar-AddressField .UrlBar-UrlObfuscationWarning,
 .UrlBar-AddressField .ContentBlocker-Control,
 .UrlBar-AddressField .ToolbarButton-Button[title^="Translate"] {
 	display: none;
-}
-
-/* AddressField show allowed permission buttons */
-.UrlBar-AddressField .permission-popup.is-allowing {
-	display: flex;
 }
 
 /* AddressField URL scheme part */
@@ -180,9 +180,4 @@
 /* Hide overlay info bubble + Fullscreen reminder */
 .overlayinfobubble {
 	display: none;
-}
-
-/* Width of empty spacer before tabs */
-.tabs-top #tabs-tabbar-container .toolbar-tabbar-before:empty {
-	min-width: 0px;
 }
