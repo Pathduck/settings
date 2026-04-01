@@ -1,14 +1,13 @@
 /* Better sharing bar */
 .page-confirm-info-bar {
 	height: 25px;
-	color: var(--colorFg);
 	background: var(--colorBg);
 }
 
 .page-confirm-info-bar .infobar-controls input {
 	height: 20px;
-	color: white;
-	background: darkred;
+	color: var(--colorAccentFg);
+	background: var(--colorAccentBg);
 }
 
 .page-confirm-info-bar .infobar-controls input:hover {
