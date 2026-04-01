@@ -33,12 +33,10 @@ nginx=start /d d:\bin\Nginx /b d:\bin\Nginx\nginx.exe $*
 nmap=D:\bin\nettools\Nmap\nmap.exe $*
 nping=D:\bin\nettools\Nmap\nping.exe $*
 npp=d:\bin\Notepad++\notepad++.exe $*
-pb=sh d:\bin\cygwin\usr\local\bin\pb $*
 putty=d:\bin\putty\putty.exe $*
 pwd=cd
 python=d:\bin\python\python.exe $*
 rm=rm -i $*
-shn=curl -F "format=simple" -F "url=$1" "https://is.gd/create.php"
 sublime=d:\bin\Sublime\sublime_text.exe $*
 sudo=gsudo $*
 tc=d:\bin\totalcmd\totalcmd.exe $*
@@ -48,3 +46,6 @@ tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1
 vi=vim $*
 winscp=d:\bin\WinSCP\winscp.exe $*
+pb=curl -sF "files[]=@$*" "https://qu.ax/upload.php" $B jq -r '.files[].url'  
+shn=curl -F "format=simple" -F "url=$1" "https://is.gd/create.php"  
+cb=curl -s -F "reqtype=fileupload" -F "fileToUpload=@$*" "https://catbox.moe/user/api.php"  
