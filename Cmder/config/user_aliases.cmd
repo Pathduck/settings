@@ -6,6 +6,7 @@
 ;= Add aliases below here
 ~=cd /d "%USERPROFILE%"
 asn=sh "d:\bin\nettools\asn\asn" $*
+cb=curl -s -F "reqtype=fileupload" -F "fileToUpload=@$*" "https://catbox.moe/user/api.php"  
 cd=cd /d $*
 clear=cls
 cmderr=cd /d "%CMDER_ROOT%"
@@ -18,9 +19,9 @@ ga=git add -A $*
 gc=git commit $*
 gg=global /V /1 /E .git $*
 gl=git hist $*
-gw=git hist --raw --no-merges $*
 grep=grep --color --ignore-case $*
 gs=git status $*
+gw=git hist --raw --no-merges $*
 home=cd /d "%USERPROFILE%"
 kill=pskill $*
 la=ls -la --color=auto --group-directories-first $*
@@ -33,10 +34,12 @@ nginx=start /d d:\bin\Nginx /b d:\bin\Nginx\nginx.exe $*
 nmap=D:\bin\nettools\Nmap\nmap.exe $*
 nping=D:\bin\nettools\Nmap\nping.exe $*
 npp=d:\bin\Notepad++\notepad++.exe $*
+pb=curl -sF "files[]=@$1" "https://qu.ax/upload.php" $B jq -r '.files[].url'  
 putty=d:\bin\putty\putty.exe $*
 pwd=cd
 python=d:\bin\python\python.exe $*
 rm=rm -i $*
+shn=curl -F "format=simple" -F "url=$1" "https://is.gd/create.php"  
 sublime=d:\bin\Sublime\sublime_text.exe $*
 sudo=gsudo $*
 tc=d:\bin\totalcmd\totalcmd.exe $*
@@ -46,6 +49,3 @@ tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1
 vi=vim $*
 winscp=d:\bin\WinSCP\winscp.exe $*
-pb=curl -sF "files[]=@$*" "https://qu.ax/upload.php" $B jq -r '.files[].url'  
-shn=curl -F "format=simple" -F "url=$1" "https://is.gd/create.php"  
-cb=curl -s -F "reqtype=fileupload" -F "fileToUpload=@$*" "https://catbox.moe/user/api.php"  

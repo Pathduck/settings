@@ -67,6 +67,7 @@ BACKUP SEARCH ENGINES
 sqlite3 "Web Data" -line "select short_name, keyword, url, suggest_url, image_url, search_url_post_params, suggest_url_post_params, image_url_post_params from keywords;" > keywords.txt
 sqlite3 "Web Data" -markdown "select short_name, keyword, url, suggest_url, image_url, search_url_post_params, suggest_url_post_params, image_url_post_params from keywords;" > keywords.md
 sqlite3 "Web Data" ".dump keywords" > keywords.sql
+sqlite3 "Web Data" ".read keywords.sql"
 
 TRANSLATION TEST
 curl -H 'Content-Type: application/json' -d '{"source":"en","target":"zh-Hans","q":["Customizations & Extensions"]}' "https://mimir2.vivaldi.com/api/translate"

@@ -9,7 +9,9 @@ if not exist "%backup_dir%" (
 pushd .
 cd /d "%vivaldi_dir%"
 
+zip -ur "%backup_dir%\SyncedFiles.zip" "SyncedFiles"
 zip -u "%backup_dir%\Profile.zip" Bookmarks Preferences "Secure Preferences" Notes "Web Data"
+zip -u "%backup_dir%\Profile.zip" "..\Local State"
 
 xcopy /qy contextmenu.json "%backup_dir%"
 xcopy /qy mainmenu.json "%backup_dir%"
