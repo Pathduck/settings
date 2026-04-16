@@ -68,16 +68,11 @@
 }
 
 /* Hide AddressField stuff */
-.UrlBar-AddressField .permission-popup,
+.UrlBar-AddressField .permission-popup.is-blocking,
 .UrlBar-AddressField .UrlBar-UrlObfuscationWarning,
 .UrlBar-AddressField .ContentBlocker-Control,
 .UrlBar-AddressField .ToolbarButton-Button[title^="Translate"] {
 	display: none;
-}
-
-/* AddressField show allowed permission buttons */
-.UrlBar-AddressField .permission-popup.is-allowing {
-	display: flex;
 }
 
 /* AddressField URL scheme part */
@@ -186,5 +181,3 @@
 .overlayinfobubble {
 	display: none;
 }
-
-

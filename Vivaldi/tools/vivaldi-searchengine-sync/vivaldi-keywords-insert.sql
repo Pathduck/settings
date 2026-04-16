@@ -32,7 +32,9 @@ select (select max(k.id) from keywords k) + row_number() over (order by kt.id) i
        -- Alternative: substr(hex(randomblob(30)), 1, 60)
        printf('%s%d', (select max(k.position) from keywords k), row_number() over (order by kt.id)) as position,
        kt.starter_pack_id,
-       kt.enforced_by_policy
+       kt.enforced_by_policy,
+       kt.featured_by_policy,
+	   url_hash
 from keywords_temp kt;
 drop table keywords_temp;
 commit transaction;
