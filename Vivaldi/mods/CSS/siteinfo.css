@@ -1,5 +1,5 @@
 /* SiteInfoButton */
-.SiteInfoButton {
+.SiteInfoButton button {
 	opacity: unset !important;
 	height: 22px;
 	width: 22px;
@@ -19,9 +19,10 @@
 /* SiteInfo secure background colour */
 .SiteInfoButton.secure, .SiteInfoButton.certified {
 	background-color: #004400 !important;
+	border-radius: var(--radius);
 }
 
 /* SiteInfo hide EV/Not Secure text */
-.SiteInfoButton .siteinfo-text {
+.SiteInfoButton.warning .button-badge {
 	display: none;
 }
