@@ -16,4 +16,4 @@ set end=%2
 set url=%3
 
 :: Loop
-for /L %%f in (%start%,1,%end%) do (node %script% -t %%f %url%)
+for /L %%f in (%start%,1,%end%) do (node --no-deprecation %script% -t %%f %url%)

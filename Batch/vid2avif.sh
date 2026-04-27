@@ -95,7 +95,9 @@ elif [[ -n "$end_time" && -n "$start_time" ]]; then
 fi
 
 # Validate Framerate
-if [[ $fps -le 0 ]]; then
+if [[ "$fps" == "-" ]]; then
+	fps="source_fps"
+elif [[ $fps -le 1 ]]; then
 	echo ${RED}"Framerate (-f) must be greater than 0."${OFF}; exit 1
 fi
 
@@ -161,7 +163,7 @@ $(basename "$0") [input_file] [arguments]
 ${GREEN}Arguments:${OFF}
   -o  Output file. Default is the same as input file, sans extension
   -r  Resize output width in pixels. Default is original input size
-  -f  Framerate in frames per seconds (default 15)
+  -f  Framerate of output, or '-' to use input framerate (default 15)
   -s  Start time of the animation (HH:MM:SS.MS)
   -e  End time of the animation (HH:MM:SS.MS)
   -x  Crop the input video (out_w:out_h:x:y)
@@ -169,7 +171,6 @@ ${GREEN}Arguments:${OFF}
       Useful for testing cropping, but will not use exact start/end time
   -p  Opens the resulting animation in the default image viewer
   -v  Set FFmpeg log level (default: error)
-
 EOF
 }
 ### End print_help ###
