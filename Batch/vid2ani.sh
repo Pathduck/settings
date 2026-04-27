@@ -60,9 +60,9 @@ mode=1
 dither=0
 scale="-1"
 filetype="gif"
-webp_lossy=""
-webp_lossy_q=75
 loglevel="error"
+webp_lossy_q=75
+webp_lossy=""
 bayerscale=""
 colormax=""
 start_time=""
@@ -156,14 +156,16 @@ elif [[ -n "$end_time" && -n "$start_time" ]]; then
 	trim="-ss $start_time -to $end_time"
 fi
 
-# Validate Framerate
-if [[ $fps -le 0 ]]; then
-	echo ${RED}"Framerate (-f) must be greater than 0."${OFF}; exit 1
-fi
-
 # Validate Max Colors
 if [[ -n $colormax && ( $colormax -lt 3 || $colormax -gt 256 ) ]]; then
 	echo ${RED}"Max colors (-c) must be between 3 and 256."${OFF}; exit 1
+fi
+
+# Validate Framerate
+if [[ "$fps" == "-" ]]; then
+	fps="source_fps"
+elif [[ $fps -le 1 ]]; then
+	echo ${RED}"Framerate (-f) must be greater than 0."${OFF}; exit 1
 fi
 
 # Putting together command to generate palette
@@ -226,14 +228,12 @@ fi
 ## Setting variables to put the encode command together ##
 
 # Palettegen decode mode
-if [[ -n $mode ]]; then
-	case $mode in
-		1) decode="paletteuse";;
-		2) decode="paletteuse=new=1";;
-		3) decode="paletteuse";;
-		*) echo ${RED}"Invalid palettegen (-m) mode"${OFF}; exit 1;;
-	esac
-fi
+case $mode in
+	1) decode="paletteuse";;
+	2) decode="paletteuse=new=1";;
+	3) decode="paletteuse";;
+	*) echo ${RED}"Invalid palettegen (-m) mode"${OFF}; exit 1;;
+esac
 
 # Error diffusion
 if [[ -n $errorswitch ]]; then
@@ -268,8 +268,11 @@ else
 fi
 
 # Checking for Bayer Scale and adjusting command
-if [[ -z $bayerscale ]]; then bayer=""; fi
-if [[ -n $bayerscale ]]; then bayer=":bayer_scale=$bayerscale"; fi
+if [[ -n $bayerscale ]]; then
+	bayer=":bayer_scale=$bayerscale"
+else 
+	bayer=""
+fi
 
 # WEBP pixel format and lossy quality
 if [[ $filetype == "webp" && -n $webp_lossy ]]; then
@@ -313,7 +316,7 @@ ${GREEN}Arguments:${OFF}
   -t  Output file type: 'gif' (default), 'apng', 'png', 'webp'
   -r  Resize output width in pixels. Default is original input size
   -l  Enable lossy WebP compression and quality, range 0-100 (default 75)
-  -f  Framerate in frames per seconds (default 15)
+  -f  Framerate of output, or '-' to use input framerate (default 15)
   -c  Maximum colors usable per palette, range 3-256 (default 256)
   -s  Start time of the animation (HH:MM:SS.MS)
   -e  End time of the animation (HH:MM:SS.MS)

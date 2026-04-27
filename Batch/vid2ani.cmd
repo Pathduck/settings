@@ -41,9 +41,9 @@ SET "mode=1"
 SET "dither=0"
 SET "scale=-1"
 SET "filetype=gif"
-SET "webp_lossy="
-SET "webp_lossy_q=75"
 SET "loglevel=error"
+SET "webp_lossy_q=75"
+SET "webp_lossy="
 SET "bayerscale="
 SET "colormax="
 SET "start_time="
@@ -170,14 +170,6 @@ IF DEFINED end_time (
 	)
 )
 
-:: Validate Framerate
-IF DEFINED fps (
-	IF !fps! LSS 0 (
-		ECHO  %RED%Framerate ^(-f^) must be greater than 0.%OFF%
-		GOTO :EOF
-	)
-)
-
 :: Validate Max Colors
 IF DEFINED colormax (
 	IF !colormax! GTR 256 (
@@ -188,6 +180,14 @@ IF DEFINED colormax (
 		ECHO  %RED%Max colors ^(-c^) must be between 3 and 256.%OFF%
 		GOTO :EOF
 	)
+)
+
+:: Validate Framerate
+IF "!fps!"=="-" (
+	SET "fps=source_fps"
+) ELSE IF !fps! LSS 1 (
+	ECHO  %RED%Framerate ^(-f^) must be greater than 0.%OFF%
+	GOTO :EOF
 )
 
 :script_start
@@ -292,8 +292,9 @@ IF NOT !mode! EQU 2 (
 ) ELSE SET "ditherenc=:dither=!ditheralg!"
 
 :: Checking for Bayer Scale and adjusting command
-IF NOT DEFINED bayerscale SET "bayer="
-IF DEFINED bayerscale SET "bayer=:bayer_scale=%bayerscale%"
+IF DEFINED bayerscale (
+	SET "bayer=:bayer_scale=!bayerscale!"
+) ELSE SET "bayer="
 
 :: WEBP pixel format and lossy quality
 IF "%filetype%"=="webp" (
@@ -337,7 +338,7 @@ ECHO  -o  Output file. Default is the same as input file, sans extension
 ECHO  -t  Output file type: 'gif' (default), 'apng', 'png', 'webp'
 ECHO  -r  Resize output width in pixels. Default is original input size
 ECHO  -l  Enable lossy WebP compression and quality, range 0-100 (default 75)
-ECHO  -f  Framerate in frames per seconds (default 15)
+ECHO  -f  Framerate of output, or '-' to use input framerate (default 15)
 ECHO  -c  Maximum colors usable per palette, range 3-256 (default 256)
 ECHO  -s  Start time of the animation (HH:MM:SS.MS)
 ECHO  -e  End time of the animation (HH:MM:SS.MS)
