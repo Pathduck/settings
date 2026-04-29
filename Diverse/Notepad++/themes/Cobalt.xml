@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <NotepadPlus modelFileLastModifiedDate="99999999">
     <LexerStyles>
         <LexerType name="bash" desc="Bash" ext="">
@@ -71,6 +71,7 @@
             <WordsStyle name="TYPE WORD" styleID="16" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="type1"></WordsStyle>
             <WordsStyle name="NUMBER" styleID="4" fgColor="00FF80" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="STRING" styleID="6" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
+            <WordsStyle name="STRINGRAW" styleID="20" fgColor="3AD900" bgColor="001B33" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="CHARACTER" styleID="7" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>
             <WordsStyle name="OPERATOR" styleID="10" fgColor="9696FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize=""></WordsStyle>
             <WordsStyle name="VERBATIM" styleID="13" fgColor="FDD802" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize=""></WordsStyle>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="Windows-1252" ?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <NotepadPlus>
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="1" transparencyMode="0" transparency="200" dotMatchesNewline="no" isSearch2ButtonsMode="yes" regexBackward4PowerUser="no" fifProjectPanel1="no" fifProjectPanel2="no" fifProjectPanel3="no" bookmarkLine="no" purge="no">
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="1" transparencyMode="0" transparency="200" dotMatchesNewline="no" isSearch2ButtonsMode="yes" regexBackward4PowerUser="no" fifProjectPanel1="no" fifProjectPanel2="no" fifProjectPanel3="no" bookmarkLine="no" purge="yes">
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="yes" customLength="100">
     </History>
@@ -16,14 +16,14 @@
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="no" fluentColor="7" fluentCustomColor="6161300" fluentMono="no">small</GUIConfig>
         <GUIConfig name="StatusBar">show</GUIConfig>
-        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" pinButton="no" showOnlyPinnedButton="no" buttonsOninactiveTabs="no" doubleClick2Close="no" vertical="no" multiLine="yes" hide="no" quitOnEmpty="no" iconSetNumber="0" tabCompactLabelLen="0" />
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" pinButton="no" showOnlyPinnedButton="no" buttonsOninactiveTabs="no" doubleClick2Close="no" vertical="no" multiLine="yes" hide="no" quitOnEmpty="no" tabCompactLabelLen="0" />
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" backspaceUnindent="no" />
-        <GUIConfig name="AppPosition" x="0" y="0" width="1920" height="1080" isMaximized="yes" />
-        <GUIConfig name="FindWindowPosition" left="956" top="220" right="1903" bottom="746" isLessModeOn="no" />
-        <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" />
-        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20251219" autoUpdateMode="1">no</GUIConfig>
+        <GUIConfig name="AppPosition" x="0" y="357" width="1453" height="823" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="873" top="503" right="1820" bottom="1029" isLessModeOn="no" />
+        <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" FiF_ignoreunsavedChangesInOpenedFiles="no" />
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20260504" autoUpdateMode="1">no</GUIConfig>
         <GUIConfig name="Auto-detection">yes</GUIConfig>
         <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
         <GUIConfig name="TrayIcon">0</GUIConfig>
@@ -61,12 +61,12 @@
         <GUIConfig name="MarkAll" matchCase="no" wholeWordOnly="yes" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="DarkMode" enable="yes" colorTone="0" customColorTop="2105376" customColorMenuHotTrack="4210752" customColorActive="4210752" customColorMain="2105376" customColorError="176" customColorText="14737632" customColorDarkText="12632256" customColorDisabledText="8421504" customColorLinkText="65535" customColorEdge="6579300" customColorHotEdge="10197915" customColorDisabledEdge="4737096" enableWindowsMode="no" darkThemeName="Cobalt.xml" darkToolBarIconSet="0" darkTbFluentColor="7" darkTbFluentCustomColor="6161300" darkTbFluentMono="no" darkTabIconSet="2" darkTabUseTheme="no" lightThemeName="" lightToolBarIconSet="4" lightTbFluentColor="0" lightTbFluentCustomColor="0" lightTbFluentMono="no" lightTabIconSet="0" lightTabUseTheme="yes" />
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="hide" indentGuideLine="show" folderMarkStyle="circle" isChangeHistoryEnabled="1" lineWrapMethod="default" currentLineIndicator="1" currentLineFrameWidth="1" virtualSpace="no" scrollBeyondLastLine="no" rightClickKeepsSelection="no" selectedTextForegroundSingleColor="yes" disableAdvancedScrolling="no" wrapSymbolShow="show" Wrap="no" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="0" zoom2="0" whiteSpaceShow="hide" eolShow="hide" eolMode="1" npcShow="hide" npcMode="1" npcCustomColor="no" npcIncludeCcUniEOL="no" npcNoInputC0="no" ccShow="no" borderWidth="1" smoothFont="no" paddingLeft="2" paddingRight="5" distractionFreeDivPart="4" lineCopyCutWithoutSelection="yes" multiSelection="yes" columnSel2MultiEdit="yes" />
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="hide" indentGuideLine="show" folderMarkStyle="circle" isChangeHistoryEnabled="1" lineWrapMethod="default" currentLineIndicator="1" currentLineFrameWidth="1" virtualSpace="no" scrollBeyondLastLine="no" rightClickKeepsSelection="no" selectedTextForegroundSingleColor="yes" disableAdvancedScrolling="no" wrapSymbolShow="show" Wrap="no" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="0" zoom2="0" whiteSpaceShow="hide" eolShow="hide" eolMode="1" npcShow="hide" npcMode="1" npcCustomColor="no" npcIncludeCcUniEOL="no" npcNoInputC0="no" ccShow="no" borderWidth="1" smoothFont="no" paddingLeft="2" paddingRight="5" distractionFreeDivPart="4" lineCopyCutWithoutSelection="yes" disableSelectedTextDragDrop="no" multiSelection="yes" columnSel2MultiEdit="yes" />
         <GUIConfig name="DockingManager" leftWidth="615" rightWidth="319" topHeight="200" bottomHeight="589">
             <FloatingWindow cont="4" x="0" y="64" width="524" height="279" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="yes" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
             <PluginDlg pluginName="JSMinNPP.dll" id="0" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
