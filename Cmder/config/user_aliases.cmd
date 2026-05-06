@@ -29,10 +29,7 @@ ll=ls -l --color=auto --group-directories-first $*
 ls=ls --color=auto --group-directories-first $*
 musify=node --no-deprecation d:\bin\node\dl-musify.club\download_album.js $*
 mv=mv -i $*
-ncat=D:\bin\nettools\Nmap\ncat.exe $*
 nginx=start /d d:\bin\Nginx /b d:\bin\Nginx\nginx.exe $*
-nmap=D:\bin\nettools\Nmap\nmap.exe $*
-nping=D:\bin\nettools\Nmap\nping.exe $*
 npp=d:\bin\Notepad++\notepad++.exe $*
 pb=curl -sF "files[]=@$1" "https://qu.ax/upload.php" $B jq -r '.files[].url'  
 putty=d:\bin\putty\putty.exe $*

@@ -11,9 +11,9 @@ exclude_paths=(
 mapfile -d '' dirs < <(find "$@" -type d ${exclude_paths[@]} -print0)
 
 # Check array for existing index made by 'tree' (rc=0) or nonexistent (rc=2)
-for i in "${!dirs[@]}"; do 
+for i in "${!dirs[@]}"; do
 	grep -qsm1 "Made by 'tree'" "${dirs[i]}/index.html"
-	if  [ $? -eq 1 ]; then 
+	if  [ $? -eq 1 ]; then
 		unset 'dirs[i]'
 	fi
 done
@@ -28,13 +28,13 @@ echo
 
 # Get confirm for creation of index
 read -n1 -p "Continue? (y/N) " confirm
-if ! echo "$confirm" | grep -q '^[Yy]$'; then 
+if ! echo "$confirm" | grep -q '^[Yy]$'; then
 	echo -e "\nAborting!"; exit 1
 fi
 echo
 
 # Create the indexes
-for dir in "${dirs[@]}"; do 
+for dir in "${dirs[@]}"; do
     echo "Creating index in $dir"
     (
 		cd "$dir" || exit 1
@@ -45,7 +45,7 @@ for dir in "${dirs[@]}"; do
 		--dirsfirst --charset "utf-8" \
 		| sed \
 			-e '/<hr>/,+7d' \
-			-e 's/href="\.">\./href="..">../' \
+			-e 's/href="\.\/*">\./href="..">../' \
 			-e 's/BODY {\(.*\)}/BODY {\1color: lime; background: black; }/' \
 			-e 's/color: black;/color: lime;/' \
 			-e 's/color: blue;/color: deepskyblue;/' \
