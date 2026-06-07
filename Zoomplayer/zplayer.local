@@ -69,9 +69,9 @@ D:OPVisIndex|0
 D:OPSearchWinHeight|531
 D:PlayListVis|0
 D:ControlBar|0
-D:nVolume|100
+D:nVolume|0
 D:AudioBalance|3
-D:mVolume|0
+D:mVolume|100
 D:NavLastVisible|1
 D:NTFRestrictedUAC|1
 D:NTFMoveRename|1
@@ -975,12 +975,12 @@ S:APPIconTray|
 S:HistFormStr|360,205,1275,513,525,84,108,104,147,225
 S:StationPLFormStr|0,0,840,420
 S:OPTAGScriptEx|\media\Playing <BR><ArtistName> - <TrackName>|\media\Playlist Position <BR><PlayListPos> / <PlayListTotal>|\dvd\Playing (<Time> / <Duration>) <BR><DVDVolume>|\dvd\Title / Chapter <BR><DVDTitle> / <DVDChapter>|\v\Source Resolution <BR><SrcWidth>x<SrcHeight>|\v\Current Resolution <BR><VidWidth>x<VidHeight>|\a\Genre <BR><Genre>|\a\Album <BR><AlbumName> (<Year>)|\media\Path <BR><FilePath>
-S:OPOpenURLHistory|
+S:OPOpenURLHistory|https://www.youtube.com/watch?v=2tWQpJ8kR5U
 S:OPPixelShaderPreList|
 S:OPPixelShaderPostList|
 S:OPPixelShaderPresets|
 S:OSDDisplayPanelFontName|Arial
-S:LastDir|
+S:LastDir|G:\download\Torrents\World Of Tomorrow Episode Three The Absent Destinations Of David Prime (2020) [1080p] [WEBRip] [YTS.MX]
 S:OPBGImageMedia|c:\Users\Stian\Documents\Settings\Zoomplayer\bg-steampunk.jpg
 S:OPNavOverrideBGImage|
 S:OPNavThumbScraperBlacklist|*sample|2. pictures|3. movie|any!|bdmv|cd?|certificate|extras|movie|posters|proof|subs|video_ts
@@ -992,7 +992,7 @@ S:CustDVDVidDecode|LAV Video Decoder
 S:CustDVDAudDecode|LAV Audio Decoder
 S:CustDVDAddFilter|
 S:CustDVDRendFilter|
-S:LastPlayedFile|
+S:LastPlayedFile|G:\download\Torrents\World Of Tomorrow Episode Three The Absent Destinations Of David Prime (2020) [1080p] [WEBRip] [YTS.MX]\World.Of.Tomorrow.Episode.Three.The.Absent.Destinations.Of.David.Prime.2020.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
 S:OPCMIgnoreExt|
 S:OPCMSaveErrorPath|
 S:OPGuardDogParam|
@@ -1080,13 +1080,13 @@ S:OPDisableMediaPosTextList|
 S:OPHideMediaHistoryList|
 S:OPNoSeekOnTextList|
 S:OPSSImageDir|
-S:OPFileNavPathEx|
+S:OPFileNavPathEx|C:\|C:\>D:\|D:\>E:\|E:\Video\Musikk\>F:\|F:\>G:\|G:\download\Torrents\World Of Tomorrow Episode Three The Absent Destinations Of David Prime (2020) [1080p] [WEBRip] [YTS.MX]\>H:\|H:\
 S:SkinFileName|
 S:SkinFileNameDVD|
 S:SkinFileNameAudio|
 S:SkinFileNameCBar|
 S:OPFFMPEGPath|
-S:OPLibCatPath|
+S:OPLibCatPath|Featured Videos**0*-1*0*0**2*******|Filmer**0*0*0*0**2*******|Zoom Player Tutorials**0*0*0*0**2*******|Media Scanner**0*0*0*0**1001*******|Remove category folder(s)**0*0*0*0**1000*******
 S:CustomKeyFile|C:\Users\Stian\Documents\Settings\Zoomplayer\stians-media.key
 S:CustomDVDKeyFile|C:\Users\Stian\Documents\Settings\Zoomplayer\stians-media.key
 S:OPNavFontFace|Arial

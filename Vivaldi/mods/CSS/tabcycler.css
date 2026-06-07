@@ -1,13 +1,11 @@
 /* Tabcycler hide image */
 .tabswitcher.list img.visual-list-preview {
-	visibility: collapse;
-	height: 0;
-	min-height: 0;
+	display: none;
 }
 
 /* Tabcycler list */
 .tabswitcher.list {
-	grid-template-columns: 0px 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: unset;
 	width: 36em;
 	max-height: 80vh;

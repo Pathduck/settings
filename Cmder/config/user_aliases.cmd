@@ -33,8 +33,8 @@ nginx=start /d d:\bin\Nginx /b d:\bin\Nginx\nginx.exe $*
 npp=d:\bin\Notepad++\notepad++.exe $*
 pb=curl -sF "files[]=@$1" "https://qu.ax/upload.php" $B jq -r '.files[].url'  
 putty=d:\bin\putty\putty.exe $*
-pwd=cd
 python=d:\bin\python\python.exe $*
+pwd=cd $*
 rm=rm -i $*
 shn=curl -F "format=simple" -F "url=$1" "https://is.gd/create.php"  
 sublime=d:\bin\Sublime\sublime_text.exe $*
