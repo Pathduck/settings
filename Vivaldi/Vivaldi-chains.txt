@@ -41,3 +41,6 @@ https://translate.google.com/website?u={page_url}
 
 Translate Selection with Google
 https://translate.google.com/?sl=auto&tl=auto&text={selection}
+
+Text deselector
+javascript:getSelection().removeAllRanges();history.replaceState(history.state,"",location.href)

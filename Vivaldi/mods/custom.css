@@ -62,8 +62,8 @@
 #switch button img,
 .tab:not(.active) .favicon img,
 .OmniLinkItem-Favicon img,
-.SiteInfoButton-Favicon,
-.item-icon {
+.SiteInfoButton img.favicon,
+.setting-search-engine .item-icon {
 	filter: drop-shadow(0 0 1px white);
 }
 

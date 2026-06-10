@@ -1,34 +1,35 @@
 BOOKMARKLETS
 ============
 Add to start.me
-javascript:window.open("https://start.me/add_bookmark?url="+document.location+"&title="+document.title);history.replaceState({},"",window.location.href);
+javascript:open("https://start.me/add_bookmark?url=%22+document.location+%22&title=%22+document.title);history.replaceState(history.state,%22%22,location.href)
 
 Archive
-javascript:window.open("https://web.archive.org/web/*/"+document.location.href);history.replaceState({},"",window.location.href);
+javascript:open("https://web.archive.org/web/*/"+location.href);history.replaceState(history.state,"",location.href)
 
 Autoscroll
-javascript:/*The%20Autoscroll%20Bookmarket:Tim%20Harper:http://tim.theenchanter.com*/var%20_ss_interval_pointer;_ss_speed=5;_ss_speed_pairs=[[0,0],[1,200.0],[1,120.0],[1,72.0],[1,43.2],[1,25.9],[2,31.0],[4,37.2],[8,44.8],[8,26.4],[16,32.0]];_ss_last_onkeypress%20=%20document.onkeypress;_ss_stop=function(){clearTimeout(_ss_interval_pointer)};_ss_start=function(){_ss_abs_speed=Math.abs(_ss_speed);_ss_direction=_ss_speed/_ss_abs_speed;_ss_speed_pair=_ss_speed_pairs[_ss_abs_speed];_ss_interval_pointer=setInterval('scrollBy(0,'+_ss_direction*_ss_speed_pair[0]+');%20if((pageYOffset%3c=1)||(pageYOffset==document.height-innerHeight))%20_ss_speed=0;',_ss_speed_pair[1]);};_ss_adj=function(q){_ss_speed+=q;if(Math.abs(_ss_speed)%3e=_ss_speed_pairs.length)_ss_speed=(_ss_speed_pairs.length-1)*(_ss_speed/Math.abs(_ss_speed))};_ss_quit=function(){_ss_stop();document.onkeypress=_ss_last_onkeypress;};document.onkeypress=function(e){if((e.charCode==113)||(e.keyCode==27)){_ss_quit();return;};if(e.charCode%3e=48&&e.charCode%3c=57)_ss_speed=e.charCode-48;else%20switch(e.charCode){case%2095:_ss_adj(-2);case%2045:_ss_adj(-1);break;case%2043:_ss_adj(2);case%2061:_ss_adj(1);break;};_ss_stop();_ss_start();};_ss_stop();_ss_start();history.replaceState({},"",window.location.href);
+javascript:/*The%20Autoscroll%20Bookmarket:Tim%20Harper:http://tim.theenchanter.com*/var%20_ss_interval_pointer;_ss_speed=5;_ss_speed_pairs=[[0,0],[1,200.0],[1,120.0],[1,72.0],[1,43.2],[1,25.9],[2,31.0],[4,37.2],[8,44.8],[8,26.4],[16,32.0]];_ss_last_onkeypress%20=%20document.onkeypress;_ss_stop=function()%7BclearTimeout(_ss_interval_pointer)%7D;_ss_start=function()%7B_ss_abs_speed=Math.abs(_ss_speed);_ss_direction=_ss_speed/_ss_abs_speed;_ss_speed_pair=_ss_speed_pairs[_ss_abs_speed];_ss_interval_pointer=setInterval(%27scrollBy(0,%27+_ss_direction*_ss_speed_pair[0]+%27);%20if((pageYOffset%3c=1)%7C%7C(pageYOffset==document.height-innerHeight))%20_ss_speed=0;%27,_ss_speed_pair[1]);%7D;_ss_adj=function(q)%7B_ss_speed+=q;if(Math.abs(_ss_speed)%3e=_ss_speed_pairs.length)_ss_speed=(_ss_speed_pairs.length-1)*(_ss_speed/Math.abs(_ss_speed))%7D;_ss_quit=function()%7B_ss_stop();document.onkeypress=_ss_last_onkeypress;%7D;document.onkeypress=function(e)%7Bif((e.charCode==113)%7C%7C(e.keyCode==27))%7B_ss_quit();return;%7D;if(e.charCode%3e=48&&e.charCode%3c=57)_ss_speed=e.charCode-48;else%20switch(e.charCode)%7Bcase%2095:_ss_adj(-2);case%2045:_ss_adj(-1);break;case%2043:_ss_adj(2);case%2061:_ss_adj(1);break;%7D;_ss_stop();_ss_start();%7D;_ss_stop();_ss_start();history.replaceState(history.state,%22%22,location.href)
 
 Force PiP
-javascript:var v=document.querySelector("video");v.removeAttribute("disablePictureInPicture");v.requestPictureInPicture();history.replaceState({},"",location.href);
+javascript:var v=document.querySelector("video");v.removeAttribute("disablePictureInPicture");v.requestPictureInPicture();history.replaceState(history.state,"",location.href)
 
 ImgOps
-javascript:(function(){url="//imgops.com/imgops.js";document.body.appendChild(document.createElement("script")).src=url+"?"+new%20Date().getTime();})();history.replaceState({},"",window.location.href);
+javascript:(function(){url='//imgops.com/imgops.js';document.body.appendChild(document.createElement('script')).src=url+%27?%27+new%20Date().getTime();})();history.replaceState(history.state,%22%22,location.href);
 
 Kick Ass, Destroy The Web!
 javascript:var KICKASSVERSION='2.0';var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);
 
 Mail Link
-javascript:document.location.href="mailto:?subject="+encodeURIComponent(document.title)+"&body="+encodeURIComponent(document.location);history.replaceState({},"",window.location.href);
-
-MultiSearch
-javascript:query=prompt("Query");if(query){window.open("https://google.com/search?q="+query);window.open("https://bing.com/search?q="+query)};history.replaceState({},"",window.location.href);
+javascript:location.href="mailto:?subject=%22+encodeURIComponent(document.title)+%22&body=%22+encodeURIComponent(document.location);history.replaceState(history.state,%22%22,location.href)
 
 Press This Page!
-javascript:window.open("https://stian.sdf.org/wp/wp-admin/press-this.php?u="+document.location.href);history.replaceState({},"",window.location.href);
+javascript:open("https://stian.sdf.org/wp/wp-admin/press-this.php?u=%22+location.href);history.replaceState(history.state,%22%22,location.href)
 
 Site Selection Search
-javascript:q=window.getSelection().toString();if(!q)q=prompt("Search%20terms");if(q!=null)window.open("https://www.google.com/search?q="+q+"+site:"+location.hostname);history.replaceState({},"",window.location.href);
+javascript:q=window.getSelection().toString();if(!q)q=prompt("Search%20terms");if(q!=null)window.open("https://www.google.com/search?q=%22+q+%22+site:%22+location.hostname);history.replaceState(history.state,%22%22,location.href)
 
-Vivaldi Social Share
-javascript:window.open("https://social.vivaldi.net/share?text="+document.title+"&url="+location.href);history.replaceState({},"",window.location.href);
+Share on Vivaldi Social
+javascript:open("https://social.vivaldi.net/share?text=%22+document.title+%22&url=%22+location.href);history.replaceState(history.state,%22%22,location.href)
+
+Text deselector
+javascript:getSelection().removeAllRanges();history.replaceState(history.state,"",location.href)
+
