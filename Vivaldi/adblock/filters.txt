@@ -6,7 +6,8 @@
 @@||$csp=worker-src 'none',domain=w3schools.com
 @@||$csp=worker-src 'none',domain=mega.nz
 @@||$csp=worker-src 'none',domain=sdf.org
-@@||$csp=worker-src 'none',domain=1337x.to
+!@@||$csp=worker-src 'none',domain=1337x.to
+@@||1337x.to^$csp=worker-src 'none'
 
 ! Block all WebSocket requests
 !$websocket

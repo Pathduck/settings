@@ -54,16 +54,18 @@
 
 /* Smaller icon for internal webpanels */
 #switch .button-toolbar-webpanel .button-icon svg {
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 }
 
 /* Add drop-shadow to some buttons */
-#switch button img,
-.tab:not(.active) .favicon img,
+#switch button img.favicon,
 .OmniLinkItem-Favicon img,
 .SiteInfoButton img.favicon,
-.setting-search-engine .item-icon {
+.SiteInfo-Header .favicon img,
+.tab:not(.active) .favicon img,
+.setting-search-engine img.item-icon,
+.visual-list img.visual-tab-list-favicon {
 	filter: drop-shadow(0 0 1px white);
 }
 

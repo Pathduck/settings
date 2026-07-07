@@ -1,4 +1,9 @@
 /* SiteInfoButton */
+.SiteInfoButton {
+	padding: unset !important;
+}
+
+/* SiteInfo unset opacity */
 .SiteInfoButton button {
 	opacity: unset !important;
 }

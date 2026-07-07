@@ -54,8 +54,8 @@ v::Send("^u") ; V - Hide Units
 AppsKey::Send("{Shift Down}{Click,right}{Shift Up}")
 RButton::Send("{Shift Down}{Click,right}{Shift Up}") 
 
-; Ctrl+Shift+S - Save game
-^+s::Send("{Alt Down},g,a,p,{Alt Up}")
+; Ctrl+S - Save game
+^s::Send("{Alt Down},g,a,p,{Alt Up}")
 
 ; Zoom controls
 z::Send("{WheelUp}")	; Zoom In
