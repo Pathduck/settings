@@ -4,7 +4,7 @@
 }
 
 /* SiteInfo unset opacity */
-.SiteInfoButton button {
+.SiteInfoButton button svg {
 	opacity: unset !important;
 }
 

@@ -117,8 +117,8 @@
 }
 
 /* Search + Address field buttons dimmed */
-.UrlBar-SearchField .toolbar-insideinput button,
-.UrlBar-AddressField .toolbar-insideinput button {
+.UrlBar-SearchField .toolbar-insideinput button svg,
+.UrlBar-AddressField .toolbar-insideinput button svg {
 	opacity: 0.5;
 }
 
@@ -130,11 +130,11 @@
 
 /* Bookmark button fill colour */
 .BookmarkButton .bookmark-animated-fill {
-	fill: var(--colorAccentBgFaded) !important;
+	fill: var(--colorAccentBg) !important;
 }
 
 /* Bookmark button active opacity */
-.BookmarkButton .button-on {
+.BookmarkButton .button-on svg {
 	opacity: unset !important;
 }
 
