@@ -63,16 +63,16 @@
 .OmniLinkItem-Favicon img,
 .SiteInfoButton img.favicon,
 .SiteInfo-Header .favicon img,
-.tab:not(.active) .favicon img,
+.tab .tab-header .favicon:not(.svg),
 .setting-search-engine img.item-icon,
 .visual-list img.visual-tab-list-favicon {
-	filter: drop-shadow(0 0 1px white);
+	filter: drop-shadow(0 0 1px white) !important;
 }
 
 /* Hide AddressField stuff */
+/*.UrlBar-AddressField .ContentBlocker-Control,*/
 .UrlBar-AddressField .permission-popup.is-blocking,
 .UrlBar-AddressField .UrlBar-UrlObfuscationWarning,
-.UrlBar-AddressField .ContentBlocker-Control,
 .UrlBar-AddressField .ToolbarButton-Button[title^="Translate"] {
 	display: none;
 }
