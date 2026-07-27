@@ -5,9 +5,11 @@
 @@||$csp=worker-src 'none',domain=spotify.com
 @@||$csp=worker-src 'none',domain=w3schools.com
 @@||$csp=worker-src 'none',domain=mega.nz
-@@||$csp=worker-src 'none',domain=sdf.org
-!@@||$csp=worker-src 'none',domain=1337x.to
-@@||1337x.to^$csp=worker-src 'none'
+@@||$csp=worker-src 'none',domain=ma.sdf.org
+@@||$csp=worker-src 'none',domain=1337x.to
+@@||$csp=worker-src 'none',domain=forum.vivaldi.net
+@@||$csp=worker-src 'none',domain=discogs.com
+@@||google.com/maps*$csp=worker-src 'none'
 
 ! Block all WebSocket requests
 !$websocket
@@ -17,6 +19,7 @@
 localhost^$websocket
 
 ! V Forum
+forum.vivaldi.net##.selection-tooltip-container
 forum.vivaldi.net###post-tooltip.card
 forum.vivaldi.net##.selection-tooltip-container
 
@@ -26,18 +29,8 @@ google.*##div.xpdopen
 ! Google Sign-in popup
 ||accounts.google.com^$third-party
 
-! 2021-12-06 https://www.reddit.com
-||reddit.com/account/sso/one_tap/$subdocument
-
 ! 2021-12-22 https://store.steampowered.com
 @@||paypal.com^$domain=store.steampowered.com
-
-! 2021-11-28 https://www.discogs.com
-discogs.com##.ad_container
-discogs.com##.ads-here
-
-! 2022-03-20 https://www.wired.com
-wired.com##.paywall-bar--expanded,.paywall-bar__expanded
 
 ! 2022-03-26 https://www.washingtonpost.com
 washingtonpost.com###leaderboard-wrapper
@@ -45,11 +38,12 @@ washingtonpost.com###leaderboard-wrapper
 ! 2022-04-01 https://www.nrk.no
 nrk.no##.nrk-masthead__info-banner--cookie
 
-! 2022-10-15 https://www.rockpapershotgun.com
-rockpapershotgun.com##.advert_container
-
-! Loading track modal https://musify.club/
+! https://musify.club/
 musify.club###__adv_audioad_container
+||musify.club^$csp=frame-src 'none'
 
-! 2024-04-03 https://1337x.to
-1337x.to###freevpn
+! Sep 28, 2024 https://www.rockpapershotgun.com
+rockpapershotgun.com##.leaderboard_container.advert_container
+
+! Oct 19, 2024 https://www.discogs.com
+discogs.com##.ads-ad.ads-here,.ad_top.ad_container,.ad_bottom.ad_container
