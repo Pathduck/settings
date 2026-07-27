@@ -1,45 +1,8 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <NotepadPlus>
     <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="1" transparencyMode="0" transparency="200" dotMatchesNewline="no" isSearch2ButtonsMode="yes" regexBackward4PowerUser="no" fifProjectPanel1="no" fifProjectPanel2="no" fifProjectPanel3="no" bookmarkLine="no" purge="yes">
-        <Path name="g:\dev\stian.sdf.org\hugo\content\posts" />
-        <Filter name="*.*" />
-        <Find name="personal" />
-        <Find name="those are" />
-        <Find name="opinion" />
-        <Find name="block" />
-        <Find name="blocked" />
-        <Find name="webkitallowfullscreen" />
-        <Find name="webkitallowfullscreen " />
-        <Find name="webgl" />
-        <Find name="gpu" />
-        <Find name="proton" />
-        <Replace name="xxxxxx" />
-        <Replace name="&quot;," />
-        <Replace name=",\n" />
-        <Replace name="&quot;" />
-        <Replace name=">" />
-        <Replace name="&lt;" />
-        <Replace name=",null\)" />
-        <Replace name=",null)" />
-        <Replace name="\n" />
-        <Replace name="&#09;&lt;/p>&lt;p>" />
     </FindHistory>
-    <FileBrowser latestSelectedItem="G:\dev\tools\languages\css.css">
-        <root foldername="G:\dev\tools\languages">
-            <expanded path="G:\dev\tools\languages" />
-        </root>
-    </FileBrowser>
     <History nbMaxFile="10" inSubMenu="yes" customLength="100">
-        <File filename="G:\dev\tools\languages\xml.xml" />
-        <File filename="G:\dev\tools\languages\yaml.yaml" />
-        <File filename="G:\dev\tools\languages\css.css" />
-        <File filename="g:\dev\stian.sdf.org\test\index.html" />
-        <File filename="g:\dev\stian.sdf.org\hugo\content\posts\2025-10-18-hacking-at-leaves.md" />
-        <File filename="g:\dev\stian.sdf.org\hugo\content\posts\2024-06-16-zoom-player-v19-final-released.md" />
-        <File filename="g:\dev\stian.sdf.org\hugo\content\posts\2002-06-24-so-you-think-youre-evil-eh.md" />
-        <File filename="g:\dev\stian.sdf.org\hugo\content\posts\2023-12-20-sdf-metaarray-v-is-coming.md" />
-        <File filename="C:\Users\Stian\Documents\Settings\Vivaldi\mods\CSS\custom.css" />
-        <File filename="e:\Docs\Fortunes\stians" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
