@@ -21,7 +21,6 @@ localhost^$websocket
 ! V Forum
 forum.vivaldi.net##.selection-tooltip-container
 forum.vivaldi.net###post-tooltip.card
-forum.vivaldi.net##.selection-tooltip-container
 
 ! Hide Google search "Scroll to Text Fragment"
 google.*##div.xpdopen
