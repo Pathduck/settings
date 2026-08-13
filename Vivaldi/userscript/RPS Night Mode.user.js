@@ -45,7 +45,7 @@ input {color: #eee !important;}
 .recommendation__title {color: #00b893;}
 .recommendation__strapline {color: #eee;}
 .section_title, .page_title, .label {color: #00b893 !important;}
-.summary .button {color: #fff !important;}
+.summary .button {color: #393939 !important;}
 .supporters_shelf .section_title {color: #9763ff !important;}
 .strapline, .disclaimer, .alert {color: #eee !important;}
 .tabbed_nav {background: #393939 !important; background-image: unset !important;}

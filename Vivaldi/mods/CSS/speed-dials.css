@@ -20,14 +20,16 @@
 	opacity: 1 !important;
 }
 
-/* Speed Dials thumbnail */
-.SpeedDial .thumbnail-image {
-	display: block;
-}
-
 /* Speed Dials thumbnail fit container */
 .SpeedDial .thumbnail-image img {
 	object-fit: contain;
 	object-position: center;
 	padding: 1em;
 }
+
+/* Speed Dials thumbnail */
+/* Might not be necessary any more? */
+/*.SpeedDial .thumbnail-image {
+	display: block;
+} */
+

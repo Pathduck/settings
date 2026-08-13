@@ -70,9 +70,9 @@
 }
 
 /* Hide AddressField stuff */
+/*.UrlBar-AddressField .ContentBlocker-Control,*/
 .UrlBar-AddressField .permission-popup.is-blocking,
 .UrlBar-AddressField .UrlBar-UrlObfuscationWarning,
-.UrlBar-AddressField .ContentBlocker-Control,
 .UrlBar-AddressField .ToolbarButton-Button[title^="Translate"] {
 	display: none;
 }

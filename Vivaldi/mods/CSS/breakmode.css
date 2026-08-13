@@ -1,0 +1,13 @@
+#browser.break-mode {
+    background-image: var(--browserBackgroundImage) !important;
+}
+
+#browser.break-mode #webview-container {
+    background-color: unset;
+}
+
+#browser.break-mode #header,
+#browser.break-mode #main,
+#browser.break-mode #footer {
+    display: none !important;
+}
