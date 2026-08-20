@@ -69,8 +69,14 @@
 	filter: drop-shadow(0 0 1px white) !important;
 }
 
+/* Text-shadow for tab titles */
+.tab .tab-header .title {
+	text-shadow: 1px 1px black, 0 0 2px black;
+}
+
 /* Hide AddressField stuff */
 /*.UrlBar-AddressField .ContentBlocker-Control,*/
+.UrlBar-AddressField .PwaInstallButton,
 .UrlBar-AddressField .permission-popup.is-blocking,
 .UrlBar-AddressField .UrlBar-UrlObfuscationWarning,
 .UrlBar-AddressField .ToolbarButton-Button[title^="Translate"] {

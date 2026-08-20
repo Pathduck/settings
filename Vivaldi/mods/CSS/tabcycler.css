@@ -1,14 +1,19 @@
-/* Tabcycler hide image */
-.tabswitcher.list img.visual-list-preview {
-	display: none;
-}
-
 /* Tabcycler list */
 .tabswitcher.list {
 	grid-template-columns: 1fr;
 	grid-gap: unset;
 	width: 36em;
 	max-height: 80vh;
+}
+
+/* Tabcycler hide image */
+.tabswitcher.list img.visual-list-preview {
+	display: none;
+}
+
+/* Tabcycler text drop-shadow */
+.tabswitcher.list .listed-tabs li.visual-list {
+	text-shadow: 1px 1px black, 0 0 2px black;
 }
 
 /* Tabcycler hide scrollbar */

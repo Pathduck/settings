@@ -6,7 +6,7 @@ set "temp_dir=%temp%\Vivaldi-backup-%random%"
 :: Define ANSI Colors
 SET "OFF=[0m"
 SET "RED=[91m"
-SET "GREEN=[32m"
+SET "GREEN=[92m"
 SET "CYAN=[96m"
 
 :: Create backup dir
@@ -45,9 +45,9 @@ jq '.vivaldi' "%temp_dir%\Preferences" > "%backup_dir%\vivaldi-settings.json" ^
 
 :: SQL Backup
 echo %CYAN%Creating SQL backups...%OFF%
+sqlite3 "%temp_dir%\Web Data" ".dump keywords" > "%backup_dir%\keywords.sql"
 sqlite3 "%temp_dir%\Web Data" -line "select short_name, keyword, url, suggest_url, image_url, search_url_post_params, suggest_url_post_params, image_url_post_params from keywords;" > "%backup_dir%\keywords.txt"
 sqlite3 "%temp_dir%\Web Data" -markdown "select short_name, keyword, url, suggest_url, image_url, search_url_post_params, suggest_url_post_params, image_url_post_params from keywords;" > "%backup_dir%\keywords.md"
-sqlite3 "%temp_dir%\Web Data" ".dump keywords" > "%backup_dir%\keywords.sql"
 
 :: Compress temp files with 7z
 echo %CYAN%Creating archive:%OFF%

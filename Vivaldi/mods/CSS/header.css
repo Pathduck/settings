@@ -37,8 +37,9 @@
 /* V icon size + zindex */
 #browser:not(.tabs-top) #titlebar .vivaldi,
 #browser:not(.tabs-top) .toolbar-mainbar .vivaldi {
-	width: 25px;
+	width: unset;
 	margin: unset;
+	padding: unset;
 	scale: unset;
 	z-index: 10;
 }
