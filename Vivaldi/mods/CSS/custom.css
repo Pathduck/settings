@@ -75,7 +75,6 @@
 }
 
 /* Hide AddressField stuff */
-/*.UrlBar-AddressField .ContentBlocker-Control,*/
 .UrlBar-AddressField .PwaInstallButton,
 .UrlBar-AddressField .permission-popup.is-blocking,
 .UrlBar-AddressField .UrlBar-UrlObfuscationWarning,
@@ -114,7 +113,7 @@
 	background-color: transparent !important;
 }
 
-/* Hide Extension buttons */
+/* Hide specific extension buttons */
 .button-toolbar.extensionId button[title="Spatial Navigation"] {display: none;}
 
 /* Toolbar buttons keyboard focus */
@@ -144,9 +143,9 @@
 	opacity: unset !important;
 }
 
-/* Bookmarks thumbnails hide */
-.panel-bookmarks-edit .cardview .preview,
-.manager-editor .cardview .preview {
+/* Hide bookmark thumbnails */
+.manager-editor .cardview .preview,
+.panel-bookmarks-edit .cardview .preview {
 	display: none;
 }
 
@@ -155,9 +154,9 @@
 	display: none;
 }
 
-/* Unread tabs bold font */
-.tab-strip .tab.unread {
-	font-weight: bold;
+/* Hide overlay info bubble + Fullscreen reminder */
+.overlayinfobubble {
+	display: none;
 }
 
 /* Tab tooltip hide thumbnail */
@@ -169,6 +168,11 @@
 #vivaldi-tooltip .tooltip .tab-group .tooltip-item {
 	width: 250px;
 	height: auto;
+}
+
+/* Unread tabs bold font */
+.tab-strip .tab.unread {
+	font-weight: bold;
 }
 
 /* Dim empty UrlField text colour */
@@ -183,9 +187,4 @@
 .OmniLinkItem--Highlighted,
 .vivaldi-settings .settings-sidebar .button-category.category-selected {
 	background-color: var(--colorHighlightBgDark) !important;
-}
-
-/* Hide overlay info bubble + Fullscreen reminder */
-.overlayinfobubble {
-	display: none;
 }
