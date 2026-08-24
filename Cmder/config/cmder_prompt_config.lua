@@ -10,7 +10,7 @@ prompt_type = "full"
 --- REQUIRED. config_prompt_useHomeSymbol is whether to show ~ instead of the full path to the user's home folder
  -- Use true or false
  -- default is false
-prompt_useHomeSymbol = false
+prompt_useHomeSymbol = true
 
 -- Symbols
 -- REQUIRED. Prompt displayed instead of user's home folder e.g. C:\Users\username
