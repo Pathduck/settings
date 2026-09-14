@@ -1,9 +1,9 @@
-@ECHO OFF
 :: Description: Video to GIF/APNG/WEBP converter
 :: By: MDHEXT, Nabi KaramAliZadeh, Pathduck
 :: Version: 6.1
 :: Url: https://github.com/Pathduck/vid2ani/
 :: License: GNU General Public License v3.0 (GPLv3)
+@ECHO OFF
 
 :: Enable delayed variable expension
 SETLOCAL ENABLEDELAYEDEXPANSION
@@ -81,7 +81,7 @@ IF NOT "%~1"=="" (
 )
 
 :safchek
-:: Validate if output file is set
+:: Validate if output file is set and not starts with a -
 IF "%output%"=="" ( ECHO %RED%Missing value for -o%OFF% & GOTO :EOF )
 FOR %%f IN ("%output%") DO SET "out_base=%%~nf"
 IF DEFINED out_base (

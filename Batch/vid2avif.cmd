@@ -1,9 +1,9 @@
-@ECHO OFF
 :: Description: Video to AVIF converter
 :: By: Pathduck
 :: Version: 1.0
 :: Url: https://github.com/Pathduck/vid2avif/
 :: License: GNU General Public License v3.0 (GPLv3)
+@ECHO OFF
 
 :: Enable delayed variable expension
 SETLOCAL ENABLEDELAYEDEXPANSION
@@ -64,9 +64,9 @@ IF NOT "%~1"=="" (
 )
 
 :safchek
-:: Validate if output file is set
-FOR %%f IN ("%output%") DO SET "out_base=%%~nf"
+:: Validate if output file is set and not starts with a -
 IF "%output%"=="" ( ECHO %RED%Missing value for -o%OFF% & GOTO :EOF )
+FOR %%f IN ("%output%") DO SET "out_base=%%~nf"
 IF DEFINED out_base (
 	IF "!out_base:~0,1!"=="-" ( ECHO %RED%Missing value for -o%OFF% & GOTO :EOF )
 )
