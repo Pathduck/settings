@@ -36,13 +36,9 @@ param(
     [string]$SortBy = "FileName",
 
     [switch]$Descending,
-
     [switch]$Recurse,
-
     [string]$OutFile,
-
     [string]$OutCSV,
-
     [string[]]$Extensions = @("*.dll", "*.exe", "*.sys", "*.ocx", "*.cpl", "*.drv", "*.ax", "*.mui", "*.scr")
 )
 
