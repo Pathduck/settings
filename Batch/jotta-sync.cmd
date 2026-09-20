@@ -1,7 +1,7 @@
 :: Script to start Jotta Daemon service
 @echo off
 
-tasklist | find /I "jottad.exe" >nul || start D:\bin\Jotta\jottad.exe & timeout 2
+tasklist | find /I "jottad.exe" >nul || ( start D:\bin\Jotta\jottad.exe & timeout 1 )
 
 jotta scan
 jotta observe

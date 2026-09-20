@@ -16,7 +16,6 @@ mmres.dll
 moricons.dll
 mstsc.exe
 mstscax.dll
-ncpa.cpl
 netcenter.dll
 netshell.dll
 networkexplorer.dll
@@ -29,4 +28,3 @@ url.dll
 wiashext.dll
 wmploc.dll
 wpdshext.dll
-xwizards.dll

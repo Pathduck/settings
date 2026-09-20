@@ -3,183 +3,183 @@
 :: Version: 1.0
 :: Url: https://github.com/Pathduck/vid2avif/
 :: License: GNU General Public License v3.0 (GPLv3)
-@ECHO OFF
+@echo off
 
 :: Enable delayed variable expension
-SETLOCAL ENABLEDELAYEDEXPANSION
+setlocal enabledelayedexpansion
 
 :: Define ANSI Colors
-SET "OFF=[0m"
-SET "RED=[91m"
-SET "GREEN=[32m"
-SET "YELLOW=[33m"
-SET "BLUE=[94m"
-SET "CYAN=[96m"
+set "off=[0m"
+set "red=[91m"
+set "green=[32m"
+set "yellow=[33m"
+set "blue=[94m"
+set "cyan=[96m"
 
 :: Check for blank input or help commands
-IF "%~1"=="" GOTO :help_message
-IF "%~1"=="-?" GOTO :help_message
-IF "%~1"=="/?" GOTO :help_message
-IF "%~1"=="--help" GOTO :help_message
+if "%~1"=="" goto :help_message
+if "%~1"=="-?" goto :help_message
+if "%~1"=="/?" goto :help_message
+if "%~1"=="--help" goto :help_message
 
 :: Check if FFmpeg exists on PATH, if not exit
-WHERE /q ffmpeg.exe || ( ECHO %RED%FFmpeg not found in PATH, please install it first%OFF% & GOTO :EOF )
+where /q ffmpeg.exe || ( echo %red%FFmpeg not found in PATH, please install it first%off% & goto :EOF )
 
 :: Assign input and output
-SET "input=%~1"
-SET "output=%~n1"
+set "input=%~1"
+set "output=%~n1"
 
 :: Validate input file
-IF NOT EXIST "%input%" (
-	ECHO %RED%Input file not found: !input! %OFF%
-	GOTO :EOF
+if not exist "%input%" (
+	echo %red%Input file not found: !input! %off%
+	goto :EOF
 )
 
 :: Clearing input vars and setting defaults
-SET "fps=15"
-SET "scale=-1"
-SET "filetype=avif"
-SET "loglevel=error"
-SET "start_time="
-SET "end_time="
-SET "crop="
-SET "picswitch="
-SET "playswitch="
+set "fps=15"
+set "scale=-1"
+set "filetype=avif"
+set "loglevel=error"
+set "start_time="
+set "end_time="
+set "crop="
+set "picswitch="
+set "playswitch="
 
 :varin
 :: Parse Arguments, first shift input one left
-SHIFT
+shift
 :parse_loop
-IF NOT "%~1"=="" (
-	IF "%~1"=="-o" SET "output=%~dpn2" & SHIFT
-	IF "%~1"=="-r" SET "scale=%~2" & SHIFT
-	IF "%~1"=="-f" SET "fps=%~2" & SHIFT
-	IF "%~1"=="-s" SET "start_time=%~2" & SHIFT
-	IF "%~1"=="-e" SET "end_time=%~2" & SHIFT
-	IF "%~1"=="-v" SET "loglevel=%~2" & SHIFT
-	IF "%~1"=="-x" SET "crop=%~2" & SHIFT
-	IF "%~1"=="-p" SET "picswitch=1"
-	IF "%~1"=="-y" SET "playswitch=1"
-	SHIFT & GOTO :parse_loop
+if not "%~1"=="" (
+	if "%~1"=="-o" set "output=%~dpn2" & shift
+	if "%~1"=="-r" set "scale=%~2" & shift
+	if "%~1"=="-f" set "fps=%~2" & shift
+	if "%~1"=="-s" set "start_time=%~2" & shift
+	if "%~1"=="-e" set "end_time=%~2" & shift
+	if "%~1"=="-v" set "loglevel=%~2" & shift
+	if "%~1"=="-x" set "crop=%~2" & shift
+	if "%~1"=="-p" set "picswitch=1"
+	if "%~1"=="-y" set "playswitch=1"
+	shift & goto :parse_loop
 )
 
 :safchek
 :: Validate if output file is set and not starts with a -
-IF "%output%"=="" ( ECHO %RED%Missing value for -o%OFF% & GOTO :EOF )
-FOR %%f IN ("%output%") DO SET "out_base=%%~nf"
-IF DEFINED out_base (
-	IF "!out_base:~0,1!"=="-" ( ECHO %RED%Missing value for -o%OFF% & GOTO :EOF )
+if "%output%"=="" ( echo %red%Missing value for -o%off% & goto :EOF )
+for %%f in ("%output%") do set "out_base=%%~nf"
+if defined out_base (
+	if "!out_base:~0,1!"=="-" ( echo %red%Missing value for -o%off% & goto :EOF )
 )
 
 :: Validate if output is a directory; strip trailing slash and use input filename
-IF EXIST "%output%\*" (
-	IF "%output:~-1%"=="\" SET "output=%output:~0,-1%"
-	FOR %%f IN ("!input!") DO SET "filename=%%~nf"
-	SET "output=!output!\!filename!"
+if exist "%output%\*" (
+	if "%output:~-1%"=="\" set "output=%output:~0,-1%"
+	for %%f in ("!input!") do set "filename=%%~nf"
+	set "output=!output!\!filename!"
 )
 
 :: Set output file extension
-SET "output=%output%.%filetype%"
+set "output=%output%.%filetype%"
 
 :: Validate Clipping
-IF DEFINED start_time (
-	IF DEFINED end_time SET "trim=-ss !start_time! -to !end_time!"
-	IF NOT DEFINED end_time (
-		ECHO %RED%End time ^(-e^) is required when Start time ^(-s^) is specified.%OFF%
-		GOTO :EOF
+if defined start_time (
+	if defined end_time set "trim=-ss !start_time! -to !end_time!"
+	if not defined end_time (
+		echo %red%End time ^(-e^) is required when Start time ^(-s^) is specified.%off%
+		goto :EOF
 	)
 )
-IF DEFINED end_time (
-	IF NOT DEFINED start_time (
-		ECHO %RED%Start time ^(-s^) is required when End time ^(-e^) is specified.%OFF%
-		GOTO :EOF
+if defined end_time (
+	if not defined start_time (
+		echo %red%Start time ^(-s^) is required when End time ^(-e^) is specified.%off%
+		goto :EOF
 	)
 )
 
 :: Validate Framerate
-IF "!fps!"=="-" (
-	SET "fps=source_fps"
-) ELSE IF !fps! LSS 1 (
-	ECHO  %RED%Framerate ^(-f^) must be greater than 0.%OFF%
-	GOTO :EOF
+if "!fps!"=="-" (
+	set "fps=source_fps"
+) else if !fps! lss 1 (
+	echo  %red%Framerate ^(-f^) must be greater than 0.%off%
+	goto :EOF
 )
 
 :script_start
 :: Putting together filters
-SET "filters=fps=%fps%"
-IF DEFINED crop ( SET "filters=%filters%,crop=%crop%" )
-SET "filters=%filters%,scale=%scale%:-1:flags=lanczos+accurate_rnd+full_chroma_int"
+set "filters=fps=%fps%"
+if defined crop ( set "filters=%filters%,crop=%crop%" )
+set "filters=%filters%,scale=%scale%:-1:flags=lanczos+accurate_rnd+full_chroma_int"
 
 :: FFplay preview
-IF DEFINED playswitch (
+if defined playswitch (
 :: Check if ffplay exists on PATH, if not exit
-	WHERE /q ffplay.exe || ( ECHO %RED%FFplay not found in PATH, please install it first%OFF% & GOTO :EOF )
+	where /q ffplay.exe || ( echo %red%FFplay not found in PATH, please install it first%off% & goto :EOF )
 
-	FOR /F "delims=" %%a in ('ffplay -version') DO (
-		IF NOT DEFINED ffplay_version ( SET "ffplay_version=%%a" 
-		 ) ELSE IF NOT DEFINED ffplay_build ( SET "ffplay_build=%%a" )
+	for /f "delims=" %%a in ('ffplay -version') do (
+		if not defined ffplay_version ( set "ffplay_version=%%a" 
+		 ) else if not defined ffplay_build ( set "ffplay_build=%%a" )
 	)
-	ECHO %YELLOW%!ffplay_version!%OFF%
-	ECHO %YELLOW%!ffplay_build!%OFF%
+	echo %yellow%!ffplay_version!%off%
+	echo %yellow%!ffplay_build!%off%
 
-	IF NOT DEFINED start_time SET "start_time=0"
-	IF NOT DEFINED end_time SET "end_time=3"
+	if not defined start_time set "start_time=0"
+	if not defined end_time set "end_time=3"
 	ffplay -v %loglevel% -i "%input%" -vf "%filters%" -an -loop 0 -ss !start_time! -t !end_time!
-	GOTO :EOF
+	goto :EOF
 )
 
 :: Storing FFmpeg version string
-FOR /F "delims=" %%a in ('ffmpeg -version') DO (
-	IF NOT DEFINED ffmpeg_version ( SET "ffmpeg_version=%%a"
-	) ELSE IF NOT DEFINED ffmpeg_build ( SET "ffmpeg_build=%%a" )
+for /f "delims=" %%a in ('ffmpeg -version') do (
+	if not defined ffmpeg_version ( set "ffmpeg_version=%%a"
+	) else if not defined ffmpeg_build ( set "ffmpeg_build=%%a" )
 )
 
 :: Displaying FFmpeg version string and output file
-ECHO %YELLOW%!ffmpeg_version!%OFF%
-ECHO %YELLOW%!ffmpeg_build!%OFF%
-ECHO %GREEN%Output file:%OFF% !output!
+echo %yellow%!ffmpeg_version!%off%
+echo %yellow%!ffmpeg_build!%off%
+echo %green%Output file:%off% !output!
 
 :: Setting variables to put the encode command together
-SET "type_opts=-crf 30 -cpu-used 4 -row-mt 1 -tiles 2x2 -pix_fmt yuv420p"
+set "type_opts=-crf 30 -cpu-used 4 -row-mt 1 -tiles 2x2 -pix_fmt yuv420p"
 
 :: Executing the encoding command
-ECHO %GREEN%Encoding animation...%OFF%
+echo %green%Encoding animation...%off%
 ffmpeg -v %loglevel% %trim% -i "%input%" ^
 -vf "%filters%" -an ^
 -f %filetype% %type_opts% -loop 0 -plays 0 -y "%output%"
 
 :: Checking if file was created and cleaning up if not
-IF NOT EXIST "%output%" (
-	ECHO ECHO %RED%Failed to generate animation: !output! not found.%OFF%
-	GOTO :cleanup
+if not exist "%output%" (
+	echo echo %red%Failed to generate animation: !output! not found.%off%
+	goto :cleanup
 )
 
 :: Open output file if picswitch is set
-IF DEFINED picswitch START "" "%output%"
+if defined picswitch start "" "%output%"
 
 :cleanup
 :: Cleaning up
-ECHO %GREEN%Done.%OFF%
-ENDLOCAL
-GOTO :EOF
+echo %green%Done.%off%
+endlocal
+goto :EOF
 
 :help_message
 :: Print usage message
-ECHO %GREEN%Video to AVIF converter v1.0%OFF%
-ECHO %BLUE%By Pathduck%OFF%
-ECHO:
-ECHO %GREEN%Usage:%OFF%
-ECHO %~n0 [input_file] [arguments]
-ECHO:
-ECHO %GREEN%Arguments:%OFF%
-ECHO  -o  Output file. Default is the same as input file, sans extension
-ECHO  -r  Resize output width in pixels. Default is original input size
-ECHO  -f  Framerate of output, or '-' to use input framerate (default 15)
-ECHO  -s  Start time of the animation (HH:MM:SS.MS)
-ECHO  -e  End time of the animation (HH:MM:SS.MS)
-ECHO  -x  Crop the input video (out_w:out_h:x:y)
-ECHO  -y  Preview animation using FFplay (part of FFmpeg)
-ECHO      Useful for testing cropping, but will not use exact start/end time
-ECHO  -p  Opens the resulting animation in the default image viewer
-ECHO  -v  Set FFmpeg log level (default: error)
-GOTO :EOF
+echo %green%Video to AVIF converter v1.0%off%
+echo %blue%By Pathduck%off%
+echo:
+echo %green%Usage:%off%
+echo %~n0 [input_file] [arguments]
+echo:
+echo %green%Arguments:%off%
+echo  -o  Output file. Default is the same as input file, sans extension
+echo  -r  Resize output width in pixels. Default is original input size
+echo  -f  Framerate of output, or '-' to use input framerate (default 15)
+echo  -s  Start time of the animation (HH:MM:SS.MS)
+echo  -e  End time of the animation (HH:MM:SS.MS)
+echo  -x  Crop the input video (out_w:out_h:x:y)
+echo  -y  Preview animation using FFplay (part of FFmpeg)
+echo      Useful for testing cropping, but will not use exact start/end time
+echo  -p  Opens the resulting animation in the default image viewer
+echo  -v  Set FFmpeg log level (default: error)
+goto :EOF
