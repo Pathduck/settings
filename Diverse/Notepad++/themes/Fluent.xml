@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--//
 
 Style name:  Fluent Dark Theme for Notepad++
@@ -1183,7 +1183,7 @@ Note:        I don't claim any ownership of this theme. It is merely a replica o
             <WordsStyle name="BINARY ( 16#{1A803F59} )" styleID="11" fgColor="32EB87" bgColor="000000" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="MONEY" styleID="12" fgColor="32EB87" bgColor="000000" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="ISSUE { #123-CD-456 }" styleID="13" fgColor="EBD6EB" bgColor="000000" fontName="" fontStyle="0" fontSize="" />
-            <WordsStyle name="TAG { &lt;TITLE HEIGHT=100&gt; }" styleID="14" fgColor="DCDCCC" bgColor="000000" fontName="" fontStyle="0" fontSize="" />
+            <WordsStyle name="TAG { &lt;TITLE HEIGHT=100> }" styleID="14" fgColor="DCDCCC" bgColor="000000" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="FILE { %/C/WINNT/SOME.DLL }" styleID="15" fgColor="DCDCCC" bgColor="333333" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="EMAIL { JOE@MAIL.DOM }" styleID="16" fgColor="DCDCCC" bgColor="333333" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="URL { FTP://THERE.DOM }" styleID="17" fgColor="DCDCCC" bgColor="333333" fontName="" fontStyle="0" fontSize="" />
@@ -1429,5 +1429,26 @@ Note:        I don't claim any ownership of this theme. It is merely a replica o
         <WidgetStyle name="URL hovered" styleID="0" fgColor="569CD6" fontStyle="0" />
         <WidgetStyle name="EOL custom color" styleID="0" fgColor="DADADA" />
         <WidgetStyle name="Non-printing characters custom color" styleID="0" fgColor="808080" />
+        <WidgetStyle name="Multi-selected text color" styleID="0" bgColor="264F78" />
+        <WidgetStyle name="Multi-edit carets color" styleID="0" fgColor="FFFFFF" />
+        <WidgetStyle name="Bookmark margin" styleID="0" bgColor="000000" />
+        <WidgetStyle name="Change History margin" styleID="0" bgColor="000000" />
+        <WidgetStyle name="Change History modified" styleID="0" fgColor="FF8000" bgColor="FF8000" />
+        <WidgetStyle name="Change History revert modified" styleID="0" fgColor="A0C000" bgColor="A0C000" />
+        <WidgetStyle name="Change History revert origin" styleID="0" fgColor="40A0BF" bgColor="40A0BF" />
+        <WidgetStyle name="Change History saved" styleID="0" fgColor="00A000" bgColor="00A000" />
+        <WidgetStyle name="Find status: Not found" styleID="0" fgColor="FF0000" />
+        <WidgetStyle name="Find status: Message" styleID="0" fgColor="0000FF" />
+        <WidgetStyle name="Find status: Search end reached" styleID="0" fgColor="008000" />
+        <WidgetStyle name="Tab color 1" styleID="0" bgColor="F3F0CB" />
+        <WidgetStyle name="Tab color 2" styleID="0" bgColor="DBF3CB" />
+        <WidgetStyle name="Tab color 3" styleID="0" bgColor="CBDBF3" />
+        <WidgetStyle name="Tab color 4" styleID="0" bgColor="F3DBCB" />
+        <WidgetStyle name="Tab color 5" styleID="0" bgColor="F3CBEE" />
+        <WidgetStyle name="Tab color dark mode 1" styleID="0" bgColor="807848" />
+        <WidgetStyle name="Tab color dark mode 2" styleID="0" bgColor="568048" />
+        <WidgetStyle name="Tab color dark mode 3" styleID="0" bgColor="507094" />
+        <WidgetStyle name="Tab color dark mode 4" styleID="0" bgColor="804849" />
+        <WidgetStyle name="Tab color dark mode 5" styleID="0" bgColor="754880" />
     </GlobalStyles>
 </NotepadPlus>

@@ -2,8 +2,8 @@
 <NotepadPlus>
     <InternalCommands>
         <Shortcut id="44022" Ctrl="yes" Alt="yes" Shift="no" Key="87" />
-        <Shortcut id="41008" Ctrl="yes" Alt="yes" Shift="no" Key="83" />
-        <Shortcut id="41007" Ctrl="yes" Alt="no" Shift="yes" Key="83" />
+        <Shortcut id="41008" Ctrl="yes" Alt="no" Shift="yes" Key="83" />
+        <Shortcut id="41007" Ctrl="yes" Alt="yes" Shift="no" Key="83" />
         <Shortcut id="44019" Ctrl="yes" Alt="yes" Shift="no" Key="65" />
         <Shortcut id="44025" Ctrl="yes" Alt="yes" Shift="no" Key="84" />
         <Shortcut id="41022" Ctrl="no" Alt="no" Shift="no" Key="0" />
@@ -16,6 +16,10 @@
         <Shortcut id="44080" Ctrl="no" Alt="no" Shift="no" Key="121" />
         <Shortcut id="49000" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="44031" Ctrl="no" Alt="yes" Shift="yes" Key="70" />
+        <Shortcut id="41014" Ctrl="yes" Alt="no" Shift="yes" Key="82" />
+        <Shortcut id="50005" Ctrl="yes" Alt="yes" Shift="no" Key="82" />
+        <Shortcut id="42026" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="43003" Ctrl="yes" Alt="no" Shift="no" Key="82" />
     </InternalCommands>
     <Macros>
         <Macro name="Trim Trailing Space and Save" Ctrl="no" Alt="yes" Shift="yes" Key="83">

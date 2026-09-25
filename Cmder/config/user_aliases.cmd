@@ -30,7 +30,6 @@ ls=ls --color=auto --group-directories-first $*
 musify=node --no-deprecation d:\bin\node\dl-musify.club\download_album.js $*
 mv=mv -i $*
 nginx=start /d d:\bin\Nginx /b d:\bin\Nginx\nginx.exe $*
-npm=d:\bin\nodejs\npm.cmd $*  
 npp=d:\bin\Notepad++\notepad++.exe $*
 pb=curl -sSF "files[]=@$*" "https://qu.ax/upload.php" $B jq -r '.files[].url'
 pst=sh "d:\bin\tools\pst" $*  

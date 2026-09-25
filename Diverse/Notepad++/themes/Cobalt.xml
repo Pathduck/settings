@@ -132,7 +132,7 @@
             <WordsStyle name="UNKNOWN IDENTIFIER" styleID="7" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="VALUE" styleID="8" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="COMMENT" styleID="9" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize="" />
-            <WordsStyle name="ID" styleID="10" fgColor="00F072" bgColor="001B33" colorStyle="1" fontName="" fontStyle="3" fontSize="" />
+            <WordsStyle name="ID" styleID="10" fgColor="FFC600" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize="" />
             <WordsStyle name="IMPORTANT" styleID="11" fgColor="FF6262" bgColor="001B33" colorStyle="1" fontName="" fontStyle="3" fontSize="" />
             <WordsStyle name="DIRECTIVE" styleID="12" fgColor="FF80FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="2" fontSize="" />
             <WordsStyle name="DOUBLE STRING" styleID="13" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
@@ -398,7 +398,7 @@
             <WordsStyle name="OPERATOR" styleID="6" fgColor="9696FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="">bool long int char</WordsStyle>
             <WordsStyle name="IDENTIFIER" styleID="7" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="INSTRUCTION WORD" styleID="8" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="instre1" />
-            <WordsStyle name="CMDLET" styleID="9" fgColor="FFFFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="instre2" />
+            <WordsStyle name="CMDLET" styleID="9" fgColor="FFFFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="instre2" />
             <WordsStyle name="ALIAS" styleID="10" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="type1" />
             <WordsStyle name="FUNCTION" styleID="11" fgColor="FFFFFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="type2" />
             <WordsStyle name="USER KEYWORDS" styleID="12" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="type3" />
@@ -513,7 +513,6 @@
             <WordsStyle name="STRING Q" styleID="24" fgColor="61CE3C" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
         </LexerType>
         <LexerType name="sql" desc="SQL" ext="">
-            <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="KEYWORD" styleID="5" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="instre1" />
             <WordsStyle name="USER1" styleID="16" fgColor="AAAAFF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="1" fontSize="" keywordClass="instre2" />
             <WordsStyle name="KEYWORD2" styleID="19" fgColor="FF9D00" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" keywordClass="type3" />
@@ -526,6 +525,7 @@
             <WordsStyle name="COMMENT DOC" styleID="3" fgColor="0088FF" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="Q OPERATOR" styleID="24" fgColor="3AD900" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="IDENTIFIER" styleID="11" fgColor="E1E1E1" bgColor="001B33" fontName="" fontStyle="0" fontSize="" colorStyle="1" />
+            <WordsStyle name="DEFAULT" styleID="0" fgColor="E1E1E1" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />
         </LexerType>
         <LexerType name="xml" desc="XML" ext="">
             <WordsStyle name="XML START" styleID="12" fgColor="FF6464" bgColor="001B33" colorStyle="1" fontName="" fontStyle="0" fontSize="" />

@@ -20,10 +20,10 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" backspaceUnindent="no" />
-        <GUIConfig name="AppPosition" x="-11" y="0" width="1455" height="825" isMaximized="yes" />
-        <GUIConfig name="FindWindowPosition" left="649" top="413" right="1596" bottom="939" isLessModeOn="no" />
+        <GUIConfig name="AppPosition" x="112" y="37" width="1618" height="916" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="973" top="550" right="1920" bottom="1076" isLessModeOn="no" />
         <GUIConfig name="FinderConfig" wrappedLines="no" purgeBeforeEverySearch="no" showOnlyOneEntryPerFoundLine="yes" FiF_ignoreunsavedChangesInOpenedFiles="no" />
-        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20260802" autoUpdateMode="1">no</GUIConfig>
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20261001" autoUpdateMode="1">no</GUIConfig>
         <GUIConfig name="Auto-detection">yes</GUIConfig>
         <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
         <GUIConfig name="TrayIcon">0</GUIConfig>
@@ -48,33 +48,34 @@
         <GUIConfig name="workspaceExt" />
         <GUIConfig name="MenuBar">show</GUIConfig>
         <GUIConfig name="Caret" width="3" blinkRate="600" />
-        <GUIConfig name="openSaveDir" value="2" defaultDirPath="%Documents%" lastUsedDirPath="" />
+        <GUIConfig name="openSaveDir" value="0" defaultDirPath="%Documents%" lastUsedDirPath="" />
         <GUIConfig name="titleBar" short="no" />
         <GUIConfig name="insertDateTime" customizedFormat="dd.MM.yyyy" reverseDefaultOrder="no" />
         <GUIConfig name="wordCharList" useDefault="yes" charsAdded="" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
         <GUIConfig name="largeFileRestriction" fileSizeMB="25" isEnabled="yes" allowAutoCompletion="no" allowBraceMatch="no" allowSmartHilite="no" allowClickableLink="no" deactivateWordWrap="yes" suppress2GBWarning="no" />
         <GUIConfig name="multiInst" setting="0" clipboardHistory="no" documentList="no" characterPanel="no" folderAsWorkspace="no" projectPanels="no" documentMap="no" fuctionList="no" pluginPanels="no" />
-        <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" fileSwitcherExtWidth="50" fileSwitcherWithoutPathColumn="yes" fileSwitcherPathWidth="50" fileSwitcherNoGroups="no" backSlashIsEscapeCharacterForSql="yes" writeTechnologyEngine="0" isFolderDroppedOpenFiles="no" docPeekOnTab="no" docPeekOnMap="no" sortFunctionList="no" saveDlgExtFilterToAllTypes="no" muteSounds="no" enableFoldCmdToggable="no" hideMenuRightShortcuts="yes" />
+        <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" fileSwitcherExtWidth="50" fileSwitcherWithoutPathColumn="yes" fileSwitcherPathWidth="50" fileSwitcherNoGroups="no" backSlashIsEscapeCharacterForSql="yes" writeTechnologyEngine="0" isFolderDroppedOpenFiles="no" docPeekOnTab="no" docPeekOnMap="no" sortFunctionList="no" saveDlgExtFilterToAllTypes="no" muteSounds="no" enableFoldCmdToggable="no" hideMenuRightShortcuts="yes" isFawSymlinkAllowed="no" />
         <GUIConfig name="Searching" monospacedFontFindDlg="no" fillFindFieldWithSelected="yes" fillFindFieldSelectCaret="no" findDlgAlwaysVisible="no" confirmReplaceInAllOpenDocs="yes" replaceStopsWithoutFindingNext="no" inSelectionAutocheckThreshold="1024" fillFindWhatThreshold="1024" fillDirFieldFromActiveDoc="no" />
         <GUIConfig name="searchEngine" searchEngineChoice="5" searchEngineCustom="" />
+        <GUIConfig name="shortcutsXmlHMAC" value="6bf8d5f59e22050bb3e1d3e9ee769ba3c9c8d514330062cfe298ef2dbe0c5a8c" />
         <GUIConfig name="MarkAll" matchCase="no" wholeWordOnly="yes" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="DarkMode" enable="yes" colorTone="0" customColorTop="2105376" customColorMenuHotTrack="4210752" customColorActive="4210752" customColorMain="2105376" customColorError="176" customColorText="14737632" customColorDarkText="12632256" customColorDisabledText="8421504" customColorLinkText="65535" customColorEdge="6579300" customColorHotEdge="10197915" customColorDisabledEdge="4737096" enableWindowsMode="no" darkThemeName="Cobalt.xml" darkToolBarIconSet="0" darkTbFluentColor="7" darkTbFluentCustomColor="6161300" darkTbFluentMono="no" darkTabIconSet="2" darkTabUseTheme="no" lightThemeName="" lightToolBarIconSet="4" lightTbFluentColor="0" lightTbFluentCustomColor="0" lightTbFluentMono="no" lightTabIconSet="0" lightTabUseTheme="yes" />
-        <GUIConfig name="ColorPickerCustomColors" color0="6579455" color1="16744703" color2="16752895" color3="16777215" color4="16777215" color5="16777215" color6="16777215" color7="16777215" color8="16777215" color9="16777215" color10="16777215" color11="16777215" color12="16777215" color13="16777215" color14="16777215" color15="16777215" />
+        <GUIConfig name="ColorPickerCustomColors" color0="16750230" color1="16744703" color2="16752895" color3="16777215" color4="16777215" color5="16777215" color6="16777215" color7="16777215" color8="16777215" color9="16777215" color10="16777215" color11="16777215" color12="16777215" color13="16777215" color14="16777215" color15="16777215" />
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="hide" indentGuideLine="show" folderMarkStyle="circle" isChangeHistoryEnabled="1" lineWrapMethod="default" currentLineIndicator="1" currentLineFrameWidth="1" virtualSpace="no" scrollBeyondLastLine="no" rightClickKeepsSelection="no" selectedTextForegroundSingleColor="yes" disableAdvancedScrolling="no" wrapSymbolShow="show" Wrap="no" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="0" zoom2="0" zoomSync="no" whiteSpaceShow="hide" eolShow="hide" eolMode="1" npcShow="hide" npcMode="1" npcCustomColor="no" npcIncludeCcUniEOL="no" npcNoInputC0="no" ccShow="no" borderWidth="1" smoothFont="no" paddingLeft="2" paddingRight="5" distractionFreeDivPart="4" lineCopyCutWithoutSelection="yes" disableSelectedTextDragDrop="no" multiSelection="yes" columnSel2MultiEdit="yes" />
-        <GUIConfig name="DockingManager" leftWidth="476" rightWidth="319" topHeight="200" bottomHeight="430">
+        <GUIConfig name="DockingManager" leftWidth="530" rightWidth="319" topHeight="200" bottomHeight="315">
             <FloatingWindow cont="4" x="0" y="64" width="524" height="279" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="yes" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="no" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="yes" />
             <PluginDlg pluginName="JSMinNPP.dll" id="0" curr="0" prev="-1" isVisible="no" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NppConverter.dll" id="3" curr="4" prev="0" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44081" curr="0" prev="-1" isVisible="no" />
             <PluginDlg pluginName="NppMarkdownPanel" id="0" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="42051" curr="1" prev="-1" isVisible="no" />
-            <PluginDlg pluginName="NppConverter.dll" id="3" curr="4" prev="0" isVisible="no" />
             <PluginDlg pluginName="MarkdownViewer++" id="0" curr="1" prev="-1" isVisible="no" />
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="0" />
