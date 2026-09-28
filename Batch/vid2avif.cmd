@@ -37,12 +37,12 @@ if not exist "%input%" (
 
 :: Clearing input vars and setting defaults
 set "fps=15"
-set "scale=-1"
 set "filetype=avif"
 set "loglevel=error"
 set "start_time="
 set "end_time="
 set "crop="
+set "scale="
 set "picswitch="
 set "playswitch="
 
@@ -108,7 +108,7 @@ if "!fps!"=="-" (
 :: Putting together filters
 set "filters=fps=%fps%"
 if defined crop ( set "filters=%filters%,crop=%crop%" )
-set "filters=%filters%,scale=%scale%:-1:flags=lanczos+accurate_rnd+full_chroma_int"
+if defined scale ( set "filters=%filters%,scale=%scale%:-1:flags=lanczos+accurate_rnd+full_chroma_int" )
 
 :: FFplay preview
 if defined playswitch (
@@ -116,7 +116,7 @@ if defined playswitch (
 	where /q ffplay.exe || ( echo %red%FFplay not found in PATH, please install it first%off% & goto :EOF )
 
 	for /f "delims=" %%a in ('ffplay -version') do (
-		if not defined ffplay_version ( set "ffplay_version=%%a" 
+		if not defined ffplay_version ( set "ffplay_version=%%a"
 		 ) else if not defined ffplay_build ( set "ffplay_build=%%a" )
 	)
 	echo %yellow%!ffplay_version!%off%
@@ -124,7 +124,7 @@ if defined playswitch (
 
 	if not defined start_time set "start_time=0"
 	if not defined end_time set "end_time=3"
-	ffplay -v %loglevel% -i "%input%" -vf "%filters%" -an -loop 0 -ss !start_time! -t !end_time!
+	ffplay -v %loglevel% -ss !start_time! -t !end_time! -i "%input%" -vf "%filters%" -an -loop 0
 	goto :EOF
 )
 

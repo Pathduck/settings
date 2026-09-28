@@ -2,7 +2,7 @@
 # Script to change Audio Device based on input string.
 # First device found that matches string is used.
 
-DEVICE=$1
+DEVICE="$1"
 # SoundVolumeCommandLine - https://www.nirsoft.net/utils/sound_volume_command_line.html
 SVCL="/d/bin/NirsoftLauncher/NirSoft/svcl.exe"
 
