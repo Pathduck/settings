@@ -59,5 +59,5 @@ rmdir /q /s "%temp_dir%"
 
 echo %GREEN%Done. %OFF%
 popd
-pause
+timeout /t 5
 GOTO :EOF
