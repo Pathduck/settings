@@ -1,6 +1,6 @@
 :: Script to start Jotta Daemon service
 @echo off
-
+title Jotta Daemon
 tasklist /fi "imagename eq jottad.exe" | findstr /i "jottad.exe" >nul || ( start "" "D:\bin\Jotta\jottad.exe" & timeout 1 )
 
 jotta scan

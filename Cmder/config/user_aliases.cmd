@@ -23,6 +23,7 @@ grep=grep --color --ignore-case $*
 gs=git status $*
 gw=git hist --raw --no-merges $*
 home=cd /d "%USERPROFILE%"
+js=jotta-share.cmd $*  
 kill=pskill $*
 la=ls -la --color=auto --group-directories-first $*
 ll=ls -l --color=auto --group-directories-first $*
@@ -47,4 +48,3 @@ tshark=d:\bin\Wireshark\tshark.exe $*
 unalias=alias /d $1
 vi=vim $*
 winscp=d:\bin\WinSCP\winscp.exe $*
-js=jotta-share.cmd $*  

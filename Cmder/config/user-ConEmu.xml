@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2026-09-24 10:41:00" build="230724">
+		<key name=".Vanilla" modified="2026-09-28 18:50:22" build="230724">
 			<value name="ColorTable00" type="dword" data="00222827"/>
 			<value name="ColorTable01" type="dword" data="00e97a01"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
@@ -291,10 +291,10 @@
 			<value name="MinimizeOnLoseFocus" type="hex" data="00"/>
 			<value name="DisableFarFlashing" type="hex" data="00"/>
 			<value name="DisableAllFlashing" type="hex" data="00"/>
-			<value name="FindText" type="string" data=""/>
+			<value name="FindText" type="string" data="clink"/>
 			<value name="FindMatchCase" type="hex" data="00"/>
 			<value name="FindMatchWholeWords" type="hex" data="00"/>
-			<value name="FindTransparent" type="hex" data="01"/>
+			<value name="FindTransparent" type="hex" data="00"/>
 			<value name="PanView.BackColor" type="dword" data="30ffffff"/>
 			<value name="PanView.PFrame" type="long" data="1"/>
 			<value name="PanView.PFrameColor" type="dword" data="28808080"/>
@@ -729,7 +729,7 @@
 			<value name="StatusBar.Hide.Dpi" type="hex" data="01"/>
 			<value name="TabFlashChanged" type="long" data="8"/>
 			<value name="TabModifiedSuffix" type="string" data="[*]"/>
-			<key name="HotKeys" modified="2026-01-08 11:24:53" build="230724">
+			<key name="HotKeys" modified="2026-09-28 15:54:05" build="230724">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -798,7 +798,7 @@
 				<value name="ClipboardVkAllLines" type="dword" data="0000102d"/>
 				<value name="ClipboardVkFirstLine" type="dword" data="00001156"/>
 				<value name="DeleteWordToLeft" type="dword" data="00001157"/>
-				<value name="FindTextKey" type="dword" data="00005d46"/>
+				<value name="FindTextKey" type="dword" data="00001146"/>
 				<value name="ScreenshotKey" type="dword" data="00000000"/>
 				<value name="ScreenshotFullKey" type="dword" data="00000000"/>
 				<value name="ShowStatusBarKey" type="dword" data="00000000"/>

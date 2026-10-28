@@ -36,4 +36,5 @@ for /f "delims=" %%A in ("%input%") do (
 echo Absolute Path  : "%fullpath%"
 echo Filename/Folder: "%filename%"
 
+:: Share file with Jotta using the name as remote
 jotta archive "%fullpath%" --share --clipboard --nogui --remote="Shares/%filename%"

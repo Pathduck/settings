@@ -1,5 +1,5 @@
 @echo off
-
+title Windows Terminal Colors
 setlocal
 call :setESC
 
@@ -56,6 +56,8 @@ echo ^<ESC^>[7m                      %ESC%[7minverse foreground ^<-^> background
 echo ^<ESC^>[7;31m                   %ESC%[7;31minverse red foreground color%ESC%[0m
 echo ^<ESC^>[7m and nested ^<ESC^>[31m %ESC%[7mbefore %ESC%[31mnested%ESC%[0m
 echo ^<ESC^>[31m and nested ^<ESC^>[7m %ESC%[31mbefore %ESC%[7mnested%ESC%[0m
+
+pause
 
 :setESC
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
