@@ -5,18 +5,16 @@
 .quick-command-container {width: 60vw !important;}
 .quick-commands .VivaldiList {height: 60vh !important;}
 
-/* Transparency */
-.qc-entry, .quick-commands {background-color: var(--colorBgAlphaHeavy) !important;}
-
-/* Selected line */
-.quick-command[data-selected] {background-color: var(--colorHighlightBg) !important;}
-
 /* Styling */
 .qc-modal .modal-wrapper {
 	color: var(--colorFgIntense) !important;
 	background-color: var(--colorBgAlphaBlur) !important;
-	backdrop-filter: blur(3px);
-	border: 2px solid var(--colorAccentBgAlphaHeavy);
+	border: 2px solid var(--colorBorderSubtle);
+}
+
+.quick-command-timestamp {
+	color: var(--colorFgIntense) !important;
+	background-color: var(--colorFgAlpha) !important;
 }
 
 /* Quick command URL */

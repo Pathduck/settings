@@ -1,3 +1,4 @@
+/* Break mode fixes */
 #browser.break-mode {
     background-image: var(--browserBackgroundImage) !important;
 }

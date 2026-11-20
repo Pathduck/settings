@@ -144,8 +144,7 @@
 }
 
 /* Hide bookmark thumbnails */
-.manager-editor .cardview .preview,
-.panel-bookmarks-edit .cardview .preview {
+.manager-editor .cardview .preview {
 	display: none;
 }
 
