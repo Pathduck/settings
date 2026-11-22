@@ -1,23 +1,24 @@
-/* Placement */
+/* QC Placement */
 .qc-modal {top: 15vh !important;}
 
-/* Width + Height */
+/* QC Width + Height */
 .quick-command-container {width: 60vw !important;}
 .quick-commands .VivaldiList {height: 60vh !important;}
 
-/* Styling */
+/* QC Styling */
 .qc-modal .modal-wrapper {
 	color: var(--colorFgIntense) !important;
 	background-color: var(--colorBgAlphaBlur) !important;
 	border: 2px solid var(--colorBorderSubtle);
 }
 
+/* QC timestamp */
 .quick-command-timestamp {
 	color: var(--colorFgIntense) !important;
 	background-color: var(--colorFgAlpha) !important;
 }
 
-/* Quick command URL */
+/* QC URL */
 .quick-command-url {
 	opacity: 1 !important;
 }

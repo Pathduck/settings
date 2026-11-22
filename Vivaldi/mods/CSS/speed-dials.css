@@ -1,10 +1,10 @@
 /* Speed Dials Mods */
 .SpeedDialView, .SpeedDialView:empty {
-	padding: 40px 0 !important;
+	padding: 40px !important;
 }
 
-/* Speed Dials search field position (if shown) */
-.sdwrapper .iconmenu-container.SearchField {
+/* Speed Dials search field (if shown) */
+.SpeedDialView-Head .SpeedDialView-SearchField.SearchField {
 	background: var(--colorBgAlphaHeavy);
 }
 
