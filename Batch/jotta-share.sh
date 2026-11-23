@@ -29,5 +29,5 @@ echo "Absolute Path  : \"$fullpath\""
 echo "Windows Path   : \"$winpath\""
 echo "Filename/Folder: \"$filename\""
 
-# 6. Call Jotta CLI safely with quoted variables
+# Call Jotta CLI safely with quoted variables
 jotta archive "$winpath" --share --clipboard --nogui --remote="Shares/$filename"
